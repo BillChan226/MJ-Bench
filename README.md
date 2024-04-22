@@ -36,7 +36,9 @@ wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-
 
 Then you can use the `edit_image` API in `ImageEditor` class for editing. You should provide the local image path, target entity (entity in the image you want to modify), new entity (the entity you want to replace it with). You can also provide the box threshold, text threshold for grounding the target entity or inherit the default values from the ImageEditor initialization. You can also specify `save_dir` for the target folder to save the edited image. You can also set `save_dir` to `None` and use the API returned edited image to do further processing or save it by yourself. For example,
 ```python
+from utils.image_editor_utils import ImageEditor
 
+image_editor = ImageEditor(debugger=False)
 local_image_path = "path/to/cat.jpg"
 
 # determine the target entity to inpaint
