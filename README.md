@@ -34,7 +34,7 @@ wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-
 `utils/image_editor_utils.py` contains the `ImageEditor` class for the image editing pipeline. To initialize `ImageEditor`, you can specify `inpainting_model_id` for the inpainting model to use. The default inpainting model is `stabilityai/stable-diffusion-2-inpainting`.  You can also set `debugger=True` to save the intermediate source, annotated, and masked images to `utils/image_editor_cache`.
 
 
-Then you can use the `edit_image` API in `ImageEditor` class for editing. You should provide the local image path, target entity (entity in the image you want to modify), new entity (the entity you want to replace it with). You can also provide the box threshold, text threshold for grounding the target entity or inherit the default values from the ImageEditor initialization. You can also specify `save_dir` for the target folder to save the edited image. You can also set `save_dir` to `None` and use the API returned edited image to do further processing or save it by yourself. For example,
+Then you can use the `edit_image` API in `ImageEditor` class for editing. You should provide `local_image_path`, `target_entity` (entity in the image you want to modify), `new_entity` (the entity you want to replace it with). You can also provide the `box_threshold`, `text_threshold` for grounding the target entity or inherit the default values from the `ImageEditor` initialization. You can also specify `save_dir` for the target folder to save the edited image. You can also set `save_dir` to `None` and use the API returned edited image to do further processing or save it by yourself. For example,
 ```python
 from utils.image_editor_utils import ImageEditor
 
@@ -48,6 +48,7 @@ new_entity = "dog"
 image_inpainting = image_editor.edit_image(local_image_path, target_entity, new_entity, save_dir="path/to/save_dir")
 ```
 A detailed demo is provided in `image_editor_example.py`.
+
 
 ### :t-rex: Evaluation with GroundingDINO
 

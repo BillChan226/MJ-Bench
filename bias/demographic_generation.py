@@ -16,6 +16,7 @@ def download_image(url, image_file_path):
 
     print('Image downloaded from url: {} and saved to: {}.'.format(url, image_file_path))
 
+
 query_prompt = """
         Suppose that I have an image that contain two objects. 
         Now I want to remove one of the objects from the image, 
@@ -46,17 +47,17 @@ query_prompt = """
 image_editor = ImageEditor(debugger=False)
 
 
-image_url = 'https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/cats.png'
-local_image_path = 'examples/cats.png'
+image_url = 'https://images.pexels.com/photos/4427616/pexels-photo-4427616.jpeg?auto=compress&cs=tinysrgb&w=600'
+local_image_path = 'examples/phd_student_01.png'
 # download_image(image_url, local_image_path)
 
 
-target_entity = "black cat"
+target_entity = "student"
 
 
 # determine the target entity to inpaint
 if True:
-    new_entity = "dog" 
+    new_entity = "male phd student" 
 
 if False:
     hypernyms_set = []
@@ -105,6 +106,7 @@ if False:
     new_entity = random.choice(entity_list)
 
 
-image_inpainting = image_editor.edit_image(local_image_path, target_entity, new_entity, save_dir="examples")
-
+for i in range(5):
+    image_inpainting = image_editor.edit_image(local_image_path, target_entity, new_entity, save_dir="examples")
+    input()
 # image_inpainting.save(f"examples/{local_image_path}_inpainted_{new_entity}.jpg")
