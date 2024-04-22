@@ -48,16 +48,12 @@ image_editor = ImageEditor(debugger=False)
 
 
 image_url = 'https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/cats.png'
-local_image_path = 'cats.png'
+local_image_path = 'examples/cats.png'
+# download_image(image_url, local_image_path)
 
-
-# download image
-download_image(image_url, local_image_path)
 
 target_entity = "black cat"
 
-
-local_image_path = local_image_path
 
 # determine the target entity to inpaint
 if True:
