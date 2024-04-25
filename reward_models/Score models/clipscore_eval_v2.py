@@ -158,7 +158,7 @@ if __name__ == "__main__":
         # if id == 3:
         #     break
 
-    save_dir = "result/validation_clipscore_eval_v2_0.00.json"
+    save_dir = "../result/validation_clipscore_eval_v2_0.00.json"
 
     with open(save_dir, 'w') as f:
         json.dump(data_list, f, indent=4)

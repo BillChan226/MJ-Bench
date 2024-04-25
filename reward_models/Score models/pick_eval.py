@@ -144,7 +144,7 @@ if __name__ == "__main__":
         # if id == 5:
         #     break
 
-    save_dir = "result/validation_pickscore_eval_0.00.json"
+    save_dir = "../result/validation_pickscore_eval_0.00.json"
 
     with open(save_dir, 'w') as f:
         json.dump(data_list, f, indent=4)
