@@ -66,7 +66,7 @@ if __name__ == "__main__":
     print("dataset", dataset)
 
     # Define save directory
-    save_dir = "./result/validation_ImageReward_eval_0.00.json"
+    save_dir = "../result/validation_ImageReward_eval_0.00.json"
     data_list = []
     threshold = 0.0
 
