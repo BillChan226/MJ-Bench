@@ -211,6 +211,8 @@ def main(args):
         data_list.append(new_item)
 
     save_dir = args.save_dir
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
     with open(save_dir, 'w', encoding='utf-8') as f:
         json.dump(data_list, f, indent=4, ensure_ascii=False)
 
