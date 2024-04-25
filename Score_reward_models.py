@@ -5,16 +5,17 @@ from PIL import Image
 from transformers import CLIPProcessor
 from io import BytesIO
 from aesthetics_predictor import AestheticsPredictorV1, AestheticsPredictorV2Linear, AestheticsPredictorV2ReLU
-from transformers import AutoProcessor, AutoModel
+from transformers import AutoProcessor, AutoModel, InstructBlipProcessor, InstructBlipForConditionalGeneration
 from datasets import load_dataset
 import torch
 import os
 import json
 from tqdm import tqdm
-from transformers import BlipProcessor, BlipForImageTextRetrieval
+from transformers import BlipProcessor, BlipForImageTextRetrieval, pipeline, LlavaForConditionalGeneration
 import hpsv2
 import ImageReward as RM
 import numpy as np
+
 
 def get_pred(prob_0, prob_1, threshold):
     if abs(prob_1 - prob_0) <= threshold:
@@ -151,7 +152,58 @@ class Scorer:
 
         return scores
 
+class VLM_scorer:
+    def __init__(self, model_path, processor_path, device):
+        self.device = device
+        self.model_path = model_path
+        self.processor_path = processor_path
+        self.processor = AutoProcessor.from_pretrained(processor_path)
+        self.model = AutoModel.from_pretrained(model_path).eval().to(device)
 
+    def InstructBLIP(self, image_path, prompt):
+        '''
+        model: Salesforce/instructblip-vicuna-7b
+        '''
+        model = InstructBlipForConditionalGeneration.from_pretrained(self.model_path).to(self.device)
+        processor = InstructBlipProcessor.from_pretrained(self.processor_path)
+
+        image = Image.open(image_path)
+        inputs = processor(images=image, text=prompt, return_tensors="pt").to(self.device)
+
+        outputs = model.generate(
+            **inputs,
+            do_sample=False,
+            max_new_tokens=512,
+            # min_length=1,
+            # top_p=0.9,
+            # repetition_penalty=1.5,
+            # length_penalty=1.0,
+            # temperature=1,
+            # num_beams=5,
+        )
+        response = processor.batch_decode(outputs, skip_special_tokens=True)[0].strip()
+        return response
+
+    def LLaVA(self, image_path, prompt):
+
+        '''
+        model: llava-hf/llava-1.5-7b-hf
+        '''
+
+        model = LlavaForConditionalGeneration.from_pretrained(
+            self.model_path,
+            # torch_dtype=torch.float16,
+            low_cpu_mem_usage=True,
+        ).to(self.device)
+
+        processor = AutoProcessor.from_pretrained(self.processor_path)
+
+        image = Image.open(image_path)
+        inputs = processor(prompt, image, return_tensors='pt').to(self.device, torch.float16)
+
+        output = model.generate(**inputs, max_new_tokens=512, do_sample=False)
+        response = processor.decode(output[0][2:], skip_special_tokens=True)
+        return response
 
 
 def main(args):
@@ -214,6 +266,8 @@ def main(args):
     save_dir = args.save_dir
     with open(save_dir, 'w', encoding='utf-8') as f:
         json.dump(data_list, f, indent=4, ensure_ascii=False)
+
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
