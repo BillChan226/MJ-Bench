@@ -89,10 +89,11 @@ class VLM_scorer:
             low_cpu_mem_usage=True,
         ).to(self.device)
 
+        prompt = f"USER: <image>\n{prompt}\nASSISTANT:"
         processor = AutoProcessor.from_pretrained(self.processor_path)
 
         image = self.open_image(image_path)
-        inputs = processor(prompt, image, return_tensors='pt').to(self.device, torch.float16)
+        inputs = processor(prompt, image, return_tensors='pt').to(self.device)
 
         output = model.generate(**inputs, max_new_tokens=512, do_sample=False)
         response = processor.decode(output[0][2:], skip_special_tokens=True)
