@@ -252,6 +252,8 @@ def main(args):
             scores = [score0, score1]
         elif args.VLM == "qwen":
             scores = scorer.Qwen_VL_Chat([image_0_path, image_1_path], prompt)
+        elif args.VLM == "idefics2":
+            scores = scorer.idefics2([image_0_path, image_1_path], prompt)
 
 
         print(f"scores: {scores}")
