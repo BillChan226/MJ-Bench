@@ -5,7 +5,7 @@ from PIL import Image
 from transformers import CLIPProcessor
 from io import BytesIO
 from aesthetics_predictor import AestheticsPredictorV1, AestheticsPredictorV2Linear, AestheticsPredictorV2ReLU
-from transformers import AutoProcessor, AutoModel, InstructBlipProcessor, InstructBlipForConditionalGeneration, CLIPImageProcessor, AutoModelForCausalLM
+from transformers import AutoProcessor, AutoModel, InstructBlipProcessor, InstructBlipForConditionalGeneration, CLIPImageProcessor, AutoModelForCausalLM, AutoModelForVision2Seq
 from datasets import load_dataset
 import torch
 import os
@@ -161,6 +161,33 @@ class VLM_scorer:
         response, history = model.chat(tokenizer, query=query, history=None)
         return response
 
+    def idefics2(self, images_path, prom):
+        images = [self.open_image(image_path) for image_path in images_path]
+
+        processor = AutoProcessor.from_pretrained(self.model_path)
+        model = AutoModelForVision2Seq.from_pretrained(self.model_path).to(self.device)
+
+        # Create inputs
+        messages = [
+            {
+                "role": "user",
+                "content": [
+                    {"type": "image"},
+                    {"type": "image"},
+                    {"type": "text", "text": prom},
+                ]
+            }
+        ]
+        prompt = processor.apply_chat_template(messages, add_generation_prompt=True)
+        inputs = processor(text=prompt, images=images, return_tensors="pt")
+        inputs = {k: v.to(self.device) for k, v in inputs.items()}
+
+        # Generate
+        generated_ids = model.generate(**inputs, max_new_tokens=512)
+        response = processor.batch_decode(generated_ids, skip_special_tokens=True)
+
+        return response
+
 
 def main(args):
     # Load dataset
@@ -189,7 +216,7 @@ def main(args):
 
         prompt = f"""
             You are given a task to evaluate the quality of the generated image included below, as well as input prompt description. You will evaluate the provided image across the following criteria:
-
+            
             Alignment: Consider whether the image accurately reflects the provided prompt. In your analysis consider if all the elements of the prompt, such as objects, positions, colors, etc.. accurately reflected in the generated image.
 
             Quality: Consider the quality of the generated image. In your evaluation some criteria to consider are: the image aesthetically pleasing; does it contain visual artifacts, such misshapen limbs, or blurs; are the images novel and original.
