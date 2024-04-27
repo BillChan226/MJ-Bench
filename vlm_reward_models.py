@@ -146,7 +146,7 @@ class VLM_scorer:
         response = model.chat(tokenizer, pixel_values, prompt, generation_config)
         return response
 
-    
+
     # multi-inputs
     def Qwen_VL_Chat(self, images_path, prompt):
 
