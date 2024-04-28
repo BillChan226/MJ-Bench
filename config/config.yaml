@@ -19,6 +19,14 @@ reward_models:
             model_path: llava-hf/llava-1.5-7b-hf
         idefics2-8b:
             model_path: HuggingFaceM4/idefics2-8b
+        instructblip:
+            model_path: Salesforce/instructblip-vicuna-7b
+        qwen:
+            model_path: Qwen/Qwen-VL-Chat
+        internVL:
+            model_path: OpenGVLab/InternVL-Chat-V1-2-Plus
+        minigpt4:
+            model_path: wangrongsheng/MiniGPT-4-LLaMA-7B
         
 
     closesource_models:
