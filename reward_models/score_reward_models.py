@@ -5,13 +5,12 @@ from PIL import Image
 from transformers import CLIPProcessor
 from io import BytesIO
 from transformers import AutoProcessor, AutoModel, InstructBlipProcessor, InstructBlipForConditionalGeneration
+from transformers import BlipProcessor, BlipForImageTextRetrieval, pipeline, LlavaForConditionalGeneration
 from datasets import load_dataset
 import torch
 import os
 import json
 from tqdm import tqdm
-from transformers import BlipProcessor, BlipForImageTextRetrieval, pipeline, LlavaForConditionalGeneration
-import ImageReward as RM
 import numpy as np
 
 
@@ -25,20 +24,22 @@ class Scorer:
         self.processor = AutoProcessor.from_pretrained(processor_path)
         self.model = AutoModel.from_pretrained(model_path).eval().to(device)
 
-        if args.score == "clipscore_v1":
+        if model_name == "clipscore_v1":
             self.get_score = self.get_clipscore
-        elif args.score == "pickscore_v1":
+        elif model_name == "clipscore_v2":
+            self.get_score = self.get_clipscore
+        elif model_name == "pickscore_v1":
             self.get_score = self.get_pickscore
-        elif args.score == "blipscore_v1":
+        elif model_name == "blipscore_v1":
             self.get_score = self.get_blipscore
-        elif args.score == "AestheticScore":
-            from aesthetics_predictor import AestheticsPredictorV1, AestheticsPredictorV2Linear, AestheticsPredictorV2ReLU
+        elif model_name == "AestheticScore":
             self.get_score = self.get_aesthetics_score
-        elif args.score == "HPS_v2.1":
-            import hpsv2
+        elif model_name == "HPS_v2.1":
             self.get_score = self.get_hpsv2_score
-        elif args.score == "ImageReward":
+        elif model_name == "ImageReward":
             self.get_score = self.ImageReward
+        else:
+            raise ValueError(f"Model {model_name} not found")
 
 
     def open_image(self, image):
@@ -145,6 +146,7 @@ class Scorer:
         return probs.cpu().tolist()
 
     def ImageReward(self, images_path, caption):
+        import ImageReward as RM
         model = RM.load("ImageReward-v1.0").to(self.device)
         scores = model.score(caption, images_path)
 
