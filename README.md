@@ -1,5 +1,10 @@
 # MM-Reward: A Comprehensive Assessment for Multi-modal Reward Models in Language Modeling
 
+<div align="center">
+  <img src="repo_logo.png" width="90%">
+</div>
+
+
 ## :basecampy: Project structure
 + utils
   - model.py

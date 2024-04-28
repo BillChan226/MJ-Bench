@@ -11,3 +11,7 @@ pycocotools
 shortuuid
 spacy
 pandas
+datasets
+simple-aesthetics-predictor
+hpsv2
+clip

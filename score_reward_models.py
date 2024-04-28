@@ -4,7 +4,6 @@ import torch
 from PIL import Image
 from transformers import CLIPProcessor
 from io import BytesIO
-from aesthetics_predictor import AestheticsPredictorV1, AestheticsPredictorV2Linear, AestheticsPredictorV2ReLU
 from transformers import AutoProcessor, AutoModel, InstructBlipProcessor, InstructBlipForConditionalGeneration
 from datasets import load_dataset
 import torch
@@ -12,29 +11,10 @@ import os
 import json
 from tqdm import tqdm
 from transformers import BlipProcessor, BlipForImageTextRetrieval, pipeline, LlavaForConditionalGeneration
-import hpsv2
 import ImageReward as RM
 import numpy as np
 
 
-def get_pred(prob_0, prob_1, threshold):
-    if abs(prob_1 - prob_0) <= threshold:
-        pred = "tie"
-    elif prob_0 > prob_1:
-        pred = "0"
-    else:
-        pred = "1"
-    return pred
-
-
-def get_label(example):
-    if example["label_0"] == 0.5:
-        label = "tie"
-    elif example["label_0"] == 1:
-        label = "0"
-    else:
-        label = "1"
-    return label
 
 class Scorer:
     def __init__(self, model_name, model_path, processor_path, device):
@@ -52,8 +32,10 @@ class Scorer:
         elif args.score == "blipscore_v1":
             self.get_score = self.get_blipscore
         elif args.score == "AestheticScore":
+            from aesthetics_predictor import AestheticsPredictorV1, AestheticsPredictorV2Linear, AestheticsPredictorV2ReLU
             self.get_score = self.get_aesthetics_score
         elif args.score == "HPS_v2.1":
+            import hpsv2
             self.get_score = self.get_hpsv2_score
         elif args.score == "ImageReward":
             self.get_score = self.ImageReward

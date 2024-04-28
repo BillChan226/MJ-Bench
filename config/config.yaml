@@ -1,5 +1,6 @@
 
 reward_models:
+
     score_models:
         clipscore_v1:
             model_path: ViT-B/32
@@ -10,18 +11,20 @@ reward_models:
             model_path: yuvalkirstain/PickScore_v1
             processor_path: yuvalkirstain/PickScore_v1
         hps_v2.1:
-            model_path: /net/scratch/zhaorun/hf_models/PickScore_v1 
+            model_path: 
             processor_path: laion/CLIP-ViT-H-14-laion2B-s32B-b79K
+
     opensource_vlm:
         llava-1.5-7b-hf:
-            model_path: /net/scratch/zhaorun/hf_models/llava-1.5-7b-hf
+            model_path: llava-hf/llava-1.5-7b-hf
         idefics2-8b:
-            model_path: /net/scratch/zhaorun/hf_models/idefics2-8b 
+            model_path: HuggingFaceM4/idefics2-8b
+        
 
     closesource_models:
         gpt-4-turbo-2024-04-09:
-            model_name:
-            api_key:
-            base_url:
+            model_name: gpt-4-turbo-2024-04-09
+            api_key: 
+            base_url: api.openai.com
         
 
