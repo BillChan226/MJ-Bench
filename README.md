@@ -30,8 +30,8 @@ where `MODEL_NAME` is the name of the reward model to evaluate; `CONFIG_PATH` is
 
 ## Development Tools
 
-### Installation
-For development, you need to install GroundingDINO for image detection editing. Here is a quick tutorial.
+### Additional Installation
+For development, you need to install GroundingDINO for image detection and editing. Here is a quick tutorial.
 
 Download pre-trained Swin-T model weights for GroundingDINO.
 ```
