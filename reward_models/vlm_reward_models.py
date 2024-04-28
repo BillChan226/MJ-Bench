@@ -12,18 +12,34 @@ import os
 import json
 from tqdm import tqdm
 from transformers import BlipProcessor, BlipForImageTextRetrieval, pipeline, LlavaForConditionalGeneration, AutoTokenizer
-import hpsv2
 import ImageReward as RM
 import numpy as np
+from utils.rm_utils import get_pred, get_label
 
 
-class VLM_scorer:
-    def __init__(self, model_path, processor_path, device):
+class Scorer:
+    def __init__(self, model_name, model_path, processor_path, device):
+        self.model_name = model_name
         self.device = device
         self.model_path = model_path
         self.processor_path = processor_path
         self.processor = AutoProcessor.from_pretrained(processor_path)
         self.model = AutoModel.from_pretrained(model_path).eval().to(device)
+
+        if model_name == "llava":
+            self.get_score = self.LLaVA
+        elif model_name == "minigpt4":
+            self.get_score = self.MiniGPT4
+        elif model_name == "instructblip":
+            self.get_score = self.InstructBLIP
+        elif model_name == "internVL":
+            self.get_score = self.InternVL
+        elif model_name == "qwen":
+            self.get_score = self.Qwen_VL_Chat()
+        elif model_name == "idefics2":
+            self.get_score = self.idefics2
+        else:
+            raise ValueError(f"Model {model_name} not found")
 
     def open_image(self, image):
         if isinstance(image, bytes):
@@ -33,7 +49,7 @@ class VLM_scorer:
         image = image.convert("RGB")
         return image
 
-    def InstructBLIP(self, image_path, prompt):
+    def InstructBLIP(self, image_path, prompt):  # single input
         '''
         model: Salesforce/instructblip-vicuna-7b
         '''
@@ -182,7 +198,7 @@ def main(args):
     image_dict = {image_dir.split(".jpg")[0]: image_dir for image_dir in all_images}
 
     device = args.device
-    scorer = VLM_scorer(args.model_path, args.processor_path, device)
+    scorer = Scorer(args.model_path, args.processor_path, device)
 
     data_list = []
     threshold = args.threshold
