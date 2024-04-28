@@ -5,7 +5,7 @@
 </div>
 
 
-## :hammer_and_wrench: Setup
+## Setup
 
 ### Installation
 Create environment and install dependencies.
@@ -27,7 +27,7 @@ wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-
 `config/config.yaml` contains the configuration for the three types of reward models that we will evaluate. You can copy the default configuration to a new file and modify the model_path and api_key to use in your own envionrment.
 
 
-## :hammer_and_wrench: Reward Model Evaluation
+## Reward Model Evaluation
 To get the reward/score from a reward model, simply run
 ```python
 python get_rm_score.py --model [MODEL_NAME] --config_path [CONFIG_PATH] --dataset [DATASET] --local_buffer [LOCAL_BUFFER] --save_dir [SAVE_DIR] --threshold [THRESHOLD]
