@@ -2,15 +2,15 @@ import yaml
 import sys, os
 sys.path.append("./")
 import argparse
-# import score_reward_models
-# import vlm_reward_models
+import score_reward_models
+import vlm_reward_models
 
-def get_parent_label(config_data, entry_name):
+# def get_parent_label(config_data, entry_name):
 
-  for parent_label, sub_models in config_data["reward_models"].items():
-    if entry_name in sub_models:
-      return parent_label
-  return None
+#   for parent_label, sub_models in config_data["reward_models"].items():
+#     if entry_name in sub_models:
+#       return parent_label
+#   return None
 
 
 def main(args):
@@ -19,9 +19,14 @@ def main(args):
         config_data = yaml.safe_load(config_file)
         reward_models_config = config_data["reward_models"]
 
-    rm_type = get_parent_label(config_data, args.model)
-    print(f"rm_type: {rm_type}")
-    input()
+    # rm_type = get_parent_label(config_data, args.model)
+
+    rm_type_dict = {}
+    for parent_label, sub_models in config_data["reward_models"].items():
+        for sub_model in sub_models:
+            rm_type_dict[sub_model] = parent_label
+        
+
 
 
     device = args.device
@@ -32,6 +37,12 @@ def main(args):
         all_images = os.listdir(image_buffer)
         image_dict = {image_dir.split(".jpg")[0]: image_dir for image_dir in all_images}
 
+    if rm_type_dict[args.model] == "score":
+        scorer = score_reward_models.Scorer(args.model, args.processor_path, device)
+    elif rm_type_dict[args.model] == "reward":
+        scorer = vlm_reward_models.Scorer(args.model, args.processor_path, device)
+    else:
+        raise ValueError(f"Model {args.model} not found in config file")
 
 
 
