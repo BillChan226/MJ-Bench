@@ -1,4 +1,4 @@
-# MM-Reward:trophy:: A Comprehensive Assessment for Multi-modal Reward Models in Language Modeling
+# MM-Re:trophy:ard: A Comprehensive Assessment for Multi-modal Reward Models in Language Modeling
 
 <div align="center">
   <img src="assets/repo_logo_3.png" width="90%">
