@@ -12,16 +12,8 @@ Create environment and install dependencies.
 ```
 conda create -n MM python=3.8
 pip install -r requirements.txt
-python -m spacy download en_core_web_sm
 ```
 
-Download pre-trained Swin-T model weights for GroundingDINO.
-```
-cd utils/GroundingDINO
-mkdir weights
-cd weights
-wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
-```
 
 ### Reward Model Config
 `config/config.yaml` contains the configuration for the three types of reward models that we will evaluate. You can copy the default configuration to a new file and modify the model_path and api_key to use in your own envionrment.
@@ -37,6 +29,19 @@ where `MODEL_NAME` is the name of the reward model to evaluate; `CONFIG_PATH` is
 
 
 ## Development Tools
+
+### Installation
+For development, you need to install GroundingDINO for image detection editing. Here is a quick tutorial.
+
+Download pre-trained Swin-T model weights for GroundingDINO.
+```
+python -m spacy download en_core_web_sm
+
+cd utils/GroundingDINO
+mkdir weights
+cd weights
+wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
+```
 
 ### :art: Image Editing Pipeline
 
