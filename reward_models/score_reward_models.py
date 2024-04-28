@@ -12,6 +12,9 @@ import os
 import json
 from tqdm import tqdm
 import numpy as np
+from aesthetics_predictor import AestheticsPredictorV2Linear
+from utils.rm_utils import get_pred, get_label
+import hpsv2
 
 
 
