@@ -17,3 +17,11 @@ reward_models:
             model_path: /net/scratch/zhaorun/hf_models/llava-1.5-7b-hf
         idefics2-8b:
             model_path: /net/scratch/zhaorun/hf_models/idefics2-8b 
+
+    closesource_models:
+        gpt-4-turbo-2024-04-09:
+            model_name:
+            api_key:
+            base_url:
+        
+
