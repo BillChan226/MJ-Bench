@@ -147,15 +147,17 @@ class VLM_scorer:
         return response
 
 
+    # multi-inputs
     def Qwen_VL_Chat(self, images_path, prompt):
 
         tokenizer = AutoTokenizer.from_pretrained(self.model_path, trust_remote_code=True)
         model = AutoModelForCausalLM.from_pretrained(self.model_path, trust_remote_code=True).eval().to(self.device)
 
-        images = [self.open_image(image_path) for image_path in images_path]
+        # images = [self.open_image(image_path) for image_path in images_path]
 
         query = tokenizer.from_list_format([
-            {'image': images},
+            {'image': images_path[0]},
+            {'image': images_path[1]},
             {'text': prompt},
         ])
 
