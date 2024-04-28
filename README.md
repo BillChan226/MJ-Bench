@@ -36,6 +36,7 @@ python get_rm_score.py --model [MODEL_NAME] --config_path [CONFIG_PATH] --datase
 where `MODEL_NAME` is the name of the reward model to evaluate; `CONFIG_PATH` is the path to the configuration file; `DATASET` is the dataset to evaluate on (default is `yuvalkirstain/pickapic_v1`); `LOCAL_BUFFER` specifies a local buffer to cache the images from an online source; `SAVE_DIR` is the directory to save the results; and `THRESHOLD` is the preference threshold for the score-based RMs(i.e. `image_0` is prefered only if `score(image_0) - score(image_1) > THRESHOLD`).
 
 
+## Development Tools
 
 ### :art: Image Editing Pipeline
 
