@@ -25,10 +25,7 @@ def main(args):
     for parent_label, sub_models in config_data["reward_models"].items():
         for sub_model in sub_models:
             rm_type_dict[sub_model] = parent_label
-        
-
-
-
+    
     device = args.device
     dataset = load_dataset(args.dataset, streaming=True)
     dataset = dataset['validation_unique']
@@ -38,12 +35,23 @@ def main(args):
         image_dict = {image_dir.split(".jpg")[0]: image_dir for image_dir in all_images}
 
     if rm_type_dict[args.model] == "score":
-        scorer = score_reward_models.Scorer(args.model, args.processor_path, device)
+        reward_model = score_reward_models.Scorer(args.model, rm_type_dict[args.model]["model_path"], rm_type_dict[args.model]["processor_path"], device)
     elif rm_type_dict[args.model] == "reward":
-        scorer = vlm_reward_models.Scorer(args.model, args.processor_path, device)
+        reward_model = vlm_reward_models.Scorer(args.model, rm_type_dict[args.model]["model_path"], rm_type_dict[args.model]["processor_path"], device)
     else:
         raise ValueError(f"Model {args.model} not found in config file")
 
+
+
+    for id, example in tqdm(enumerate(dataset)):
+
+        new_item = {}
+
+        image_0_path = os.path.join(image_buffer, image_dict[example["image_0_uid"]])
+        image_1_path = os.path.join(image_buffer, image_dict[example["image_1_uid"]])
+        caption = example["caption"]
+
+        scores = reward_model.get_score([image_0_path, image_1_path], caption)
 
 
 

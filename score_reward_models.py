@@ -37,12 +37,27 @@ def get_label(example):
     return label
 
 class Scorer:
-    def __init__(self, model_path, processor_path, device):
+    def __init__(self, model_name, model_path, processor_path, device):
         self.device = device
+        self.model_name = model_name
         self.model_path = model_path
         self.processor_path = processor_path
         self.processor = AutoProcessor.from_pretrained(processor_path)
         self.model = AutoModel.from_pretrained(model_path).eval().to(device)
+
+        if args.score == "clipscore_v1":
+            self.get_score = self.get_clipscore
+        elif args.score == "pickscore_v1":
+            self.get_score = self.get_pickscore
+        elif args.score == "blipscore_v1":
+            self.get_score = self.get_blipscore
+        elif args.score == "AestheticScore":
+            self.get_score = self.get_aesthetics_score
+        elif args.score == "HPS_v2.1":
+            self.get_score = self.get_hpsv2_score
+        elif args.score == "ImageReward":
+            self.get_score = self.ImageReward
+
 
     def open_image(self, image):
         if isinstance(image, bytes):
@@ -51,6 +66,7 @@ class Scorer:
             image = Image.open(image)
         image = image.convert("RGB")
         return image
+
 
     def get_aesthetics_score(self, images_path, caption):
         images = [self.open_image(image) for image in images_path]
