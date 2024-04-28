@@ -27,8 +27,8 @@ def main(args):
     # dataset = load_dataset("yuvalkirstain/pickapic_v2", num_proc=64)
     dataset = dataset['validation_unique']
 
-    if os.path.exists(args.local_dataset_buffer):
-        root_buffer = args.local_dataset_buffer
+    if os.path.exists(args.local_buffer):
+        root_buffer = args.local_buffer
         all_images = os.listdir(root_buffer)
         image_dict = {image_dir.split(".jpg")[0]: image_dir for image_dir in all_images}
     else:
@@ -96,7 +96,7 @@ if __name__ == "__main__":
     parser.add_argument("--model", "-m", type=str, default="clipscore_v1", help="rm model to evaluate")
     parser.add_argument("--config_path", "-c", type=str, default="config/config.yaml", help="config path")
     parser.add_argument("--dataset", type=str, default="yuvalkirstain/pickapic_v1", help="dataset")
-    parser.add_argument("--local_dataset_buffer", type=str, default="cache/", help="local directory to buffer dataset")
+    parser.add_argument("--local_buffer", type=str, default="cache/", help="local directory to buffer dataset")
     parser.add_argument("--save_dir", type=str, default="result/", help="save directory")
     parser.add_argument("--device", type=str, default="cuda:0", help="cuda or cpu")
     parser.add_argument("--threshold", type=float, default=0.0, help="threshold")

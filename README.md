@@ -5,20 +5,9 @@
 </div>
 
 
-## :basecampy: Project structure
-+ utils
-  - model.py
-  - metric.py
-    ...
-+ reward_models
-+ Alignment
-+ Aesthetic
-+ Spurious Correlation
-...
-  
+## :hammer_and_wrench: Setup
 
-## :hammer_and_wrench: Installation
-
+### Installation
 Create environment and install dependencies.
 ```
 conda create -n MM python=3.8
@@ -33,6 +22,20 @@ mkdir weights
 cd weights
 wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
 ```
+
+### Reward Model Config
+`config/config.yaml` contains the configuration for the three types of reward models that we will evaluate. You can copy the default configuration to a new file and modify the model_path and api_key to use in your own envionrment.
+
+
+## :hammer_and_wrench: Reward Model Evaluation
+To get the reward/score from a reward model, simply run
+```python
+python get_rm_score.py --model [MODEL_NAME] --config_path [CONFIG_PATH] --dataset [DATASET] --local_buffer [LOCAL_BUFFER] --save_dir [SAVE_DIR] --threshold [THRESHOLD]
+```
+
+where `MODEL_NAME` is the name of the reward model to evaluate; `CONFIG_PATH` is the path to the configuration file; `DATASET` is the dataset to evaluate on (default is `yuvalkirstain/pickapic_v1`); `LOCAL_BUFFER` specifies a local buffer to cache the images from an online source; `SAVE_DIR` is the directory to save the results; and `THRESHOLD` is the preference threshold for the score-based RMs(i.e. `image_0` is prefered only if `score(image_0) - score(image_1) > THRESHOLD`).
+
+
 
 ### :art: Image Editing Pipeline
 
