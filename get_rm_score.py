@@ -8,6 +8,7 @@ from datasets import load_dataset
 import json
 from tqdm import tqdm
 from utils.rm_utils import get_pred, get_label, get_config, open_image
+import datetime
 
 
 
@@ -73,9 +74,7 @@ def main(args):
         new_item["caption"] = caption
         new_item["ranking_id"] = example["ranking_id"]
         new_item["image_0_uid"] = example["image_0_uid"]
-        new_item["image_0_path"] = image_0_path
         new_item["image_1_uid"] = example["image_1_uid"]
-        new_item["image_1_path"] = image_1_path
         new_item["score_0"] = scores[0]
         new_item["score_1"] = scores[1]
         new_item["label"] = label
@@ -83,10 +82,10 @@ def main(args):
 
         data_list.append(new_item)
 
-    save_dir = args.save_dir
-    # if not os.path.exists(save_dir):
-    #     os.makedirs(save_dir)
-    with open(save_dir, 'w', encoding='utf-8') as f:
+    save_dir = args.save_dir + f"{args.model}/"
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+    with open(save_dir+str(datetime.datetime.now())+".json", 'w', encoding='utf-8') as f:
         json.dump(data_list, f, indent=4)
 
 
@@ -98,7 +97,7 @@ if __name__ == "__main__":
     parser.add_argument("--config_path", "-c", type=str, default="config/config.yaml", help="config path")
     parser.add_argument("--dataset", type=str, default="yuvalkirstain/pickapic_v1", help="dataset")
     parser.add_argument("--local_dataset_buffer", type=str, default="cache/", help="local directory to buffer dataset")
-    parser.add_argument("--save_dir", type=str, default="result/test.json", help="save directory")
+    parser.add_argument("--save_dir", type=str, default="result/", help="save directory")
     parser.add_argument("--device", type=str, default="cuda:0", help="cuda or cpu")
     parser.add_argument("--threshold", type=float, default=0.0, help="threshold")
     args = parser.parse_args()
