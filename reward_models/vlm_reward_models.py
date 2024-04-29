@@ -5,13 +5,15 @@ from PIL import Image
 from transformers import CLIPProcessor
 from io import BytesIO
 from aesthetics_predictor import AestheticsPredictorV1, AestheticsPredictorV2Linear, AestheticsPredictorV2ReLU
-from transformers import AutoProcessor, AutoModel, InstructBlipProcessor, InstructBlipForConditionalGeneration, CLIPImageProcessor, AutoModelForCausalLM, AutoModelForVision2Seq
+from transformers import AutoProcessor, AutoModel, InstructBlipProcessor, InstructBlipForConditionalGeneration, \
+    CLIPImageProcessor, AutoModelForCausalLM, AutoModelForVision2Seq
 from datasets import load_dataset
 import torch
 import os
 import json
 from tqdm import tqdm
-from transformers import BlipProcessor, BlipForImageTextRetrieval, pipeline, LlavaForConditionalGeneration, AutoTokenizer
+from transformers import BlipProcessor, BlipForImageTextRetrieval, pipeline, LlavaForConditionalGeneration, \
+    AutoTokenizer
 import ImageReward as RM
 import numpy as np
 from utils.rm_utils import get_pred, get_label
@@ -23,23 +25,80 @@ class Scorer:
         self.device = device
         self.model_path = model_path
         self.processor_path = processor_path
-        self.processor = AutoProcessor.from_pretrained(processor_path)
-        self.model = AutoModel.from_pretrained(model_path).eval().to(device)
+        # self.processor = AutoProcessor.from_pretrained(processor_path)
+        self.model = None  # Initialize model as None
+        self.processor = None  # Initialize processor as None
+        self.tokenizer = None  # Initialize tokenizer as None
 
         if model_name == "llava":
             self.get_score = self.LLaVA
+            self.load_llava_model()
         elif model_name == "minigpt4":
             self.get_score = self.MiniGPT4
+            self.load_minigpt4_model()
         elif model_name == "instructblip":
             self.get_score = self.InstructBLIP
+            self.load_instructblip_model()
         elif model_name == "internVL":
             self.get_score = self.InternVL
+            self.load_internVL_model()
         elif model_name == "qwen":
             self.get_score = self.Qwen_VL_Chat()
+            self.load_qwen_model()
         elif model_name == "idefics2":
             self.get_score = self.idefics2
+            self.load_idefics2_model()
         else:
             raise ValueError(f"Model {model_name} not found")
+
+    def load_llava_model(self):
+        model = LlavaForConditionalGeneration.from_pretrained(
+            self.model_path,
+            low_cpu_mem_usage=True,
+        ).to(self.device)
+        processor = AutoProcessor.from_pretrained(self.processor_path)
+        self.processor = processor
+        self.model = model
+
+    def load_minigpt4_model(self):
+        model = AutoModel.from_pretrained(self.model_path, low_cpu_mem_usage=True).to(self.device)
+        tokenizer = AutoTokenizer.from_pretrained(self.model_path)
+        processor = AutoProcessor.from_pretrained(self.processor_path)
+        self.processor = processor
+        self.tokenizer = tokenizer
+        self.model = model
+
+    def load_instructblip_model(self):
+        model = InstructBlipForConditionalGeneration.from_pretrained(self.model_path).to(self.device)
+        processor = InstructBlipProcessor.from_pretrained(self.processor_path)
+        self.processor = processor
+        self.model = model
+
+    def load_internVL_model(self):
+        model = AutoModel.from_pretrained(
+            self.model_path,
+            torch_dtype=torch.bfloat16,
+            low_cpu_mem_usage=True,
+            trust_remote_code=True
+        ).eval().to(self.device)
+        processor = CLIPImageProcessor.from_pretrained(self.processor_path)
+        tokenizer = AutoTokenizer.from_pretrained(self.model_path)
+        self.processor = processor
+        self.tokenizer = tokenizer
+        self.model = model
+
+    def load_qwen_model(self):
+        tokenizer = AutoTokenizer.from_pretrained(self.model_path, trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained(self.model_path, trust_remote_code=True).eval().to(self.device)
+        self.tokenizer = tokenizer
+        self.model = model
+
+    def load_idefics2_model(self):
+        model = AutoModelForVision2Seq.from_pretrained(self.model_path).to(self.device)
+        processor = AutoProcessor.from_pretrained(self.model_path)
+        self.processor = processor
+        self.model = model
+
 
     def open_image(self, image):
         if isinstance(image, bytes):
@@ -49,89 +108,56 @@ class Scorer:
         image = image.convert("RGB")
         return image
 
-    def InstructBLIP(self, image_path, prompt):  # single input
+    def InstructBLIP(self, images_path, prompt):
         '''
         model: Salesforce/instructblip-vicuna-7b
         '''
-        model = InstructBlipForConditionalGeneration.from_pretrained(self.model_path).to(self.device)
-        processor = InstructBlipProcessor.from_pretrained(self.processor_path)
 
-        image = self.open_image(image_path)
-        inputs = processor(images=image, text=prompt, return_tensors="pt").to(self.device)
+        images = [self.open_image(image) for image in images_path]
+        inputs = [self.processor(image=image, text=prompt, return_tensors="pt").to(self.device) for image in images]
+        outputs = [self.model.generate(**input, do_sample=False, max_new_tokens=512) for input in inputs]
+        responses = [self.processor.batch_decode(output, skip_special_tokens=True)[0].strip() for output in outputs]
 
-        outputs = model.generate(
-            **inputs,
-            do_sample=False,
-            max_new_tokens=512,
-            # min_length=1,
-            # top_p=0.9,
-            # repetition_penalty=1.5,
-            # length_penalty=1.0,
-            # temperature=1,
-            # num_beams=5,
-        )
-        response = processor.batch_decode(outputs, skip_special_tokens=True)[0].strip()
-        return response
+        return responses
 
-    def LLaVA(self, image_path, prompt):
+    def LLaVA(self, images_path, prompt):
 
         '''
         model: llava-hf/llava-1.5-7b-hf
         '''
 
-        model = LlavaForConditionalGeneration.from_pretrained(
-            self.model_path,
-            # torch_dtype=torch.float16,
-            low_cpu_mem_usage=True,
-        ).to(self.device)
 
         prompt = f"USER: <image>\n{prompt}\nASSISTANT:"
-        processor = AutoProcessor.from_pretrained(self.processor_path)
 
-        image = self.open_image(image_path)
-        inputs = processor(prompt, image, return_tensors='pt').to(self.device)
+        images = [self.open_image(image) for image in images_path]
+        inputs = [self.processor(prompt, image, return_tensors='pt').to(self.device) for image in images]
+        outputs = [self.model.generate(**input, max_new_tokens=512, do_sample=False) for input in inputs]
+        responses = [self.processor.decode(output[0][2:], skip_special_tokens=True) for output in outputs]
 
-        output = model.generate(**inputs, max_new_tokens=512, do_sample=False)
-        response = processor.decode(output[0][2:], skip_special_tokens=True)
-        return response
+        return responses
 
-    def MiniGPT4(self, image_path, prompt):
+    def MiniGPT4(self, images_path, prompt):  # TODO: test pending
         '''
         model: wangrongsheng/MiniGPT-4-LLaMA-7B
         '''
-        model = AutoModel.from_pretrained(self.model_path, low_cpu_mem_usage=True).to(self.device)
-        tokenizer = AutoTokenizer.from_pretrained(self.model_path)
-        processor = AutoProcessor.from_pretrained(self.processor_path)
 
-        image = self.open_image(image_path)
-        inputs = processor(prompt, image, return_tensors='pt').to(self.device)
+        images = [self.open_image(image) for image in images_path]
+        inputs = [self.processor(prompt, image, return_tensors='pt').to(self.device) for image in images]
+        outputs = [self.model.generate(**input, max_new_tokens=512, do_sample=False) for input in inputs]
 
-        output = model.generate(**inputs, max_new_tokens=512, do_sample=False)
-        response = processor.decode(output[0][2:], skip_special_tokens=True)
+        responses = [self.processor.decode(output[0][2:], skip_special_tokens=True) for output in outputs]
 
-        return response
+        return responses
 
-
-    def InternVL(self, image_path, prompt):
+    def InternVL(self, images_path, prompt):
 
         '''
         model: OpenGVLab/InternVL-Chat-V1-2-Plus
         '''
 
-        model = AutoModel.from_pretrained(
-            self.model_path,
-            torch_dtype=torch.bfloat16,
-            low_cpu_mem_usage=True,
-            trust_remote_code=True
-        ).eval().to(self.device)
-
-        tokenizer = AutoTokenizer.from_pretrained(self.model_path)
-        image = self.open_image(image_path)
-        image = image.resize((448, 448))
-        image_processor = CLIPImageProcessor.from_pretrained(self.processor_path)
-
-        pixel_values = image_processor(images=image, return_tensors='pt').pixel_values
-        pixel_values = pixel_values.to(torch.bfloat16).to(self.device)
+        images = [self.open_image(image) for image in images_path]
+        images = [image.resize((224, 224)) for image in images]
+        pixel_values = [self.processor(images=image, return_tensors='pt').pixel_values.to(torch.bfloat16).to(self.device) for image in images]
 
         generation_config = dict(
             num_beams=1,
@@ -139,32 +165,24 @@ class Scorer:
             do_sample=False,
         )
 
-        response = model.chat(tokenizer, pixel_values, prompt, generation_config)
-        return response
+        responses = [self.model.chat(self.tokenizer, pixel_value, prompt, generation_config) for pixel_value in pixel_values]
 
+        return responses
 
     # multi-inputs
     def Qwen_VL_Chat(self, images_path, prompt):
 
-        tokenizer = AutoTokenizer.from_pretrained(self.model_path, trust_remote_code=True)
-        model = AutoModelForCausalLM.from_pretrained(self.model_path, trust_remote_code=True).eval().to(self.device)
-
-        # images = [self.open_image(image_path) for image_path in images_path]
-
-        query = tokenizer.from_list_format([
+        query = self.tokenizer.from_list_format([
             {'image': images_path[0]},
             {'image': images_path[1]},
             {'text': prompt},
         ])
 
-        response, history = model.chat(tokenizer, query=query, history=None)
+        response, history = self.model.chat(self.tokenizer, query=query, history=None)
         return response
 
     def idefics2(self, images_path, prom):
         images = [self.open_image(image_path) for image_path in images_path]
-
-        processor = AutoProcessor.from_pretrained(self.model_path)
-        model = AutoModelForVision2Seq.from_pretrained(self.model_path).to(self.device)
 
         # Create inputs
         messages = [
@@ -177,13 +195,13 @@ class Scorer:
                 ]
             }
         ]
-        prompt = processor.apply_chat_template(messages, add_generation_prompt=True)
-        inputs = processor(text=prompt, images=images, return_tensors="pt")
+        prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True)
+        inputs = self.processor(text=prompt, images=images, return_tensors="pt")
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
 
         # Generate
-        generated_ids = model.generate(**inputs, max_new_tokens=512)
-        response = processor.batch_decode(generated_ids, skip_special_tokens=True)
+        generated_ids = self.model.generate(**inputs, max_new_tokens=512)
+        response = self.processor.batch_decode(generated_ids, skip_special_tokens=True)
 
         return response
 
@@ -215,7 +233,7 @@ def main(args):
 
         prompt = f"""
             You are given a task to evaluate the quality of the generated image included below, as well as input prompt description. You will evaluate the provided image across the following criteria:
-            
+
             Alignment: Consider whether the image accurately reflects the provided prompt. In your analysis consider if all the elements of the prompt, such as objects, positions, colors, etc.. accurately reflected in the generated image.
 
             Quality: Consider the quality of the generated image. In your evaluation some criteria to consider are: the image aesthetically pleasing; does it contain visual artifacts, such misshapen limbs, or blurs; are the images novel and original.
@@ -254,7 +272,6 @@ def main(args):
         elif args.VLM == "idefics2":
             scores = scorer.idefics2([image_0_path, image_1_path], prompt)
 
-
         print(f"scores: {scores}")
 
         label = get_label(example)
@@ -277,7 +294,6 @@ def main(args):
         os.makedirs(save_dir)
     with open(save_dir, 'w', encoding='utf-8') as f:
         json.dump(data_list, f, indent=4, ensure_ascii=False)
-
 
 
 if __name__ == "__main__":

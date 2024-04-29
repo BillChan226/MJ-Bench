@@ -71,13 +71,9 @@ def main(args):
             scores = reward_model.get_score([image_0_path, image_1_path], caption)
 
         elif rm_type_dict[args.model] == "opensource_vlm":
-            if args.model == "qwen" or args.model == "idefics2":   # multi inputs
-                scores = reward_model.get_score([image_0_path, image_1_path], prompt)
-            else:                                                  # single input
-                score_0 = reward_model.get_score(image_0_path, prompt)
-                score_1 = reward_model.get_score(image_1_path, prompt)
-                scores = [score_0, score_1]    # The scores here are actually the generations of the vlms
-                # TODO: get scores of different perspectives from vlm generations
+            scores = reward_model.get_score([image_0_path, image_1_path], prompt)
+            # The scores here are actually the generations of the vlms
+            # TODO: get scores of different perspectives from vlm generations
 
 
         label = get_label(example)
