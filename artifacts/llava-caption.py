@@ -21,7 +21,8 @@ processor = AutoProcessor.from_pretrained(model_id)
 image_dir = "./blur_dataset/sharp"
 all_images = os.listdir(image_dir)
 
-with open("./blur_dataset/captions_blur.json", "r", encoding='utf-8')as f:
+json_path = "./blur_dataset/captions_blur.json"
+with open(json_path, "r", encoding='utf-8')as f:
     captions_data = json.load(f)
 
 for image_name in tqdm(all_images[100:], desc="Processing", leave=True):
