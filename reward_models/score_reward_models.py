@@ -155,6 +155,12 @@ class Scorer:
 
         return scores
 
+    def get_hpsv2_score(self, images_path, caption):
+        scores = hpsv2.score(images_path, caption, hps_version="v2.1")
+        scores = np.array(scores).tolist()
+
+        return scores
+
 
 
 def main(args):
@@ -191,8 +197,7 @@ def main(args):
         elif args.score == "AestheticScore":
             scores = scorer.get_aesthetics_score([image_0_path, image_1_path], caption)
         elif args.score == "HPS_v2.1":
-            scores = hpsv2.score([image_0_path, image_1_path], caption, hps_version="v2.1")
-            scores = np.array(scores).tolist()
+            scores = scorer.get_hpsv2_score([image_0_path, image_1_path], caption)
         elif args.score == "ImageReward":
             scores = scorer.ImageReward([image_0_path, image_1_path], caption)
 
