@@ -15,6 +15,7 @@ import numpy as np
 from aesthetics_predictor import AestheticsPredictorV2Linear
 from utils.rm_utils import get_pred, get_label
 import hpsv2
+import ImageReward as RM
 
 
 
@@ -22,22 +23,34 @@ class Scorer:
     def __init__(self, model_name, model_path, processor_path, device):
         self.device = device
         self.model_name = model_name
-        self.model_path = model_path
-        self.processor_path = processor_path
-        self.processor = AutoProcessor.from_pretrained(processor_path)
-        self.model = AutoModel.from_pretrained(model_path).eval().to(device)
+        if model_name == 'ImageReward':
+            self.model = RM.load("ImageReward-v1.0").to(device)
+        elif model_name == 'aesthetics':
+            self.model = AestheticsPredictorV2Linear.from_pretrained(model_path).to(device)
+            self.processor = CLIPProcessor.from_pretrained(processor_path)
+        elif model_name == 'blipscore':
+            self.model = BlipForImageTextRetrieval.from_pretrained(model_path).to(device)
+            self.processor = BlipProcessor.from_pretrained(processor_path)
+        else:
+            if not model_path=='None' and not processor_path=='None':
+                self.model_path = model_path
+                self.processor_path = processor_path
+                self.processor = AutoProcessor.from_pretrained(processor_path)
+                self.model = AutoModel.from_pretrained(model_path).eval().to(device)
 
         if model_name == "clipscore_v1":
             self.get_score = self.get_clipscore
         elif model_name == "clipscore_v2":
             self.get_score = self.get_clipscore
+        elif model_name == "blipscore":
+            self.get_score = self.get_blipscore
         elif model_name == "pickscore_v1":
             self.get_score = self.get_pickscore
         elif model_name == "blipscore_v1":
             self.get_score = self.get_blipscore
-        elif model_name == "AestheticScore":
+        elif model_name == "aesthetics":
             self.get_score = self.get_aesthetics_score
-        elif model_name == "HPS_v2.1":
+        elif model_name == "hps_v2.1":
             self.get_score = self.get_hpsv2_score
         elif model_name == "ImageReward":
             self.get_score = self.ImageReward
@@ -56,16 +69,12 @@ class Scorer:
 
     def get_aesthetics_score(self, images_path, caption):
         images = [self.open_image(image) for image in images_path]
-
-        predictor = AestheticsPredictorV2Linear.from_pretrained(self.model_path)
-        processor = CLIPProcessor.from_pretrained(self.processor_path)
-        inputs = processor(images=images, return_tensors="pt")
-
-        predictor = predictor.to(self.device)
+        inputs = self.processor(images=images, return_tensors="pt")
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
 
         with torch.no_grad():
-            outputs = predictor(**inputs)
+            outputs = self.model(**inputs)
+
         aesthetics_score = outputs.logits
         aesthetics_score = aesthetics_score.cpu().tolist()
         scores = [score[0] for score in aesthetics_score]
@@ -105,12 +114,12 @@ class Scorer:
     def get_blipscore(self, images_path, caption):
         images = [self.open_image(image) for image in images_path]
 
-        processor = BlipProcessor.from_pretrained(self.processor_path)
-        model = BlipForImageTextRetrieval.from_pretrained(self.model_path).eval().to(self.device)
+        # processor = BlipProcessor.from_pretrained(self.processor_path)
+        # model = BlipForImageTextRetrieval.from_pretrained(self.model_path).eval().to(self.device)
 
         with torch.no_grad():
-            inputs = processor(images, caption, return_tensors="pt").to(self.device)
-            cosine_score = model(**inputs, use_itm_head=False)[0]
+            inputs = self.processor(images, caption, return_tensors="pt").to(self.device)
+            cosine_score = self.model(**inputs)[0]
             cosine_score = cosine_score.cpu().tolist()
             scores = [score[0] for score in cosine_score]
 
@@ -149,12 +158,9 @@ class Scorer:
         return probs.cpu().tolist()
 
     def ImageReward(self, images_path, caption):
-        import ImageReward as RM
-        model = RM.load("ImageReward-v1.0").to(self.device)
-        scores = model.score(caption, images_path)
+        scores = self.model.score(caption, images_path)
 
         return scores
-
     def get_hpsv2_score(self, images_path, caption):
         scores = hpsv2.score(images_path, caption, hps_version="v2.1")
         scores = np.array(scores).tolist()
