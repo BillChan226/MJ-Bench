@@ -1,0 +1,37 @@
+/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion.py:268: FutureWarning: `_encode_prompt()` is deprecated and it will be removed in a future version. Use `encode_prompt()` instead. Also, be aware that the output format changed from a concatenated tensor to a tuple.
+  deprecate("_encode_prompt()", "1.0.0", deprecation_message, standard_warn=False)
+
+
+
+
+
+
+Timestep:  84%|██████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 42/50 [00:11<00:02,  3.80it/s]
+
+
+
+
+
+
+Timestep:  88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▎              | 44/50 [00:11<00:01,  3.76it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+  File "experimental/ddpo_finetune.py", line 108, in <module>
+    trainer.train()
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 604, in train
+    global_step = self.step(epoch, global_step)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 266, in step
+    self.image_samples_callback(prompt_image_data, global_step, self.accelerator.trackers[0])
+  File "experimental/ddpo_finetune.py", line 72, in image_outputs_logger
+    reward = rewards[i].item()
+IndexError: invalid index of a 0-dim tensor. Use `tensor.item()` in Python or `tensor.item<T>()` in C++ to convert a 0-dim tensor to a number

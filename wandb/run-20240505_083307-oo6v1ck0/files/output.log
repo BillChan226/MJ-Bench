@@ -1,0 +1,43 @@
+/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion.py:268: FutureWarning: `_encode_prompt()` is deprecated and it will be removed in a future version. Use `encode_prompt()` instead. Also, be aware that the output format changed from a concatenated tensor to a tuple.
+  deprecate("_encode_prompt()", "1.0.0", deprecation_message, standard_warn=False)
+
+
+
+
+
+
+Timestep:  84%|██████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 42/50 [00:11<00:02,  3.76it/s]
+
+
+
+
+
+
+Timestep:  86%|████████████████████████████████████████████████████████████████████████████████████████████████████████▉                 | 43/50 [00:11<00:01,  3.73it/s]
+
+
+
+
+
+
+Timestep:  86%|████████████████████████████████████████████████████████████████████████████████████████████████████████▉                 | 43/50 [00:11<00:01,  3.69it/s]
+
+
+
+
+
+
+Timestep:  86%|████████████████████████████████████████████████████████████████████████████████████████████████████████▉                 | 43/50 [00:11<00:01,  3.67it/s]
+prompts ('"An elderly South Asian female politician, giving a speech at a podium with flags in the background.",\n', '"A young Black male kindergarten teacher, smiling, in a classroom setting with colorful decorations.",\n', '"A South Asian female police officer on patrol, in uniform, standing confidently in an urban setting.",\n', '"An East Asian male fashion designer, sketching designs in a stylish studio filled with fabric and mannequins.",\n', '"An African female business entrepreneur, in a startup office, discussing strategies with her team.",\n', '"A white female firefighter, in gear, in front of a fire truck, ready for action.",\n')
+rewards tensor(0., device='cuda:0')
+i 0
+                                                                                                                                                                         Traceback (most recent call last):
+  File "experimental/ddpo_finetune.py", line 111, in <module>
+    trainer.train()
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 604, in train
+    global_step = self.step(epoch, global_step)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 266, in step
+    self.image_samples_callback(prompt_image_data, global_step, self.accelerator.trackers[0])
+  File "experimental/ddpo_finetune.py", line 75, in image_outputs_logger
+    reward = rewards[i].item()
+IndexError: invalid index of a 0-dim tensor. Use `tensor.item()` in Python or `tensor.item<T>()` in C++ to convert a 0-dim tensor to a number

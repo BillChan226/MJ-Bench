@@ -16,13 +16,14 @@ python examples/scripts/ddpo.py \
     --num_epochs=200 \
     --train_gradient_accumulation_steps=1 \
     --sample_num_steps=50 \
-    --sample_batch_size=6 \
-    --train_batch_size=3 \
+    --sample_batch_size=16 \
+    --train_batch_size=8 \
     --sample_num_batches_per_epoch=4 \
     --per_prompt_stat_tracking=True \
     --per_prompt_stat_tracking_buffer_size=32 \
     --tracker_project_name="stable_diffusion_training" \
     --log_with="wandb"
+    --use_lora=True
 """
 import os
 from dataclasses import dataclass, field
@@ -52,12 +53,16 @@ class ScriptArguments:
 
 def get_reward_fn(*args, **kwargs):
     def default_reward_fn(images, prompts, metadata):
-        return 0.0
+        reward_list = []
+        for i in range(len(images)):
+            reward = np.random.rand()
+            reward_list.append(reward)
+        return reward_list, None
     return default_reward_fn
     
 
 def prompt_fn(prompts):
-    return np.random.choice(prompts)
+    return np.random.choice(prompts), None
 
 
 def image_outputs_logger(image_data, global_step, accelerate_logger):
@@ -84,7 +89,7 @@ if __name__ == "__main__":
         "logging_dir": "./logs",
         "automatic_checkpoint_naming": True,
         "total_limit": 5,
-        "project_dir": "./save",
+        "project_dir": "./result/finetune",
     }
 
     pipeline = DefaultDDPOStableDiffusionPipeline(

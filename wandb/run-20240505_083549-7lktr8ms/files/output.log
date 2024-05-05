@@ -1,0 +1,76 @@
+/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion.py:268: FutureWarning: `_encode_prompt()` is deprecated and it will be removed in a future version. Use `encode_prompt()` instead. Also, be aware that the output format changed from a concatenated tensor to a tuple.
+  deprecate("_encode_prompt()", "1.0.0", deprecation_message, standard_warn=False)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Timestep:  84%|██████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 42/50 [00:11<00:02,  3.71it/s]
+
+
+
+
+
+
+Timestep:  86%|████████████████████████████████████████████████████████████████████████████████████████████████████████▉                 | 43/50 [00:11<00:01,  3.68it/s]
+
+
+
+
+
+
+Timestep:  84%|██████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 42/50 [00:11<00:02,  3.66it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Timestep:  86%|████████████████████████████████████████████████████████████████████████████████████▎             | 43/50 [00:12<00:01,  3.57it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Timestep:  94%|████████████████████████████████████████████████████████████████████████████████████████████      | 47/50 [00:13<00:00,  3.58it/s]
+                                                                                                                                                 Traceback (most recent call last):
+  File "experimental/ddpo_finetune.py", line 112, in <module>
+    trainer.train()
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 604, in train
+    global_step = self.step(epoch, global_step)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 328, in step
+    global_step = self._train_batched_samples(inner_epoch, epoch, global_step, samples_batched)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 547, in _train_batched_samples
+    self.accelerator.backward(loss)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/accelerate/accelerator.py", line 2011, in backward
+    self.scaler.scale(loss).backward(**kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
