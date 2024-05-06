@@ -17,7 +17,6 @@ with open(gpt4_score_dir, "r") as f:
 #         gpt4_score.append(line)
     
 
-
 with open(pick_score_dir, "r") as f:
     pick_score = json.load(f)
 

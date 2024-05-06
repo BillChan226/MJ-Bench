@@ -15,3 +15,5 @@ datasets
 simple-aesthetics-predictor
 hpsv2
 clip
+anthropic
+openai
