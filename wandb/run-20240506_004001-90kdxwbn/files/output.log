@@ -702,3 +702,54 @@ Timestep:  90%|█████████████████████�
 
 
 
+Timestep:  96%|████████████████████████████████████████████████████████████████████████████████████████▎   | 48/50 [00:17<00:00,  2.73it/s]
+                                                                                                                                           Traceback (most recent call last):
+  File "experimental/ddpo_finetune.py", line 139, in <module>
+    trainer.train()
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 604, in train
+    global_step = self.step(epoch, global_step)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 328, in step
+    global_step = self._train_batched_samples(inner_epoch, epoch, global_step, samples_batched)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 535, in _train_batched_samples
+    loss, approx_kl, clipfrac = self.calculate_loss(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 365, in calculate_loss
+    noise_pred = self.sd_pipeline.unet(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/accelerate/utils/operations.py", line 825, in forward
+    return model_forward(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/accelerate/utils/operations.py", line 813, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/diffusers/models/unets/unet_2d_condition.py", line 1281, in forward
+    sample = upsample_block(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 2542, in forward
+    hidden_states = attn(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/diffusers/models/transformers/transformer_2d.py", line 397, in forward
+    hidden_states = block(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/diffusers/models/attention.py", line 353, in forward
+    norm_hidden_states = self.norm2(hidden_states)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/normalization.py", line 201, in forward
+    return F.layer_norm(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/functional.py", line 2546, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+KeyboardInterrupt
