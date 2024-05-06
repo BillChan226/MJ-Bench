@@ -1,3 +1,4 @@
 utils/image_editor_cache
 cache/
 logs/
+result/finetune/

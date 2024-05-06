@@ -1,0 +1,51 @@
+
+
+
+
+  File "experimental/ddpo_finetune.py", line 139, in <module>
+    trainer.train()
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 604, in train
+    global_step = self.step(epoch, global_step)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 251, in step
+    samples, prompt_image_data = self._generate_samples(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/trainer/ddpo_trainer.py", line 476, in _generate_samples
+    sd_output = self.sd_pipeline(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/models/modeling_sd_base.py", line 564, in __call__
+    return pipeline_step(self.sd_pipeline, *args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/trl/models/modeling_sd_base.py", line 479, in pipeline_step
+    noise_pred = self.unet(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/accelerate/utils/operations.py", line 825, in forward
+    return model_forward(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/accelerate/utils/operations.py", line 813, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/diffusers/models/unets/unet_2d_condition.py", line 1292, in forward
+    sample = upsample_block(
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 2664, in forward
+    hidden_states = resnet(hidden_states, temb)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/diffusers/models/resnet.py", line 333, in forward
+    hidden_states = self.nonlinearity(hidden_states)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/modules/activation.py", line 393, in forward
+    return F.silu(input, inplace=self.inplace)
+  File "/home/czr/anaconda3/envs/MM/lib/python3.8/site-packages/torch/nn/functional.py", line 2075, in silu
+    return torch._C._nn.silu(input)
+KeyboardInterrupt

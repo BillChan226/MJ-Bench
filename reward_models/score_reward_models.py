@@ -61,6 +61,8 @@ class Scorer:
     def open_image(self, image):
         if isinstance(image, bytes):
             image = Image.open(BytesIO(image))
+        elif isinstance(image, torch.Tensor):
+            image = Image.fromarray(image.mul(255).byte().permute(1, 2, 0).cpu().numpy())
         else:
             image = Image.open(image)
         image = image.convert("RGB")
