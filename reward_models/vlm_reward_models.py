@@ -114,7 +114,7 @@ class Scorer:
         '''
 
         images = [self.open_image(image) for image in images_path]
-        inputs = [self.processor(image=image, text=prompt, return_tensors="pt").to(self.device) for image in images]
+        inputs = [self.processor(images=image, text=prompt, return_tensors="pt").to(self.device) for image in images]
         outputs = [self.model.generate(**input, do_sample=False, max_new_tokens=512) for input in inputs]
         responses = [self.processor.batch_decode(output, skip_special_tokens=True)[0].strip() for output in outputs]
 
