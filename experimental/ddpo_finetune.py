@@ -67,7 +67,7 @@ class ScriptArguments:
     reward_model_name: str = None
     prompt_file: str = None
     config_path: str = field(default="config/config.yaml", metadata={"help": "the configuration for reward model."})
-
+    save_dir: str = field(default="result/", metadata={"help": "the directory to save the result."})
 
 def get_reward_fn(args, **kwargs):
 
@@ -128,7 +128,7 @@ if __name__ == "__main__":
         "logging_dir": "./logs",
         "automatic_checkpoint_naming": True,
         "total_limit": 5,
-        "project_dir": "./result/finetune",
+        "project_dir": args.save_dir,
     }
 
     pipeline = DefaultDDPOStableDiffusionPipeline(
@@ -146,7 +146,7 @@ if __name__ == "__main__":
         get_reward_fn(args),
         prompt_fn,
         pipeline,
-        image_samples_hook=image_outputs_logger,
+        #image_samples_hook=image_outputs_logger,
     )
 
     trainer.train()

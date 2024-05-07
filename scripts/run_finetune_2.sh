@@ -1,5 +1,5 @@
 srun --gres=gpu:4 -c 24  --mem 320G -p general accelerate launch --multi_gpu --mixed_precision=bf16 --num_processes 4 experimental/ddpo_finetune.py \
-    --reward_model_name "clipscore_v2" \
+    --reward_model_name "blipscore" \
     --prompt_file "finetune_datasets/biased_finetune_prompt_filtered_list.txt" \
     --num_epochs=200 \
     --train_gradient_accumulation_steps=1 \
@@ -12,4 +12,4 @@ srun --gres=gpu:4 -c 24  --mem 320G -p general accelerate launch --multi_gpu --m
     --tracker_project_name="stable_diffusion_training" \
     --log_with="wandb" \
     --use_lora=True \
-    --save_dir="result/finetune/clipscore_v2_finetune" \
+    --save_dir="result/finetune/blip_finetune" \

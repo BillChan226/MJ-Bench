@@ -91,21 +91,24 @@ class Scorer:
 
         image_inputs = self.processor(
             images=images,
-            padding=True,
-            truncation=True,
-            max_length=77,
+            # padding=True,
+            # truncation=True,
+            # max_length=77,
             return_tensors="pt",
-        ).to(self.device)
+        ).to(self.model.device)
 
         text_inputs = self.processor(
             text=caption,
-            padding=True,
-            truncation=True,
-            max_length=77,
+            # padding=True,
+            # truncation=True,
+            # max_length=77,
             return_tensors="pt",
-        ).to(self.device)
+        ).to(self.model.device)
 
         with torch.no_grad():
+            # print("image_inputs", image_inputs)
+            # print("text_inputs", text_inputs)
+            # print("model device", self.model.device)
             image_embs = self.model.get_image_features(**image_inputs)
             image_embs = image_embs / torch.norm(image_embs, dim=-1, keepdim=True)
 
