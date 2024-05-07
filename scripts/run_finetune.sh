@@ -12,4 +12,4 @@ srun --gres=gpu:4 -c 24  --mem 320G -p general accelerate launch --multi_gpu --m
     --tracker_project_name="stable_diffusion_training" \
     --log_with="wandb" \
     --use_lora=True \
-    --save_dir="result/finetune/clipscore_v2_finetune" \
+    --save_dir="result/finetune/clipscore_v2_finetune"
