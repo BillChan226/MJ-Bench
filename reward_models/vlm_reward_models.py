@@ -17,7 +17,7 @@ from transformers import BlipProcessor, BlipForImageTextRetrieval, pipeline, Lla
 # import ImageReward as RM
 import numpy as np
 import sys
-sys.path.append("/data/test1/wzc/MM-Reward/utils/")
+sys.path.append("../utils/")
 from rm_utils import get_pred, get_label
 
 
