@@ -30,7 +30,7 @@ class Scorer:
         self.processor = None  # Initialize processor as None
         self.tokenizer = None  # Initialize tokenizer as None
 
-        if model_name == "llava":
+        if model_name == "llava-1.5-7b-hf":
             self.get_score = self.LLaVA
             self.load_llava_model()
         elif model_name == "minigpt4":
@@ -45,7 +45,7 @@ class Scorer:
         elif model_name == "qwen":
             self.get_score = self.Qwen_VL_Chat()
             self.load_qwen_model()
-        elif model_name == "idefics2":
+        elif model_name == "idefics2-8b":
             self.get_score = self.idefics2
             self.load_idefics2_model()
         else:

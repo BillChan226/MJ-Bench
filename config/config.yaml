@@ -26,22 +26,27 @@ reward_models:
     opensource_vlm:
         llava-1.5-7b-hf:
             model_path: llava-hf/llava-1.5-7b-hf
+            processor_path: llava-hf/llava-1.5-7b-hf
         idefics2-8b:
             model_path: HuggingFaceM4/idefics2-8b
+            processor_path: HuggingFaceM4/idefics2-8b
         instructblip:
             model_path: Salesforce/instructblip-vicuna-7b
+            processor_path: Salesforce/instructblip-vicuna-7b
         qwen:
             model_path: Qwen/Qwen-VL-Chat
+            processor_path: Qwen/Qwen-VL-Chat
         internVL:
             model_path: OpenGVLab/InternVL-Chat-V1-2-Plus
+            processor_path: OpenGVLab/InternVL-Chat-V1-2-Plus
         minigpt4:
             model_path: wangrongsheng/MiniGPT-4-LLaMA-7B
-        
+            processor_path: wangrongsheng/MiniGPT-4-LLaMA-7B
+
 
     closesource_models:
         gpt-4-turbo-2024-04-09:
             model_name: gpt-4-turbo-2024-04-09
-            api_key: 
+            api_key:
             base_url: api.openai.com
-        
 
