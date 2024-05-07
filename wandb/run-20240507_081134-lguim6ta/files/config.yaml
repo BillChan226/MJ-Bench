@@ -1,0 +1,83 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.19
+    cli_version: 0.16.6
+    framework: huggingface
+    huggingface_version: 4.39.3
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1715087494.0
+    t:
+      1:
+      - 1
+      - 11
+      - 49
+      - 51
+      - 55
+      - 71
+      - 83
+      - 98
+      2:
+      - 1
+      - 11
+      - 49
+      - 51
+      - 55
+      - 71
+      - 83
+      - 98
+      3:
+      - 23
+      4: 3.8.19
+      5: 0.16.6
+      6: 4.39.3
+      8:
+      - 5
+      13: linux-x86_64
+ddpo_trainer_config:
+  desc: null
+  value:
+    exp_name: ddpo_finetune
+    run_name: ''
+    seed: 0
+    log_with: wandb
+    project_kwargs/logging_dir: ./logs
+    project_kwargs/automatic_checkpoint_naming: true
+    project_kwargs/total_limit: 5
+    project_kwargs/project_dir: ./result/finetune
+    tracker_project_name: stable_diffusion_training
+    logdir: logs
+    num_epochs: 200
+    save_freq: 1
+    num_checkpoint_limit: 5
+    mixed_precision: fp16
+    allow_tf32: true
+    resume_from: ''
+    sample_num_steps: 50
+    sample_eta: 1.0
+    sample_guidance_scale: 5.0
+    sample_batch_size: 64
+    sample_num_batches_per_epoch: 8
+    train_batch_size: 64
+    train_use_8bit_adam: false
+    train_learning_rate: 0.0003
+    train_adam_beta1: 0.9
+    train_adam_beta2: 0.999
+    train_adam_weight_decay: 0.0001
+    train_adam_epsilon: 1.0e-08
+    train_gradient_accumulation_steps: 1
+    train_max_grad_norm: 1.0
+    train_num_inner_epochs: 1
+    train_cfg: true
+    train_adv_clip_max: 5
+    train_clip_range: 0.0001
+    train_timestep_fraction: 1.0
+    per_prompt_stat_tracking: true
+    per_prompt_stat_tracking_buffer_size: 32
+    per_prompt_stat_tracking_min_count: 16
+    async_reward_computation: false
+    max_workers: 2
+    negative_prompts: ''

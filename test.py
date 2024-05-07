@@ -13,9 +13,9 @@ from transformers import CLIPModel, CLIPProcessor, HfArgumentParser
 
 import sys
 sys.path.append("./")
-sys.path.append('trl/trl')
-sys.path.append("trl/trl/trainer")
-sys.path.append("trl/trl/model")
+sys.path.append('trl_modified/trl')
+sys.path.append("trl_modified/trl/trainer")
+sys.path.append("trl_modified/trl/model")
 from trainer import DDPOConfig
 from ddpo_trainer import DDPOTrainer
 from modeling_sd_base import DefaultDDPOStableDiffusionPipeline

@@ -41,19 +41,19 @@ from transformers import CLIPModel, CLIPProcessor, HfArgumentParser
 
 import sys
 sys.path.append("./")
-sys.path.append('trl/trl')
-sys.path.append("trl/trl/trainer")
-sys.path.append("trl/trl/model")
+sys.path.append('trl_modified/trl')
+sys.path.append("trl_modified/trl/trainer")
+sys.path.append("trl_modified/trl/model")
 from trainer import DDPOConfig
 from ddpo_trainer import DDPOTrainer
 from modeling_sd_base import DefaultDDPOStableDiffusionPipeline
 from import_utils import is_npu_available, is_xpu_available
 
-
+sys.path.append("utils")
 from reward_models import score_reward_models
 from reward_models import vlm_reward_models
 
-sys.path.append("utils")
+
 from rm_utils import get_pred, get_label, get_config, open_image
 
 @dataclass
