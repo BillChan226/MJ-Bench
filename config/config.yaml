@@ -42,11 +42,11 @@ reward_models:
         minigpt4:
             model_path: wangrongsheng/MiniGPT-4-LLaMA-7B
             processor_path: wangrongsheng/MiniGPT-4-LLaMA-7B
-
+        
 
     closesource_models:
         gpt-4-turbo-2024-04-09:
             model_name: gpt-4-turbo-2024-04-09
-            api_key:
+            api_key: 
             base_url: api.openai.com
 
