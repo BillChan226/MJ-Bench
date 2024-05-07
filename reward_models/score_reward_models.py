@@ -12,10 +12,11 @@ import os
 import json
 from tqdm import tqdm
 import numpy as np
-from aesthetics_predictor import AestheticsPredictorV2Linear
-from utils.rm_utils import get_pred, get_label
-import hpsv2
-import ImageReward as RM
+import sys
+sys.path.append("../utils/")
+from rm_utils import get_pred, get_label
+# import hpsv2
+
 
 
 
@@ -24,8 +25,10 @@ class Scorer:
         self.device = device
         self.model_name = model_name
         if model_name == 'ImageReward':
+            import ImageReward as RM
             self.model = RM.load("ImageReward-v1.0").to(device)
         elif model_name == 'aesthetics':
+            from aesthetics_predictor import AestheticsPredictorV2Linear
             self.model = AestheticsPredictorV2Linear.from_pretrained(model_path).to(device)
             self.processor = CLIPProcessor.from_pretrained(processor_path)
         elif model_name == 'blipscore':
@@ -61,6 +64,8 @@ class Scorer:
     def open_image(self, image):
         if isinstance(image, bytes):
             image = Image.open(BytesIO(image))
+        elif isinstance(image, torch.Tensor):
+            image = Image.fromarray(image.mul(255).byte().permute(1, 2, 0).cpu().numpy())
         else:
             image = Image.open(image)
         image = image.convert("RGB")
