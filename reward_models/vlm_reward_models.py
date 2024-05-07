@@ -4,7 +4,7 @@ import torch
 from PIL import Image
 from transformers import CLIPProcessor
 from io import BytesIO
-from aesthetics_predictor import AestheticsPredictorV1, AestheticsPredictorV2Linear, AestheticsPredictorV2ReLU
+# from aesthetics_predictor import AestheticsPredictorV1, AestheticsPredictorV2Linear, AestheticsPredictorV2ReLU
 from transformers import AutoProcessor, AutoModel, InstructBlipProcessor, InstructBlipForConditionalGeneration, \
     CLIPImageProcessor, AutoModelForCausalLM, AutoModelForVision2Seq
 from datasets import load_dataset
@@ -14,9 +14,9 @@ import json
 from tqdm import tqdm
 from transformers import BlipProcessor, BlipForImageTextRetrieval, pipeline, LlavaForConditionalGeneration, \
     AutoTokenizer
-import ImageReward as RM
+# import ImageReward as RM
 import numpy as np
-from utils.rm_utils import get_pred, get_label
+from rm_utils import get_pred, get_label
 
 
 class Scorer:

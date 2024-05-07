@@ -35,14 +35,26 @@ from huggingface_hub import hf_hub_download
 from huggingface_hub.utils import EntryNotFoundError
 from transformers import CLIPModel, CLIPProcessor, HfArgumentParser
 
-from trl import DDPOConfig, DDPOTrainer, DefaultDDPOStableDiffusionPipeline
-from trl.import_utils import is_npu_available, is_xpu_available
 
+#from trl import DDPOConfig, DDPOTrainer, DefaultDDPOStableDiffusionPipeline
+# from trl.import_utils import is_npu_available, is_xpu_available
+
+import sys
 sys.path.append("./")
+sys.path.append('trl/trl')
+sys.path.append("trl/trl/trainer")
+sys.path.append("trl/trl/model")
+from trainer import DDPOConfig
+from ddpo_trainer import DDPOTrainer
+from modeling_sd_base import DefaultDDPOStableDiffusionPipeline
+from import_utils import is_npu_available, is_xpu_available
+
+
 from reward_models import score_reward_models
 from reward_models import vlm_reward_models
 
-from utils.rm_utils import get_pred, get_label, get_config, open_image
+sys.path.append("utils")
+from rm_utils import get_pred, get_label, get_config, open_image
 
 @dataclass
 class ScriptArguments:
@@ -80,6 +92,7 @@ def get_reward_fn(args, **kwargs):
     def wrapper_reward_fn(images, prompts, metadata):
         reward_list = []
         for image, prompt in zip(images, prompts):
+            image = image.to(device)
             score = reward_model.get_score([image], prompt)
             reward_list.append(score)
         return reward_list, None

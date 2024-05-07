@@ -12,10 +12,10 @@ import os
 import json
 from tqdm import tqdm
 import numpy as np
-from aesthetics_predictor import AestheticsPredictorV2Linear
-from utils.rm_utils import get_pred, get_label
-import hpsv2
-import ImageReward as RM
+
+from rm_utils import get_pred, get_label
+# import hpsv2
+
 
 
 
@@ -24,8 +24,10 @@ class Scorer:
         self.device = device
         self.model_name = model_name
         if model_name == 'ImageReward':
+            import ImageReward as RM
             self.model = RM.load("ImageReward-v1.0").to(device)
         elif model_name == 'aesthetics':
+            from aesthetics_predictor import AestheticsPredictorV2Linear
             self.model = AestheticsPredictorV2Linear.from_pretrained(model_path).to(device)
             self.processor = CLIPProcessor.from_pretrained(processor_path)
         elif model_name == 'blipscore':
