@@ -17,3 +17,6 @@ hpsv2
 clip
 anthropic
 openai
+diffusers
+accelerate
+rich
