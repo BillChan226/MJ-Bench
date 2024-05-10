@@ -3,3 +3,9 @@ cache/
 logs/
 result/finetune/
 wandb/
+
+
+*.pt
+*.bin
+*.pkl
+*.safetensor
