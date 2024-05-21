@@ -6,7 +6,8 @@
         "image_1_path": "inpaint_azt1gbX.jpg",
         "score_0": -2.278008460998535,
         "score_1": -0.9986562728881836,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 1,
@@ -15,7 +16,8 @@
         "image_1_path": "inpaint_13455347_014_1219.jpg",
         "score_0": -1.5733647346496582,
         "score_1": -1.3774499893188477,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 2,
@@ -24,7 +26,8 @@
         "image_1_path": "inpaint_12805643_007_0175.jpg",
         "score_0": -2.279757261276245,
         "score_1": 0.6818265318870544,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 3,
@@ -33,7 +36,8 @@
         "image_1_path": "inpaint_ERTmN4P.jpg",
         "score_0": -1.1894246339797974,
         "score_1": -1.0621238946914673,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 4,
@@ -42,7 +46,8 @@
         "image_1_path": "inpaint_OSztSBS.jpg",
         "score_0": -2.2084743976593018,
         "score_1": -1.8374420404434204,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 5,
@@ -51,7 +56,8 @@
         "image_1_path": "inpaint_1sLi2b7.jpg",
         "score_0": -2.2820584774017334,
         "score_1": -1.5600255727767944,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 6,
@@ -60,7 +66,8 @@
         "image_1_path": "inpaint_A6d6YGA.jpg",
         "score_0": -1.537864089012146,
         "score_1": -0.45121335983276367,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 7,
@@ -69,7 +76,8 @@
         "image_1_path": "inpaint_nI6HB24.jpg",
         "score_0": -0.5752533078193665,
         "score_1": -0.32343780994415283,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 8,
@@ -78,7 +86,8 @@
         "image_1_path": "inpaint_kkvl5HHh.jpg",
         "score_0": -1.3278217315673828,
         "score_1": -1.4536722898483276,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 9,
@@ -87,7 +96,8 @@
         "image_1_path": "inpaint_wdoAC7L.jpg",
         "score_0": 0.6970348954200745,
         "score_1": -1.4129862785339355,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 10,
@@ -96,7 +106,8 @@
         "image_1_path": "inpaint_pzAJ6SN.jpg",
         "score_0": -1.8968913555145264,
         "score_1": -1.728346586227417,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 11,
@@ -105,7 +116,8 @@
         "image_1_path": "inpaint_MtR7YER.jpg",
         "score_0": -2.114374876022339,
         "score_1": 1.5774668455123901,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 12,
@@ -114,7 +126,8 @@
         "image_1_path": "inpaint_56978599_012_2e57.jpg",
         "score_0": -2.2791855335235596,
         "score_1": -1.1788922548294067,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 13,
@@ -123,7 +136,8 @@
         "image_1_path": "inpaint_Wq2gpft.jpg",
         "score_0": 0.25144073367118835,
         "score_1": 0.7803587317466736,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 14,
@@ -132,7 +146,8 @@
         "image_1_path": "inpaint_j52M0oL.jpg",
         "score_0": -1.0505259037017822,
         "score_1": -0.24195244908332825,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 15,
@@ -141,7 +156,8 @@
         "image_1_path": "inpaint_FU9o9O2.jpg",
         "score_0": -0.6841000318527222,
         "score_1": -0.3830755949020386,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 16,
@@ -150,7 +166,8 @@
         "image_1_path": "inpaint_jSxdxK6.jpg",
         "score_0": -0.7002283334732056,
         "score_1": -0.3656347095966339,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 17,
@@ -159,7 +176,8 @@
         "image_1_path": "inpaint_ozcezst.jpg",
         "score_0": -2.275700569152832,
         "score_1": -0.46575072407722473,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 18,
@@ -168,7 +186,8 @@
         "image_1_path": "inpaint_fkQSluJ.jpg",
         "score_0": -0.8406581282615662,
         "score_1": -0.6938901543617249,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 19,
@@ -177,7 +196,8 @@
         "image_1_path": "inpaint_Qktinci.jpg",
         "score_0": -1.1283334493637085,
         "score_1": -1.3673810958862305,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 20,
@@ -186,7 +206,8 @@
         "image_1_path": "inpaint_Gsw8gv2.jpg",
         "score_0": -0.29255443811416626,
         "score_1": -0.9206110239028931,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 21,
@@ -195,7 +216,8 @@
         "image_1_path": "inpaint_CJMmrat.jpg",
         "score_0": -1.1418477296829224,
         "score_1": -0.4771641492843628,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 22,
@@ -204,7 +226,8 @@
         "image_1_path": "inpaint_41928253_015_cd1d.jpg",
         "score_0": -2.2788357734680176,
         "score_1": -2.1757142543792725,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 23,
@@ -213,7 +236,8 @@
         "image_1_path": "inpaint_19528248_016_c5ca.jpg",
         "score_0": -2.2687883377075195,
         "score_1": -2.186762571334839,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 24,
@@ -222,7 +246,8 @@
         "image_1_path": "inpaint_QGZ4gjJ.jpg",
         "score_0": -2.1986353397369385,
         "score_1": -0.26466044783592224,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 25,
@@ -231,7 +256,8 @@
         "image_1_path": "inpaint_KfQOoqa.jpg",
         "score_0": -2.240901231765747,
         "score_1": -1.2991706132888794,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 26,
@@ -240,7 +266,8 @@
         "image_1_path": "inpaint_SySr5C5.jpg",
         "score_0": -1.789786696434021,
         "score_1": -1.2393649816513062,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 27,
@@ -249,7 +276,8 @@
         "image_1_path": "inpaint_15.jpg",
         "score_0": -1.9698030948638916,
         "score_1": -2.0361485481262207,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 28,
@@ -258,7 +286,8 @@
         "image_1_path": "inpaint_24.jpg",
         "score_0": -2.2637038230895996,
         "score_1": -1.4504644870758057,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 29,
@@ -267,7 +296,8 @@
         "image_1_path": "inpaint_83016622_008_d8f9.jpg",
         "score_0": -0.1548299938440323,
         "score_1": 0.2345678210258484,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 30,
@@ -276,7 +306,8 @@
         "image_1_path": "inpaint_23732263_015_9e88.jpg",
         "score_0": -2.260932445526123,
         "score_1": -2.10048770904541,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 31,
@@ -285,7 +316,8 @@
         "image_1_path": "inpaint_54483958_014_7261.jpg",
         "score_0": -0.8493586182594299,
         "score_1": -1.5536309480667114,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 32,
@@ -294,7 +326,8 @@
         "image_1_path": "inpaint_75421769_016_f8c7.jpg",
         "score_0": -2.280640125274658,
         "score_1": -2.169694423675537,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 33,
@@ -303,7 +336,8 @@
         "image_1_path": "inpaint_58594673_015_02a1.jpg",
         "score_0": -2.1628317832946777,
         "score_1": -1.9224622249603271,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 34,
@@ -312,7 +346,8 @@
         "image_1_path": "inpaint_y6L8UuY.jpg",
         "score_0": -1.8103501796722412,
         "score_1": -1.7824798822402954,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 35,
@@ -321,7 +356,8 @@
         "image_1_path": "inpaint_yv0yoG4.jpg",
         "score_0": -0.5508202910423279,
         "score_1": -0.9463446736335754,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 36,
@@ -330,7 +366,8 @@
         "image_1_path": "inpaint_y37U2Hj.jpg",
         "score_0": -0.7324053645133972,
         "score_1": -0.7669034600257874,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 37,
@@ -339,7 +376,8 @@
         "image_1_path": "inpaint_SU5QwwD.jpg",
         "score_0": -0.4913537800312042,
         "score_1": -0.7745260000228882,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 38,
@@ -348,7 +386,8 @@
         "image_1_path": "inpaint_xFGk717.jpg",
         "score_0": -1.5297205448150635,
         "score_1": -1.7910382747650146,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 39,
@@ -357,7 +396,8 @@
         "image_1_path": "inpaint_0iNYT89.jpg",
         "score_0": -0.356891930103302,
         "score_1": 0.6684685945510864,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 40,
@@ -366,7 +406,8 @@
         "image_1_path": "inpaint_x9RnqOC.jpg",
         "score_0": -1.9132188558578491,
         "score_1": -1.6573830842971802,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 41,
@@ -375,7 +416,8 @@
         "image_1_path": "inpaint_12.jpg",
         "score_0": -2.271765947341919,
         "score_1": 0.21571864187717438,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 42,
@@ -384,7 +426,8 @@
         "image_1_path": "inpaint_i4E0swc.jpg",
         "score_0": -1.638868808746338,
         "score_1": 1.1531981229782104,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 43,
@@ -393,7 +436,8 @@
         "image_1_path": "inpaint_ghjl0jV.jpg",
         "score_0": -0.8384388089179993,
         "score_1": -0.9475163817405701,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 44,
@@ -402,7 +446,8 @@
         "image_1_path": "inpaint_81124382_011_e663.jpg",
         "score_0": -2.272953748703003,
         "score_1": -0.7016040682792664,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 45,
@@ -411,7 +456,8 @@
         "image_1_path": "inpaint_90102271_016_3bd8.jpg",
         "score_0": -2.276632308959961,
         "score_1": -1.73317551612854,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 46,
@@ -420,7 +466,8 @@
         "image_1_path": "inpaint_CHRqavp.jpg",
         "score_0": -0.7362445592880249,
         "score_1": -1.271203875541687,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 47,
@@ -429,7 +476,8 @@
         "image_1_path": "inpaint_QCHWDSK.jpg",
         "score_0": -0.2926667034626007,
         "score_1": 0.08183994144201279,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 48,
@@ -438,7 +486,8 @@
         "image_1_path": "inpaint_cTJSHoI.jpg",
         "score_0": -0.18354323506355286,
         "score_1": -0.3477209508419037,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 49,
@@ -447,7 +496,8 @@
         "image_1_path": "inpaint_S4LHXni.jpg",
         "score_0": -1.9237068891525269,
         "score_1": -0.6668258309364319,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 50,
@@ -456,7 +506,8 @@
         "image_1_path": "inpaint_4.jpg",
         "score_0": -1.9101415872573853,
         "score_1": 1.9882724285125732,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 51,
@@ -465,7 +516,8 @@
         "image_1_path": "inpaint_LGezaRy.jpg",
         "score_0": -2.0515050888061523,
         "score_1": -0.9850372076034546,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 52,
@@ -474,7 +526,8 @@
         "image_1_path": "inpaint_ymA8Gbc.jpg",
         "score_0": 0.02950219064950943,
         "score_1": 0.17337733507156372,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 53,
@@ -483,7 +536,8 @@
         "image_1_path": "inpaint_12394726_008_e91a.jpg",
         "score_0": -2.2708933353424072,
         "score_1": -1.9766052961349487,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 54,
@@ -492,7 +546,8 @@
         "image_1_path": "inpaint_1Ly1c.jpg",
         "score_0": -2.276423454284668,
         "score_1": -2.252717971801758,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 55,
@@ -501,7 +556,8 @@
         "image_1_path": "inpaint_ZwdgH3p.jpg",
         "score_0": -2.045743942260742,
         "score_1": -1.5667109489440918,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 56,
@@ -510,7 +566,8 @@
         "image_1_path": "inpaint_YN44VlZ.jpg",
         "score_0": -1.3765591382980347,
         "score_1": -1.2161999940872192,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 57,
@@ -519,7 +576,8 @@
         "image_1_path": "inpaint_eSmR6B6.jpg",
         "score_0": -1.814547061920166,
         "score_1": -1.7120747566223145,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 58,
@@ -528,7 +586,8 @@
         "image_1_path": "inpaint_62280638_016_c824.jpg",
         "score_0": -2.265515089035034,
         "score_1": -1.7415456771850586,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 59,
@@ -537,7 +596,8 @@
         "image_1_path": "inpaint_DFEOx.jpg",
         "score_0": -2.1764514446258545,
         "score_1": -2.016347885131836,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 60,
@@ -546,7 +606,8 @@
         "image_1_path": "inpaint_G0UXmRy.jpg",
         "score_0": -2.281015157699585,
         "score_1": 0.5690699815750122,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 61,
@@ -555,7 +616,8 @@
         "image_1_path": "inpaint_13567465_010_72c9.jpg",
         "score_0": -2.274198532104492,
         "score_1": -2.2198777198791504,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 62,
@@ -564,7 +626,8 @@
         "image_1_path": "inpaint_ofdRvDD.jpg",
         "score_0": -1.4311907291412354,
         "score_1": -0.8680918216705322,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 63,
@@ -573,7 +636,8 @@
         "image_1_path": "inpaint_81740589_015_6a32.jpg",
         "score_0": -2.270179033279419,
         "score_1": -1.9298211336135864,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 64,
@@ -582,7 +646,8 @@
         "image_1_path": "inpaint_80493586_013_a2e3.jpg",
         "score_0": -0.7055114507675171,
         "score_1": 0.14838364720344543,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 65,
@@ -591,7 +656,8 @@
         "image_1_path": "inpaint_b2g0U6V.jpg",
         "score_0": 0.1253267377614975,
         "score_1": -0.052836254239082336,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 66,
@@ -600,7 +666,8 @@
         "image_1_path": "inpaint_13431113_009_fe53.jpg",
         "score_0": -2.2783613204956055,
         "score_1": -2.2670764923095703,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 67,
@@ -609,7 +676,8 @@
         "image_1_path": "inpaint_83482748_015_d1d6.jpg",
         "score_0": -1.4837864637374878,
         "score_1": -1.5923620462417603,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 68,
@@ -618,7 +686,8 @@
         "image_1_path": "inpaint_79467563_015_34dc.jpg",
         "score_0": -2.2732858657836914,
         "score_1": -0.9729673266410828,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 69,
@@ -627,7 +696,8 @@
         "image_1_path": "inpaint_13Mh63F.jpg",
         "score_0": -1.1911498308181763,
         "score_1": -0.7318044900894165,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 70,
@@ -636,7 +706,8 @@
         "image_1_path": "inpaint_0awiZWC.jpg",
         "score_0": -2.2615416049957275,
         "score_1": -1.879247784614563,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 71,
@@ -645,7 +716,8 @@
         "image_1_path": "inpaint_bAvKORB.jpg",
         "score_0": -1.1664425134658813,
         "score_1": -1.0446300506591797,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 72,
@@ -654,7 +726,8 @@
         "image_1_path": "inpaint_xCpb4PE.jpg",
         "score_0": -1.4403492212295532,
         "score_1": 0.2984236478805542,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 73,
@@ -663,7 +736,8 @@
         "image_1_path": "inpaint_22026542_014_6412.jpg",
         "score_0": -2.2673041820526123,
         "score_1": -0.9753010272979736,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 74,
@@ -672,7 +746,8 @@
         "image_1_path": "inpaint_i9SYIWO.jpg",
         "score_0": -1.4073199033737183,
         "score_1": -2.2284090518951416,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 75,
@@ -681,7 +756,8 @@
         "image_1_path": "inpaint_23.jpg",
         "score_0": -2.276048183441162,
         "score_1": -1.3680366277694702,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 76,
@@ -690,7 +766,8 @@
         "image_1_path": "inpaint_bS6Aca6.jpg",
         "score_0": -0.5116482377052307,
         "score_1": 0.019689878448843956,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 77,
@@ -699,7 +776,8 @@
         "image_1_path": "inpaint_qtZCmKs.jpg",
         "score_0": -2.262758731842041,
         "score_1": -2.263561487197876,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 78,
@@ -708,7 +786,8 @@
         "image_1_path": "inpaint_znIbOg1.jpg",
         "score_0": -2.2684128284454346,
         "score_1": -0.37415361404418945,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 79,
@@ -717,7 +796,8 @@
         "image_1_path": "inpaint_90916162_016_19f2.jpg",
         "score_0": -1.4880907535552979,
         "score_1": -1.285142183303833,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 80,
@@ -726,7 +806,8 @@
         "image_1_path": "inpaint_Yy7iXne.jpg",
         "score_0": -1.9547384977340698,
         "score_1": 0.4785745441913605,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 81,
@@ -735,7 +816,8 @@
         "image_1_path": "inpaint_c7K9tMn.jpg",
         "score_0": -0.03944414481520653,
         "score_1": -0.07858910411596298,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 82,
@@ -744,7 +826,8 @@
         "image_1_path": "inpaint_YsUKPFH.jpg",
         "score_0": -1.1640558242797852,
         "score_1": -0.8935025334358215,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 83,
@@ -753,7 +836,8 @@
         "image_1_path": "inpaint_mt60K.jpg",
         "score_0": -2.078864336013794,
         "score_1": -1.6806963682174683,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 84,
@@ -762,7 +846,8 @@
         "image_1_path": "inpaint_BD4F7ts.jpg",
         "score_0": -1.784105896949768,
         "score_1": -0.21082369983196259,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 85,
@@ -771,7 +856,8 @@
         "image_1_path": "inpaint_EJa0Vmqh.jpg",
         "score_0": -1.6788901090621948,
         "score_1": 1.1545592546463013,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 86,
@@ -780,7 +866,8 @@
         "image_1_path": "inpaint_cAM3OQOh.jpg",
         "score_0": -2.2617387771606445,
         "score_1": 0.6498486995697021,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 87,
@@ -789,7 +876,8 @@
         "image_1_path": "inpaint_xLKQl2Z.jpg",
         "score_0": -1.3301135301589966,
         "score_1": -1.3146592378616333,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 88,
@@ -798,7 +886,8 @@
         "image_1_path": "inpaint_56902720_007_9ae1.jpg",
         "score_0": -2.0522921085357666,
         "score_1": 0.8435021042823792,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 89,
@@ -807,7 +896,8 @@
         "image_1_path": "inpaint_dpht4kP.jpg",
         "score_0": -0.1877281367778778,
         "score_1": -0.5620610117912292,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 90,
@@ -816,7 +906,8 @@
         "image_1_path": "inpaint_BL1KQd0.jpg",
         "score_0": -2.2222025394439697,
         "score_1": -0.2963481843471527,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 91,
@@ -825,7 +916,8 @@
         "image_1_path": "inpaint_oqWtWbM.jpg",
         "score_0": -1.277030110359192,
         "score_1": 0.9217974543571472,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 92,
@@ -834,7 +926,8 @@
         "image_1_path": "inpaint_AKteW4p.jpg",
         "score_0": -2.2212717533111572,
         "score_1": -1.9737156629562378,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 93,
@@ -843,7 +936,8 @@
         "image_1_path": "inpaint_TlG10kL.jpg",
         "score_0": -2.007002115249634,
         "score_1": -1.9124749898910522,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 94,
@@ -852,7 +946,8 @@
         "image_1_path": "inpaint_13.jpg",
         "score_0": -2.246384620666504,
         "score_1": -0.4461839497089386,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 95,
@@ -861,7 +956,8 @@
         "image_1_path": "inpaint_77072157_015_8d3f.jpg",
         "score_0": -2.243812084197998,
         "score_1": -0.8906015753746033,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 96,
@@ -870,7 +966,8 @@
         "image_1_path": "inpaint_73991010_020_b037.jpg",
         "score_0": -2.121584892272949,
         "score_1": -2.1210360527038574,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 97,
@@ -879,7 +976,8 @@
         "image_1_path": "inpaint_lT2UZfR.jpg",
         "score_0": -0.951437771320343,
         "score_1": -0.5543009638786316,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 98,
@@ -888,7 +986,8 @@
         "image_1_path": "inpaint_SA5QDc1.jpg",
         "score_0": -2.254272699356079,
         "score_1": 0.8308501839637756,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 99,
@@ -897,7 +996,8 @@
         "image_1_path": "inpaint_13346673_007_6806.jpg",
         "score_0": -2.109529733657837,
         "score_1": -1.1299532651901245,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 100,
@@ -906,7 +1006,8 @@
         "image_1_path": "inpaint_xfNuLQb.jpg",
         "score_0": -0.8175281882286072,
         "score_1": -1.1881279945373535,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 101,
@@ -915,7 +1016,8 @@
         "image_1_path": "inpaint_H4roZnk.jpg",
         "score_0": -2.1522436141967773,
         "score_1": -2.1016738414764404,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 102,
@@ -924,7 +1026,8 @@
         "image_1_path": "inpaint_YOZEa1u.jpg",
         "score_0": -0.7175861597061157,
         "score_1": -1.1729353666305542,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 103,
@@ -933,7 +1036,8 @@
         "image_1_path": "inpaint_12628162_015_036f.jpg",
         "score_0": -2.27553129196167,
         "score_1": -1.3059110641479492,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 104,
@@ -942,7 +1046,8 @@
         "image_1_path": "inpaint_34423004_011_5156.jpg",
         "score_0": -2.116482973098755,
         "score_1": -1.4541518688201904,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 105,
@@ -951,7 +1056,8 @@
         "image_1_path": "inpaint_NxIEaBB.jpg",
         "score_0": 0.7275105714797974,
         "score_1": 0.43092483282089233,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 106,
@@ -960,7 +1066,8 @@
         "image_1_path": "inpaint_oC6qqoi.jpg",
         "score_0": -1.6053627729415894,
         "score_1": -1.5624496936798096,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 107,
@@ -969,7 +1076,8 @@
         "image_1_path": "inpaint_msM0lMF.jpg",
         "score_0": -2.26765775680542,
         "score_1": -1.1301459074020386,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 108,
@@ -978,7 +1086,8 @@
         "image_1_path": "inpaint_16941367_009_3bde.jpg",
         "score_0": -2.2700002193450928,
         "score_1": -1.4971448183059692,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 109,
@@ -987,7 +1096,8 @@
         "image_1_path": "inpaint_80635476_015_8f45.jpg",
         "score_0": -2.280750274658203,
         "score_1": -1.5513066053390503,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 110,
@@ -996,7 +1106,8 @@
         "image_1_path": "inpaint_mYBASmO.jpg",
         "score_0": -1.1099379062652588,
         "score_1": -0.8931516408920288,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 111,
@@ -1005,7 +1116,8 @@
         "image_1_path": "inpaint_26366388_015_4671.jpg",
         "score_0": -2.229140520095825,
         "score_1": -1.41611647605896,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 112,
@@ -1014,7 +1126,8 @@
         "image_1_path": "inpaint_94030454_015_4ab2.jpg",
         "score_0": -2.189081907272339,
         "score_1": -2.2047948837280273,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 113,
@@ -1023,7 +1136,8 @@
         "image_1_path": "inpaint_KLi15xE.jpg",
         "score_0": -0.8751962780952454,
         "score_1": -1.1277143955230713,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 114,
@@ -1032,7 +1146,8 @@
         "image_1_path": "inpaint_CghDadv.jpg",
         "score_0": -1.5251837968826294,
         "score_1": -1.7910728454589844,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 115,
@@ -1041,7 +1156,8 @@
         "image_1_path": "inpaint_20.jpg",
         "score_0": -2.2825076580047607,
         "score_1": 1.1279698610305786,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 116,
@@ -1050,7 +1166,8 @@
         "image_1_path": "inpaint_21.jpg",
         "score_0": -2.17665958404541,
         "score_1": -0.9732685685157776,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 117,
@@ -1059,7 +1176,8 @@
         "image_1_path": "inpaint_KPlvMqW.jpg",
         "score_0": -2.272160291671753,
         "score_1": -0.6812435984611511,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 118,
@@ -1068,7 +1186,8 @@
         "image_1_path": "inpaint_17606754_018_0036.jpg",
         "score_0": -2.124687671661377,
         "score_1": -0.7860563397407532,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 119,
@@ -1077,7 +1196,8 @@
         "image_1_path": "inpaint_XUHNOPO.jpg",
         "score_0": -0.9865824580192566,
         "score_1": 0.2600233852863312,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 120,
@@ -1086,7 +1206,8 @@
         "image_1_path": "inpaint_80023458_015_d3c3.jpg",
         "score_0": -2.2711985111236572,
         "score_1": 0.41162365674972534,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 121,
@@ -1095,7 +1216,8 @@
         "image_1_path": "inpaint_hcuWvSM.jpg",
         "score_0": -0.9695598483085632,
         "score_1": 1.7888987064361572,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 122,
@@ -1104,7 +1226,8 @@
         "image_1_path": "inpaint_IO4vmTD.jpg",
         "score_0": -1.4020029306411743,
         "score_1": -0.6256521344184875,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 123,
@@ -1113,7 +1236,8 @@
         "image_1_path": "inpaint_94760918_015_5bc4.jpg",
         "score_0": -1.1879034042358398,
         "score_1": -0.4780657887458801,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 124,
@@ -1122,7 +1246,8 @@
         "image_1_path": "inpaint_l9ymaaT.jpg",
         "score_0": -2.2349698543548584,
         "score_1": -2.266119956970215,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 125,
@@ -1131,7 +1256,8 @@
         "image_1_path": "inpaint_12833785_020_14ea.jpg",
         "score_0": -1.939919352531433,
         "score_1": -1.9639084339141846,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 126,
@@ -1140,7 +1266,8 @@
         "image_1_path": "inpaint_TgB9dW2.jpg",
         "score_0": -1.8453153371810913,
         "score_1": 0.5271758437156677,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 127,
@@ -1149,7 +1276,8 @@
         "image_1_path": "inpaint_VKxh2XK.jpg",
         "score_0": -0.28139573335647583,
         "score_1": -0.5545849800109863,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 128,
@@ -1158,7 +1286,8 @@
         "image_1_path": "inpaint_W5ZEdWq.jpg",
         "score_0": 0.465522825717926,
         "score_1": -0.11127109825611115,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 129,
@@ -1167,7 +1296,8 @@
         "image_1_path": "inpaint_shyE8NF.jpg",
         "score_0": 0.8168230652809143,
         "score_1": 0.36790016293525696,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 130,
@@ -1176,7 +1306,8 @@
         "image_1_path": "inpaint_hJUdDu3.jpg",
         "score_0": 1.6808185577392578,
         "score_1": 1.5673277378082275,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 131,
@@ -1185,7 +1316,8 @@
         "image_1_path": "inpaint_z1vRLwz.jpg",
         "score_0": -1.8940354585647583,
         "score_1": -1.744938850402832,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 132,
@@ -1194,7 +1326,8 @@
         "image_1_path": "inpaint_jhaIaiK.jpg",
         "score_0": -0.048152800649404526,
         "score_1": 0.3087715804576874,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 133,
@@ -1203,7 +1336,8 @@
         "image_1_path": "inpaint_1.jpg",
         "score_0": -2.2432332038879395,
         "score_1": 0.5335521697998047,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 134,
@@ -1212,7 +1346,8 @@
         "image_1_path": "inpaint_Uvihehv.jpg",
         "score_0": -2.251248836517334,
         "score_1": -1.9436231851577759,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 135,
@@ -1221,7 +1356,8 @@
         "image_1_path": "inpaint_13693478_013_8094.jpg",
         "score_0": -2.274136781692505,
         "score_1": -2.161724090576172,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 136,
@@ -1230,7 +1366,8 @@
         "image_1_path": "inpaint_75313454_013_8554.jpg",
         "score_0": -2.1978776454925537,
         "score_1": -1.7926748991012573,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 137,
@@ -1239,7 +1376,8 @@
         "image_1_path": "inpaint_bSKYPpM.jpg",
         "score_0": -1.9152640104293823,
         "score_1": -1.4681012630462646,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 138,
@@ -1248,7 +1386,8 @@
         "image_1_path": "inpaint_xb9xYjY.jpg",
         "score_0": -1.9232944250106812,
         "score_1": -0.14371073246002197,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 139,
@@ -1257,7 +1396,8 @@
         "image_1_path": "inpaint_18.jpg",
         "score_0": -0.45459452271461487,
         "score_1": 1.3020422458648682,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 140,
@@ -1266,7 +1406,8 @@
         "image_1_path": "inpaint_22936527_015_6cd6.jpg",
         "score_0": -2.0923469066619873,
         "score_1": -0.6982128024101257,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 141,
@@ -1275,7 +1416,8 @@
         "image_1_path": "inpaint_76043039_015_83c8.jpg",
         "score_0": -2.178896188735962,
         "score_1": -1.7740410566329956,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 142,
@@ -1284,7 +1426,8 @@
         "image_1_path": "inpaint_a3uVip8.jpg",
         "score_0": -2.222294807434082,
         "score_1": -0.470156192779541,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 143,
@@ -1293,7 +1436,8 @@
         "image_1_path": "inpaint_zx9UMC1.jpg",
         "score_0": -1.596887469291687,
         "score_1": -1.137797474861145,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 144,
@@ -1302,7 +1446,8 @@
         "image_1_path": "inpaint_xF64CDn.jpg",
         "score_0": -1.849975824356079,
         "score_1": -1.7972530126571655,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 145,
@@ -1311,7 +1456,8 @@
         "image_1_path": "inpaint_AsGxbsc.jpg",
         "score_0": -2.2152087688446045,
         "score_1": -1.8968737125396729,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 146,
@@ -1320,7 +1466,8 @@
         "image_1_path": "inpaint_bGWP6Yo.jpg",
         "score_0": -1.499658465385437,
         "score_1": 0.41502848267555237,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 147,
@@ -1329,7 +1476,8 @@
         "image_1_path": "inpaint_zayGDTB.jpg",
         "score_0": -0.650290846824646,
         "score_1": -0.10615437477827072,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 148,
@@ -1338,7 +1486,8 @@
         "image_1_path": "inpaint_pK9hLvG.jpg",
         "score_0": -2.042112112045288,
         "score_1": -1.789933681488037,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 149,
@@ -1347,7 +1496,8 @@
         "image_1_path": "inpaint_73278756_011_6646.jpg",
         "score_0": -2.2765917778015137,
         "score_1": -2.0961754322052,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 150,
@@ -1356,7 +1506,8 @@
         "image_1_path": "inpaint_dY6lXna.jpg",
         "score_0": -1.7742209434509277,
         "score_1": 1.0585908889770508,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 151,
@@ -1365,7 +1516,8 @@
         "image_1_path": "inpaint_NWgdC0d.jpg",
         "score_0": -0.52219158411026,
         "score_1": 0.5798409581184387,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 152,
@@ -1374,7 +1526,8 @@
         "image_1_path": "inpaint_Fsn8uE9.jpg",
         "score_0": -0.23299235105514526,
         "score_1": -0.21056686341762543,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 153,
@@ -1383,7 +1536,8 @@
         "image_1_path": "inpaint_cHi1pOQ.jpg",
         "score_0": -2.2758986949920654,
         "score_1": 1.5904088020324707,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 154,
@@ -1392,7 +1546,8 @@
         "image_1_path": "inpaint_2jDeo2A.jpg",
         "score_0": -2.2789931297302246,
         "score_1": -1.5394150018692017,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 155,
@@ -1401,7 +1556,8 @@
         "image_1_path": "inpaint_1fhjmZR.jpg",
         "score_0": -2.2781822681427,
         "score_1": -0.37172043323516846,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 156,
@@ -1410,7 +1566,8 @@
         "image_1_path": "inpaint_66585934_015_92a5.jpg",
         "score_0": -2.280604124069214,
         "score_1": -0.6943353414535522,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 157,
@@ -1419,7 +1576,8 @@
         "image_1_path": "inpaint_QdYCt1c.jpg",
         "score_0": -1.8267972469329834,
         "score_1": -0.19418419897556305,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 158,
@@ -1428,7 +1586,8 @@
         "image_1_path": "inpaint_MDA4B18.jpg",
         "score_0": -1.2961543798446655,
         "score_1": -1.4093773365020752,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 159,
@@ -1437,7 +1596,8 @@
         "image_1_path": "inpaint_fm2Okhl.jpg",
         "score_0": -2.1878929138183594,
         "score_1": -0.9933193325996399,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 160,
@@ -1446,7 +1606,8 @@
         "image_1_path": "inpaint_wpqolHd.jpg",
         "score_0": -1.4718917608261108,
         "score_1": -1.3471307754516602,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 161,
@@ -1455,7 +1616,8 @@
         "image_1_path": "inpaint_Y4j5Ma1.jpg",
         "score_0": -0.3762950599193573,
         "score_1": -0.12593744695186615,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 162,
@@ -1464,7 +1626,8 @@
         "image_1_path": "inpaint_PfG0BX9.jpg",
         "score_0": -2.272191286087036,
         "score_1": 0.25651344656944275,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 163,
@@ -1473,7 +1636,8 @@
         "image_1_path": "inpaint_HKDZTQX.jpg",
         "score_0": 0.3288331925868988,
         "score_1": -0.019848689436912537,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 164,
@@ -1482,7 +1646,8 @@
         "image_1_path": "inpaint_10.jpg",
         "score_0": -0.1459425985813141,
         "score_1": 0.6592968106269836,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 165,
@@ -1491,7 +1656,8 @@
         "image_1_path": "inpaint_97081297_016_99dd.jpg",
         "score_0": -1.918159008026123,
         "score_1": 0.01836584135890007,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 166,
@@ -1500,7 +1666,8 @@
         "image_1_path": "inpaint_Fjq98e3.jpg",
         "score_0": -2.17612624168396,
         "score_1": -1.2955327033996582,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 167,
@@ -1509,7 +1676,8 @@
         "image_1_path": "inpaint_41462583_020_0e67.jpg",
         "score_0": -2.27703857421875,
         "score_1": -1.8092801570892334,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 168,
@@ -1518,7 +1686,8 @@
         "image_1_path": "inpaint_ocDEDSW.jpg",
         "score_0": -1.429774284362793,
         "score_1": -1.4603592157363892,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 169,
@@ -1527,7 +1696,8 @@
         "image_1_path": "inpaint_lt1oQWS.jpg",
         "score_0": -2.276489734649658,
         "score_1": 1.0327948331832886,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 170,
@@ -1536,7 +1706,8 @@
         "image_1_path": "inpaint_LcEC1Fr.jpg",
         "score_0": -0.36275961995124817,
         "score_1": -0.28226131200790405,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 171,
@@ -1545,7 +1716,8 @@
         "image_1_path": "inpaint_76043039_014_aba2.jpg",
         "score_0": -2.2780940532684326,
         "score_1": -1.851032018661499,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 172,
@@ -1554,7 +1726,8 @@
         "image_1_path": "inpaint_Qe8nEpL.jpg",
         "score_0": -0.662015438079834,
         "score_1": -0.3803279399871826,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 173,
@@ -1563,7 +1736,8 @@
         "image_1_path": "inpaint_13293072_015_73d5.jpg",
         "score_0": -2.271803617477417,
         "score_1": -2.2534868717193604,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 174,
@@ -1572,7 +1746,8 @@
         "image_1_path": "inpaint_13401559_016_47b5.jpg",
         "score_0": -2.275789260864258,
         "score_1": -0.3328929841518402,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 175,
@@ -1581,7 +1756,8 @@
         "image_1_path": "inpaint_48210253_014_eb38.jpg",
         "score_0": -2.26788330078125,
         "score_1": -1.3641377687454224,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 176,
@@ -1590,7 +1766,8 @@
         "image_1_path": "inpaint_QyvWCyt.jpg",
         "score_0": -1.5637538433074951,
         "score_1": -1.67979097366333,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 177,
@@ -1599,7 +1776,8 @@
         "image_1_path": "inpaint_7.jpg",
         "score_0": 1.1333931684494019,
         "score_1": 0.42568936944007874,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 178,
@@ -1608,7 +1786,8 @@
         "image_1_path": "inpaint_52830196_015_a1f0.jpg",
         "score_0": -0.9893031120300293,
         "score_1": -0.4888054132461548,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 179,
@@ -1617,7 +1796,8 @@
         "image_1_path": "inpaint_wcVyUj8.jpg",
         "score_0": -1.508554458618164,
         "score_1": -1.1500582695007324,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 180,
@@ -1626,7 +1806,8 @@
         "image_1_path": "inpaint_hU1yvXm.jpg",
         "score_0": -1.6635907888412476,
         "score_1": -1.3902091979980469,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 181,
@@ -1635,7 +1816,8 @@
         "image_1_path": "inpaint_95151045_014_a24d.jpg",
         "score_0": -2.277986764907837,
         "score_1": -1.9986629486083984,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 182,
@@ -1644,7 +1826,8 @@
         "image_1_path": "inpaint_glpENJW.jpg",
         "score_0": -0.5928848385810852,
         "score_1": -1.2426546812057495,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 183,
@@ -1653,7 +1836,8 @@
         "image_1_path": "inpaint_BGHoIUz.jpg",
         "score_0": -2.2695159912109375,
         "score_1": -2.2832162380218506,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 184,
@@ -1662,7 +1846,8 @@
         "image_1_path": "inpaint_16103862_010_f2cd.jpg",
         "score_0": -2.230271339416504,
         "score_1": -0.17040763795375824,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 185,
@@ -1671,7 +1856,8 @@
         "image_1_path": "inpaint_65293057_012_4f3f.jpg",
         "score_0": -1.0473908185958862,
         "score_1": 0.087762251496315,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 186,
@@ -1680,7 +1866,8 @@
         "image_1_path": "inpaint_88741853_008_4c68.jpg",
         "score_0": -2.2757019996643066,
         "score_1": -1.2034337520599365,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 187,
@@ -1689,7 +1876,8 @@
         "image_1_path": "inpaint_rXMI32B.jpg",
         "score_0": -1.8979172706604004,
         "score_1": -1.7619684934616089,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 188,
@@ -1698,7 +1886,8 @@
         "image_1_path": "inpaint_XGvnDCv.jpg",
         "score_0": -2.0985283851623535,
         "score_1": -2.132751226425171,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 189,
@@ -1707,7 +1896,8 @@
         "image_1_path": "inpaint_QJidYFU.jpg",
         "score_0": -2.280170202255249,
         "score_1": -0.7357375025749207,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 190,
@@ -1716,7 +1906,8 @@
         "image_1_path": "inpaint_56281324_016_8dd9.jpg",
         "score_0": -2.2806475162506104,
         "score_1": -0.19996510446071625,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 191,
@@ -1725,7 +1916,8 @@
         "image_1_path": "inpaint_jvjso6Z.jpg",
         "score_0": -0.6360778212547302,
         "score_1": -0.6478422284126282,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 192,
@@ -1734,7 +1926,8 @@
         "image_1_path": "inpaint_76058426_015_0302.jpg",
         "score_0": -2.226351022720337,
         "score_1": -1.915783405303955,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 193,
@@ -1743,7 +1936,8 @@
         "image_1_path": "inpaint_5.jpg",
         "score_0": -2.276864528656006,
         "score_1": -0.3431335389614105,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 194,
@@ -1752,7 +1946,8 @@
         "image_1_path": "inpaint_vKZsrwg.jpg",
         "score_0": -1.1432268619537354,
         "score_1": -1.4826973676681519,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 195,
@@ -1761,7 +1956,8 @@
         "image_1_path": "inpaint_VGjkpPd.jpg",
         "score_0": 0.4235841631889343,
         "score_1": 0.19280071556568146,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 196,
@@ -1770,7 +1966,8 @@
         "image_1_path": "inpaint_XoygdeT.jpg",
         "score_0": -2.2756729125976562,
         "score_1": -1.4274377822875977,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 197,
@@ -1779,7 +1976,8 @@
         "image_1_path": "inpaint_68321477_012_3b12.jpg",
         "score_0": -2.2770984172821045,
         "score_1": -0.7499184608459473,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 198,
@@ -1788,7 +1986,8 @@
         "image_1_path": "inpaint_0RgKxZ3.jpg",
         "score_0": -2.2719526290893555,
         "score_1": -1.7855459451675415,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 199,
@@ -1797,7 +1996,8 @@
         "image_1_path": "inpaint_59439810_008_b106.jpg",
         "score_0": -1.1475684642791748,
         "score_1": -0.5327246785163879,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 200,
@@ -1806,7 +2006,8 @@
         "image_1_path": "inpaint_Nc0x7vb.jpg",
         "score_0": -2.0671305656433105,
         "score_1": -0.6003101468086243,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 201,
@@ -1815,7 +2016,8 @@
         "image_1_path": "inpaint_12142019_016_2a45.jpg",
         "score_0": -2.2788217067718506,
         "score_1": -1.6292239427566528,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 202,
@@ -1824,7 +2026,8 @@
         "image_1_path": "inpaint_0pHHAf6.jpg",
         "score_0": -2.2792465686798096,
         "score_1": -2.1859004497528076,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 203,
@@ -1833,7 +2036,8 @@
         "image_1_path": "inpaint_XjBxfOA.jpg",
         "score_0": -2.271803140640259,
         "score_1": -2.13444185256958,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 204,
@@ -1842,7 +2046,8 @@
         "image_1_path": "inpaint_IuRo5h3.jpg",
         "score_0": -1.7390905618667603,
         "score_1": 0.5570276975631714,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 205,
@@ -1851,7 +2056,8 @@
         "image_1_path": "inpaint_31848424_011_2640.jpg",
         "score_0": -2.164865016937256,
         "score_1": -0.6683600544929504,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 206,
@@ -1860,7 +2066,8 @@
         "image_1_path": "inpaint_a2RfphF.jpg",
         "score_0": -0.6334972977638245,
         "score_1": -0.9260427951812744,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 207,
@@ -1869,7 +2076,8 @@
         "image_1_path": "inpaint_dc3GNij.jpg",
         "score_0": 0.5975363254547119,
         "score_1": 0.6057900786399841,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 208,
@@ -1878,7 +2086,8 @@
         "image_1_path": "inpaint_68029507_016_16af.jpg",
         "score_0": -2.2780420780181885,
         "score_1": -1.9735370874404907,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 209,
@@ -1887,7 +2096,8 @@
         "image_1_path": "inpaint_63433699_011_58f1.jpg",
         "score_0": -2.2448885440826416,
         "score_1": -1.9422123432159424,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 210,
@@ -1896,7 +2106,8 @@
         "image_1_path": "inpaint_ngkabEE.jpg",
         "score_0": -0.6056855320930481,
         "score_1": -0.33987072110176086,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 211,
@@ -1905,7 +2116,8 @@
         "image_1_path": "inpaint_23595190_015_ef16.jpg",
         "score_0": -2.2691590785980225,
         "score_1": -1.9674417972564697,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 212,
@@ -1914,7 +2126,8 @@
         "image_1_path": "inpaint_81075160_016_fe71.jpg",
         "score_0": -1.8905376195907593,
         "score_1": -1.7024650573730469,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 213,
@@ -1923,7 +2136,8 @@
         "image_1_path": "inpaint_P3DSsV0.jpg",
         "score_0": -1.5640078783035278,
         "score_1": -1.5053483247756958,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 214,
@@ -1932,7 +2146,8 @@
         "image_1_path": "inpaint_71332660_011_b9aa.jpg",
         "score_0": -2.278010606765747,
         "score_1": -2.1915862560272217,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 215,
@@ -1941,7 +2156,8 @@
         "image_1_path": "inpaint_LHrE3nB.jpg",
         "score_0": -1.9885222911834717,
         "score_1": -1.8989686965942383,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 216,
@@ -1950,7 +2166,8 @@
         "image_1_path": "inpaint_Pj5rdS0.jpg",
         "score_0": -1.664127230644226,
         "score_1": -1.7914068698883057,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 217,
@@ -1959,7 +2176,8 @@
         "image_1_path": "inpaint_5lpRCoV.jpg",
         "score_0": -2.210827350616455,
         "score_1": -1.7497957944869995,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 218,
@@ -1968,7 +2186,8 @@
         "image_1_path": "inpaint_T0R1Ff5.jpg",
         "score_0": 0.10400962084531784,
         "score_1": -0.14600366353988647,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 219,
@@ -1977,7 +2196,8 @@
         "image_1_path": "inpaint_nRu1878.jpg",
         "score_0": 0.8592661023139954,
         "score_1": 0.677649199962616,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 220,
@@ -1986,7 +2206,8 @@
         "image_1_path": "inpaint_14.jpg",
         "score_0": -1.1268811225891113,
         "score_1": -1.49840247631073,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 221,
@@ -1995,7 +2216,8 @@
         "image_1_path": "inpaint_26etyW0.jpg",
         "score_0": -2.2761948108673096,
         "score_1": -0.5113638639450073,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 222,
@@ -2004,7 +2226,8 @@
         "image_1_path": "inpaint_46903815_009_ad39.jpg",
         "score_0": -2.1901261806488037,
         "score_1": -2.1752381324768066,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 223,
@@ -2013,7 +2236,8 @@
         "image_1_path": "inpaint_91587083_016_06d8.jpg",
         "score_0": -2.264655590057373,
         "score_1": -1.7246185541152954,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 224,
@@ -2022,7 +2246,8 @@
         "image_1_path": "inpaint_Vpxgk3X.jpg",
         "score_0": -2.275435209274292,
         "score_1": -1.8564608097076416,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 225,
@@ -2031,7 +2256,8 @@
         "image_1_path": "inpaint_JOWzfMz.jpg",
         "score_0": -1.3310906887054443,
         "score_1": -1.6111618280410767,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 226,
@@ -2040,7 +2266,8 @@
         "image_1_path": "inpaint_13465304_008_68ea.jpg",
         "score_0": -1.7390081882476807,
         "score_1": -1.9296077489852905,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 227,
@@ -2049,7 +2276,8 @@
         "image_1_path": "inpaint_LX8pEMS.jpg",
         "score_0": -0.7389812469482422,
         "score_1": -1.6170402765274048,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 228,
@@ -2058,7 +2286,8 @@
         "image_1_path": "inpaint_Sx8aqy3.jpg",
         "score_0": 0.5834687948226929,
         "score_1": 0.21044930815696716,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 229,
@@ -2067,7 +2296,8 @@
         "image_1_path": "inpaint_kaUEK9J.jpg",
         "score_0": -1.5314595699310303,
         "score_1": -1.2321498394012451,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 230,
@@ -2076,7 +2306,8 @@
         "image_1_path": "inpaint_epnUFie.jpg",
         "score_0": -2.275923490524292,
         "score_1": -0.6362708806991577,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 231,
@@ -2085,7 +2316,8 @@
         "image_1_path": "inpaint_45029018_015_e0c1.jpg",
         "score_0": -2.267230749130249,
         "score_1": -2.2696712017059326,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 232,
@@ -2094,7 +2326,8 @@
         "image_1_path": "inpaint_pS6nD4L.jpg",
         "score_0": -0.8391359448432922,
         "score_1": -0.8867528438568115,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 233,
@@ -2103,7 +2336,8 @@
         "image_1_path": "inpaint_kvwlUzs.jpg",
         "score_0": 0.29186147451400757,
         "score_1": -0.03307308629155159,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 234,
@@ -2112,7 +2346,8 @@
         "image_1_path": "inpaint_JY0Bspo.jpg",
         "score_0": -1.379673719406128,
         "score_1": -1.2732287645339966,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 235,
@@ -2121,7 +2356,8 @@
         "image_1_path": "inpaint_PVCgCo5.jpg",
         "score_0": -2.2728703022003174,
         "score_1": -2.215047836303711,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 236,
@@ -2130,7 +2366,8 @@
         "image_1_path": "inpaint_62758989_026_9fa4.jpg",
         "score_0": -2.263516664505005,
         "score_1": -0.9084510207176208,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 237,
@@ -2139,7 +2376,8 @@
         "image_1_path": "inpaint_f8ch0Vt.jpg",
         "score_0": -2.2668919563293457,
         "score_1": -2.2112762928009033,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 238,
@@ -2148,7 +2386,8 @@
         "image_1_path": "inpaint_16428585_011_b246.jpg",
         "score_0": -2.2753567695617676,
         "score_1": -0.9979386925697327,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 239,
@@ -2157,7 +2396,8 @@
         "image_1_path": "inpaint_DtXtf5M.jpg",
         "score_0": -1.0807583332061768,
         "score_1": -0.9993852376937866,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 240,
@@ -2166,7 +2406,8 @@
         "image_1_path": "inpaint_40154040_020_f039.jpg",
         "score_0": -1.9078166484832764,
         "score_1": -0.97230064868927,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 241,
@@ -2175,7 +2416,8 @@
         "image_1_path": "inpaint_30024399_011_2370.jpg",
         "score_0": -1.9711791276931763,
         "score_1": -0.07845982909202576,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 242,
@@ -2184,7 +2426,8 @@
         "image_1_path": "inpaint_yJWgASx.jpg",
         "score_0": -0.4395532011985779,
         "score_1": 1.2362275123596191,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 243,
@@ -2193,7 +2436,8 @@
         "image_1_path": "inpaint_68213286_016_16d5.jpg",
         "score_0": -0.614577054977417,
         "score_1": -0.3042093813419342,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 244,
@@ -2202,7 +2446,8 @@
         "image_1_path": "inpaint_EeTP2tM.jpg",
         "score_0": -0.6457618474960327,
         "score_1": -0.5720239281654358,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 245,
@@ -2211,7 +2456,8 @@
         "image_1_path": "inpaint_ULTcoSa.jpg",
         "score_0": -2.1311488151550293,
         "score_1": 0.07689530402421951,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 246,
@@ -2220,7 +2466,8 @@
         "image_1_path": "inpaint_76283732_015_79ab.jpg",
         "score_0": -2.2748639583587646,
         "score_1": -0.584687352180481,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 247,
@@ -2229,7 +2476,8 @@
         "image_1_path": "inpaint_TYSXHvs.jpg",
         "score_0": -2.2189908027648926,
         "score_1": -1.8599472045898438,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 248,
@@ -2238,7 +2486,8 @@
         "image_1_path": "inpaint_aW6j6ZP.jpg",
         "score_0": -2.268671989440918,
         "score_1": -1.4313926696777344,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 249,
@@ -2247,7 +2496,8 @@
         "image_1_path": "inpaint_babfCoR.jpg",
         "score_0": -0.2737484872341156,
         "score_1": -0.11006557941436768,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 250,
@@ -2256,7 +2506,8 @@
         "image_1_path": "inpaint_u9CmyXF.jpg",
         "score_0": -2.2799408435821533,
         "score_1": 0.013159041292965412,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 251,
@@ -2265,7 +2516,8 @@
         "image_1_path": "inpaint_Hz9jyMS.jpg",
         "score_0": -2.247086524963379,
         "score_1": -2.2202112674713135,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 252,
@@ -2274,7 +2526,8 @@
         "image_1_path": "inpaint_QJ8jcFO.jpg",
         "score_0": -1.6073682308197021,
         "score_1": -0.8639222383499146,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 253,
@@ -2283,7 +2536,8 @@
         "image_1_path": "inpaint_NoYy7Sc.jpg",
         "score_0": -1.7578482627868652,
         "score_1": -1.757084846496582,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 254,
@@ -2292,7 +2546,8 @@
         "image_1_path": "inpaint_Lt7r80q.jpg",
         "score_0": -1.2232590913772583,
         "score_1": -0.20412246882915497,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 255,
@@ -2301,7 +2556,8 @@
         "image_1_path": "inpaint_EO7QIbl.jpg",
         "score_0": -0.7829350829124451,
         "score_1": -0.3120565712451935,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 256,
@@ -2310,7 +2566,8 @@
         "image_1_path": "inpaint_DUIA5GG.jpg",
         "score_0": -0.132980078458786,
         "score_1": -1.1242319345474243,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 257,
@@ -2319,7 +2576,8 @@
         "image_1_path": "inpaint_vIR5exg.jpg",
         "score_0": -1.094909906387329,
         "score_1": -1.400383472442627,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 258,
@@ -2328,7 +2586,8 @@
         "image_1_path": "inpaint_UE1aFDG.jpg",
         "score_0": -2.192793846130371,
         "score_1": -1.8603465557098389,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 259,
@@ -2337,7 +2596,8 @@
         "image_1_path": "inpaint_j9GDJ.jpg",
         "score_0": -2.2746076583862305,
         "score_1": -0.40696990489959717,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 260,
@@ -2346,7 +2606,8 @@
         "image_1_path": "inpaint_53054184_008_0ebf.jpg",
         "score_0": -2.2694406509399414,
         "score_1": -1.7995764017105103,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 261,
@@ -2355,7 +2616,8 @@
         "image_1_path": "inpaint_tGqyMRe.jpg",
         "score_0": -0.9637478590011597,
         "score_1": -0.2848877012729645,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 262,
@@ -2364,7 +2626,8 @@
         "image_1_path": "inpaint_6.jpg",
         "score_0": -2.2684996128082275,
         "score_1": -1.8421050310134888,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 263,
@@ -2373,7 +2636,8 @@
         "image_1_path": "inpaint_88113444_009_91b8.jpg",
         "score_0": -2.2678985595703125,
         "score_1": -0.5201785564422607,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 264,
@@ -2382,7 +2646,8 @@
         "image_1_path": "inpaint_latnvep.jpg",
         "score_0": -1.966500163078308,
         "score_1": -2.165353536605835,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 265,
@@ -2391,7 +2656,8 @@
         "image_1_path": "inpaint_vimj8V3.jpg",
         "score_0": -0.08542431890964508,
         "score_1": -0.04628439247608185,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 266,
@@ -2400,7 +2666,8 @@
         "image_1_path": "inpaint_82297155_016_be4a.jpg",
         "score_0": -2.2723886966705322,
         "score_1": 0.6532230377197266,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 267,
@@ -2409,7 +2676,8 @@
         "image_1_path": "inpaint_t8WKOQh.jpg",
         "score_0": -2.2669270038604736,
         "score_1": -2.1613872051239014,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 268,
@@ -2418,7 +2686,8 @@
         "image_1_path": "inpaint_dE2pipo.jpg",
         "score_0": -1.708547830581665,
         "score_1": -0.4026423990726471,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 269,
@@ -2427,7 +2696,8 @@
         "image_1_path": "inpaint_27656255_016_f3f3.jpg",
         "score_0": -2.2758774757385254,
         "score_1": -1.8477712869644165,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 270,
@@ -2436,7 +2706,8 @@
         "image_1_path": "inpaint_mKzwMn6.jpg",
         "score_0": -2.1442136764526367,
         "score_1": -0.4627784192562103,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 271,
@@ -2445,7 +2716,8 @@
         "image_1_path": "inpaint_79297399_020_1964.jpg",
         "score_0": -2.2698447704315186,
         "score_1": -0.9781385660171509,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 272,
@@ -2454,7 +2726,8 @@
         "image_1_path": "inpaint_AwMIGVc.jpg",
         "score_0": -0.8999152183532715,
         "score_1": -0.6184895038604736,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 273,
@@ -2463,7 +2736,8 @@
         "image_1_path": "inpaint_Gf2x3kk.jpg",
         "score_0": -0.7501660585403442,
         "score_1": -1.8202462196350098,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 274,
@@ -2472,7 +2746,8 @@
         "image_1_path": "inpaint_EYj1hKF.jpg",
         "score_0": -1.2543543577194214,
         "score_1": -0.8111679553985596,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 275,
@@ -2481,7 +2756,8 @@
         "image_1_path": "inpaint_noYz5HH.jpg",
         "score_0": -1.2206329107284546,
         "score_1": 1.1799583435058594,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 276,
@@ -2490,7 +2766,8 @@
         "image_1_path": "inpaint_gemd1m5.jpg",
         "score_0": -1.7496006488800049,
         "score_1": -1.5233319997787476,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 277,
@@ -2499,7 +2776,8 @@
         "image_1_path": "inpaint_16519891_015_4f73.jpg",
         "score_0": -2.2699508666992188,
         "score_1": -1.3275644779205322,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 278,
@@ -2508,7 +2786,8 @@
         "image_1_path": "inpaint_Pa3Yi6q.jpg",
         "score_0": -1.640249490737915,
         "score_1": -1.702483057975769,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 279,
@@ -2517,7 +2796,8 @@
         "image_1_path": "inpaint_kDGroXn.jpg",
         "score_0": -1.2750880718231201,
         "score_1": -1.0509711503982544,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 280,
@@ -2526,7 +2806,8 @@
         "image_1_path": "inpaint_29324794_005_e545.jpg",
         "score_0": -2.2716217041015625,
         "score_1": -1.4393435716629028,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 281,
@@ -2535,7 +2816,8 @@
         "image_1_path": "inpaint_VsriCEC.jpg",
         "score_0": -2.23138689994812,
         "score_1": 0.4641105830669403,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 282,
@@ -2544,7 +2826,8 @@
         "image_1_path": "inpaint_KmBiB4W.jpg",
         "score_0": -0.8918744325637817,
         "score_1": -0.7076737284660339,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 283,
@@ -2553,7 +2836,8 @@
         "image_1_path": "inpaint_jGio7ke.jpg",
         "score_0": -0.7067036628723145,
         "score_1": -1.0944387912750244,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 284,
@@ -2562,7 +2846,8 @@
         "image_1_path": "inpaint_1YSVM.jpg",
         "score_0": -2.277970552444458,
         "score_1": -0.9183835387229919,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 285,
@@ -2571,7 +2856,8 @@
         "image_1_path": "inpaint_NZWA3Rt.jpg",
         "score_0": 0.2023511379957199,
         "score_1": -0.21080653369426727,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 286,
@@ -2580,7 +2866,8 @@
         "image_1_path": "inpaint_dHJKHbI.jpg",
         "score_0": -2.2841310501098633,
         "score_1": -0.6909166574478149,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 287,
@@ -2589,7 +2876,8 @@
         "image_1_path": "inpaint_rm5REmp.jpg",
         "score_0": -1.2152155637741089,
         "score_1": -1.4197036027908325,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 288,
@@ -2598,7 +2886,8 @@
         "image_1_path": "inpaint_K2dJWh2.jpg",
         "score_0": -2.2747802734375,
         "score_1": -2.1688690185546875,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 289,
@@ -2607,7 +2896,8 @@
         "image_1_path": "inpaint_13511214_008_9227.jpg",
         "score_0": -2.276949405670166,
         "score_1": -2.208747148513794,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 290,
@@ -2616,7 +2906,8 @@
         "image_1_path": "inpaint_jZhy8Yw.jpg",
         "score_0": 0.6569957137107849,
         "score_1": 0.780193567276001,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 291,
@@ -2625,7 +2916,8 @@
         "image_1_path": "inpaint_Ljl73ah.jpg",
         "score_0": -0.7978449463844299,
         "score_1": -0.8187008500099182,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 292,
@@ -2634,7 +2926,8 @@
         "image_1_path": "inpaint_SmhmySW.jpg",
         "score_0": -1.1688581705093384,
         "score_1": -1.3024295568466187,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 293,
@@ -2643,7 +2936,8 @@
         "image_1_path": "inpaint_nmFG5ZU.jpg",
         "score_0": -2.128509044647217,
         "score_1": -1.0107975006103516,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 294,
@@ -2652,7 +2946,8 @@
         "image_1_path": "inpaint_57407778_008_9dd8.jpg",
         "score_0": -0.1234976276755333,
         "score_1": 0.3635100722312927,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 295,
@@ -2661,7 +2956,8 @@
         "image_1_path": "inpaint_26.jpg",
         "score_0": -2.237277030944824,
         "score_1": -2.0938560962677,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 296,
@@ -2670,7 +2966,8 @@
         "image_1_path": "inpaint_ls4kIUa.jpg",
         "score_0": -0.31493595242500305,
         "score_1": -0.7096980214118958,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 297,
@@ -2679,7 +2976,8 @@
         "image_1_path": "inpaint_ZWde4Ub.jpg",
         "score_0": -0.4310995936393738,
         "score_1": -0.7811928987503052,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 298,
@@ -2688,7 +2986,8 @@
         "image_1_path": "inpaint_ekbpFET.jpg",
         "score_0": -0.31186163425445557,
         "score_1": -0.7481010556221008,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 299,
@@ -2697,7 +2996,8 @@
         "image_1_path": "inpaint_11.jpg",
         "score_0": -2.2525970935821533,
         "score_1": -0.14437048137187958,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 300,
@@ -2706,7 +3006,8 @@
         "image_1_path": "inpaint_oNAMj5d.jpg",
         "score_0": -1.4360160827636719,
         "score_1": -1.5776537656784058,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 301,
@@ -2715,7 +3016,8 @@
         "image_1_path": "inpaint_qcgfF8d.jpg",
         "score_0": -1.5540227890014648,
         "score_1": -0.5715266466140747,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 302,
@@ -2724,7 +3026,8 @@
         "image_1_path": "inpaint_26299274_016_34e7.jpg",
         "score_0": -1.4630863666534424,
         "score_1": -1.3992522954940796,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 303,
@@ -2733,7 +3036,8 @@
         "image_1_path": "inpaint_ZFjwnXk.jpg",
         "score_0": -0.872104287147522,
         "score_1": -0.3850838243961334,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 304,
@@ -2742,7 +3046,8 @@
         "image_1_path": "inpaint_AoX89py.jpg",
         "score_0": -1.456630825996399,
         "score_1": -1.5833104848861694,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 305,
@@ -2751,7 +3056,8 @@
         "image_1_path": "inpaint_50679509_014_d01b.jpg",
         "score_0": -2.26633882522583,
         "score_1": 0.6647451519966125,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 306,
@@ -2760,7 +3066,8 @@
         "image_1_path": "inpaint_95262209_016_028b.jpg",
         "score_0": -1.1584991216659546,
         "score_1": -1.2933310270309448,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 307,
@@ -2769,7 +3076,8 @@
         "image_1_path": "inpaint_17.jpg",
         "score_0": -0.8676232695579529,
         "score_1": -0.35214492678642273,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 308,
@@ -2778,7 +3086,8 @@
         "image_1_path": "inpaint_T6RF4uz.jpg",
         "score_0": -2.2768590450286865,
         "score_1": -2.0977509021759033,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 309,
@@ -2787,7 +3096,8 @@
         "image_1_path": "inpaint_kQANbFk.jpg",
         "score_0": -1.6462501287460327,
         "score_1": -0.4568045139312744,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 310,
@@ -2796,7 +3106,8 @@
         "image_1_path": "inpaint_B3zCrlB.jpg",
         "score_0": -1.0074198246002197,
         "score_1": -1.1015619039535522,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 311,
@@ -2805,7 +3116,8 @@
         "image_1_path": "inpaint_C5DBnAp.jpg",
         "score_0": -1.9802604913711548,
         "score_1": -1.8182939291000366,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 312,
@@ -2814,7 +3126,8 @@
         "image_1_path": "inpaint_iOGysMX.jpg",
         "score_0": -1.4349968433380127,
         "score_1": -1.4787153005599976,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 313,
@@ -2823,7 +3136,8 @@
         "image_1_path": "inpaint_76993836_015_964c.jpg",
         "score_0": -1.8557788133621216,
         "score_1": -1.5496374368667603,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 314,
@@ -2832,7 +3146,8 @@
         "image_1_path": "inpaint_erZYQ17.jpg",
         "score_0": -1.0132403373718262,
         "score_1": -0.601950466632843,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 315,
@@ -2841,7 +3156,8 @@
         "image_1_path": "inpaint_LO0JplE.jpg",
         "score_0": -1.6286909580230713,
         "score_1": -1.6806102991104126,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 316,
@@ -2850,7 +3166,8 @@
         "image_1_path": "inpaint_13493663_015_4780.jpg",
         "score_0": -2.1344547271728516,
         "score_1": 1.0211595296859741,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 317,
@@ -2859,7 +3176,8 @@
         "image_1_path": "inpaint_Q6PXEWF.jpg",
         "score_0": -2.07353138923645,
         "score_1": -1.320916771888733,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 318,
@@ -2868,7 +3186,8 @@
         "image_1_path": "inpaint_75033110_016_8b9b.jpg",
         "score_0": -2.2790989875793457,
         "score_1": -2.1680386066436768,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 319,
@@ -2877,7 +3196,8 @@
         "image_1_path": "inpaint_hyBB3bm.jpg",
         "score_0": -2.280092239379883,
         "score_1": -2.191638231277466,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 320,
@@ -2886,7 +3206,8 @@
         "image_1_path": "inpaint_J5wFON1.jpg",
         "score_0": -1.0872352123260498,
         "score_1": 0.3293193280696869,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 321,
@@ -2895,7 +3216,8 @@
         "image_1_path": "inpaint_ZOmhV0k.jpg",
         "score_0": -1.9004021883010864,
         "score_1": -1.1996244192123413,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 322,
@@ -2904,7 +3226,8 @@
         "image_1_path": "inpaint_C7Hh8lV.jpg",
         "score_0": -2.1583657264709473,
         "score_1": -2.193958282470703,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 323,
@@ -2913,7 +3236,8 @@
         "image_1_path": "inpaint_VUdyYXd.jpg",
         "score_0": 0.20878826081752777,
         "score_1": 0.040722236037254333,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 324,
@@ -2922,7 +3246,8 @@
         "image_1_path": "inpaint_SW9xDVdh.jpg",
         "score_0": -2.2688000202178955,
         "score_1": 0.6695064902305603,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 325,
@@ -2931,7 +3256,8 @@
         "image_1_path": "inpaint_W3DuQV6.jpg",
         "score_0": -0.9613604545593262,
         "score_1": -0.41763368248939514,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 326,
@@ -2940,7 +3266,8 @@
         "image_1_path": "inpaint_FuK9OXA.jpg",
         "score_0": -0.1884106546640396,
         "score_1": -0.19843050837516785,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 327,
@@ -2949,7 +3276,8 @@
         "image_1_path": "inpaint_WV5p85I.jpg",
         "score_0": -0.2150956690311432,
         "score_1": 0.5065340399742126,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 328,
@@ -2958,7 +3286,8 @@
         "image_1_path": "inpaint_GmN9ipN.jpg",
         "score_0": -1.46043062210083,
         "score_1": -1.451597809791565,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 329,
@@ -2967,7 +3296,8 @@
         "image_1_path": "inpaint_InaDRDR.jpg",
         "score_0": -1.1261755228042603,
         "score_1": -1.5068544149398804,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 330,
@@ -2976,7 +3306,8 @@
         "image_1_path": "inpaint_1WfyA5Q.jpg",
         "score_0": -2.265075206756592,
         "score_1": -1.9378576278686523,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 331,
@@ -2985,7 +3316,8 @@
         "image_1_path": "inpaint_1bLb8.jpg",
         "score_0": -2.279883861541748,
         "score_1": -0.6899036765098572,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 332,
@@ -2994,7 +3326,8 @@
         "image_1_path": "inpaint_81579210_003_ddf5.jpg",
         "score_0": -2.0255284309387207,
         "score_1": -0.5938684940338135,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 333,
@@ -3003,7 +3336,8 @@
         "image_1_path": "inpaint_1Ewgt.jpg",
         "score_0": 0.1576385498046875,
         "score_1": 0.4143913984298706,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 334,
@@ -3012,7 +3346,8 @@
         "image_1_path": "inpaint_F0Vy7lp.jpg",
         "score_0": -2.2821407318115234,
         "score_1": -1.8460427522659302,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 335,
@@ -3021,7 +3356,8 @@
         "image_1_path": "inpaint_0cl5FrI.jpg",
         "score_0": -2.046433210372925,
         "score_1": -0.48783791065216064,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 336,
@@ -3030,7 +3366,8 @@
         "image_1_path": "inpaint_31053633_016_ad1f.jpg",
         "score_0": -2.280991315841675,
         "score_1": -2.098423957824707,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 337,
@@ -3039,7 +3376,8 @@
         "image_1_path": "inpaint_40910398_015_de30.jpg",
         "score_0": -2.2442734241485596,
         "score_1": -1.5433546304702759,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 338,
@@ -3048,7 +3386,8 @@
         "image_1_path": "inpaint_13318187_007_0e9e.jpg",
         "score_0": -2.027020215988159,
         "score_1": 0.38695216178894043,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 339,
@@ -3057,7 +3396,8 @@
         "image_1_path": "inpaint_19.jpg",
         "score_0": 0.6953209042549133,
         "score_1": 0.8261157274246216,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 340,
@@ -3066,7 +3406,8 @@
         "image_1_path": "inpaint_1EgkDS4.jpg",
         "score_0": -0.9475163817405701,
         "score_1": -0.4342784583568573,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 341,
@@ -3075,7 +3416,8 @@
         "image_1_path": "inpaint_iJFgnRW.jpg",
         "score_0": -0.6402894854545593,
         "score_1": -0.8074352145195007,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 342,
@@ -3084,7 +3426,8 @@
         "image_1_path": "inpaint_Bi6xYaK.jpg",
         "score_0": -1.1764702796936035,
         "score_1": -0.8415058851242065,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 343,
@@ -3093,7 +3436,8 @@
         "image_1_path": "inpaint_eOH2AG7.jpg",
         "score_0": -2.2740447521209717,
         "score_1": -2.0342090129852295,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 344,
@@ -3102,7 +3446,8 @@
         "image_1_path": "inpaint_drA8kwi.jpg",
         "score_0": -2.235719919204712,
         "score_1": -2.096524477005005,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 345,
@@ -3111,7 +3456,8 @@
         "image_1_path": "inpaint_78828215_016_62db.jpg",
         "score_0": -0.7437767386436462,
         "score_1": -0.3285972476005554,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 346,
@@ -3120,7 +3466,8 @@
         "image_1_path": "inpaint_eg5gTOr.jpg",
         "score_0": -1.4092150926589966,
         "score_1": -1.4218246936798096,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 347,
@@ -3129,7 +3476,8 @@
         "image_1_path": "inpaint_EBHtF8U.jpg",
         "score_0": -2.2279319763183594,
         "score_1": -2.2105844020843506,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 348,
@@ -3138,7 +3486,8 @@
         "image_1_path": "inpaint_81783510_014_9eb1.jpg",
         "score_0": -1.6149958372116089,
         "score_1": -2.1915383338928223,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 349,
@@ -3147,7 +3496,8 @@
         "image_1_path": "inpaint_U3VvwFk.jpg",
         "score_0": 0.05887196213006973,
         "score_1": 0.27307039499282837,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 350,
@@ -3156,7 +3506,8 @@
         "image_1_path": "inpaint_83438926_015_fdaa.jpg",
         "score_0": -2.273573160171509,
         "score_1": -1.613046407699585,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 351,
@@ -3165,7 +3516,8 @@
         "image_1_path": "inpaint_DQ185Of.jpg",
         "score_0": -1.8660876750946045,
         "score_1": -1.6300902366638184,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 352,
@@ -3174,7 +3526,8 @@
         "image_1_path": "inpaint_22.jpg",
         "score_0": -1.2678022384643555,
         "score_1": 0.1603233963251114,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 353,
@@ -3183,7 +3536,8 @@
         "image_1_path": "inpaint_13461493_005_9e89.jpg",
         "score_0": -1.525055170059204,
         "score_1": -0.8783658742904663,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 354,
@@ -3192,7 +3546,8 @@
         "image_1_path": "inpaint_60148031_015_f945.jpg",
         "score_0": -2.2637033462524414,
         "score_1": -1.7195031642913818,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 355,
@@ -3201,7 +3556,8 @@
         "image_1_path": "inpaint_oBdzco9.jpg",
         "score_0": -2.272923707962036,
         "score_1": -0.20493675768375397,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 356,
@@ -3210,7 +3566,8 @@
         "image_1_path": "inpaint_AeMDSm0.jpg",
         "score_0": -2.0391552448272705,
         "score_1": -1.9570503234863281,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 357,
@@ -3219,7 +3576,8 @@
         "image_1_path": "inpaint_q7mGlav.jpg",
         "score_0": -2.2753684520721436,
         "score_1": -0.41198351979255676,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 358,
@@ -3228,7 +3586,8 @@
         "image_1_path": "inpaint_aWsNWQG.jpg",
         "score_0": -0.34344905614852905,
         "score_1": 0.15708497166633606,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 359,
@@ -3237,7 +3596,8 @@
         "image_1_path": "inpaint_75405776_015_74cf.jpg",
         "score_0": 0.3707039952278137,
         "score_1": 0.43958404660224915,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 360,
@@ -3246,7 +3606,8 @@
         "image_1_path": "inpaint_IAWSf8I.jpg",
         "score_0": -2.262702703475952,
         "score_1": -2.243840217590332,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 361,
@@ -3255,7 +3616,8 @@
         "image_1_path": "inpaint_b3yfzpK.jpg",
         "score_0": -1.9354292154312134,
         "score_1": -0.08149486780166626,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 362,
@@ -3264,7 +3626,8 @@
         "image_1_path": "inpaint_0XeoBMy.jpg",
         "score_0": -1.6962671279907227,
         "score_1": 0.721348226070404,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 363,
@@ -3273,7 +3636,8 @@
         "image_1_path": "inpaint_13431113_014_c9c5.jpg",
         "score_0": -1.5983649492263794,
         "score_1": 0.5360735654830933,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 364,
@@ -3282,7 +3646,8 @@
         "image_1_path": "inpaint_FgeDUQ6.jpg",
         "score_0": -0.5465565919876099,
         "score_1": -0.8307700753211975,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 365,
@@ -3291,7 +3656,8 @@
         "image_1_path": "inpaint_15418783_002_de97.jpg",
         "score_0": -2.2578954696655273,
         "score_1": -1.792022705078125,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 366,
@@ -3300,7 +3666,8 @@
         "image_1_path": "inpaint_tZNCOVV.jpg",
         "score_0": -2.2382917404174805,
         "score_1": -0.1446468085050583,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 367,
@@ -3309,7 +3676,8 @@
         "image_1_path": "inpaint_1xKo2d5.jpg",
         "score_0": -2.281226396560669,
         "score_1": -0.6136741042137146,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 368,
@@ -3318,7 +3686,8 @@
         "image_1_path": "inpaint_pZ6RCQm.jpg",
         "score_0": -0.8587568402290344,
         "score_1": -1.04983389377594,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 369,
@@ -3327,7 +3696,8 @@
         "image_1_path": "inpaint_0LG53uh.jpg",
         "score_0": -0.715368926525116,
         "score_1": -0.6440542340278625,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 370,
@@ -3336,7 +3706,8 @@
         "image_1_path": "inpaint_1n3oE6Q.jpg",
         "score_0": -2.268465995788574,
         "score_1": -1.9304769039154053,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 371,
@@ -3345,7 +3716,8 @@
         "image_1_path": "inpaint_12677981_012_fd1d.jpg",
         "score_0": -2.1839163303375244,
         "score_1": -2.1559011936187744,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 372,
@@ -3354,7 +3726,8 @@
         "image_1_path": "inpaint_12965457_015_cc20.jpg",
         "score_0": -2.2791268825531006,
         "score_1": -0.8651708364486694,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 373,
@@ -3363,7 +3736,8 @@
         "image_1_path": "inpaint_WJsE0Cbh.jpg",
         "score_0": -0.12255875766277313,
         "score_1": -0.8663108348846436,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 374,
@@ -3372,7 +3746,8 @@
         "image_1_path": "inpaint_Eb589E2.jpg",
         "score_0": -0.17509518563747406,
         "score_1": -0.047454312443733215,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 375,
@@ -3381,7 +3756,8 @@
         "image_1_path": "inpaint_vPZCh2I.jpg",
         "score_0": -2.2773818969726562,
         "score_1": -0.31926456093788147,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 376,
@@ -3390,7 +3766,8 @@
         "image_1_path": "inpaint_ZXDXfqz.jpg",
         "score_0": -2.2755229473114014,
         "score_1": -0.7087617516517639,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 377,
@@ -3399,7 +3776,8 @@
         "image_1_path": "inpaint_0Ki8Do3.jpg",
         "score_0": -1.4208667278289795,
         "score_1": 0.33867111802101135,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 378,
@@ -3408,7 +3786,8 @@
         "image_1_path": "inpaint_0KdQZar.jpg",
         "score_0": -1.5002955198287964,
         "score_1": -0.8222260475158691,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 379,
@@ -3417,7 +3796,8 @@
         "image_1_path": "inpaint_ouI9VYW.jpg",
         "score_0": 1.0978388786315918,
         "score_1": 1.2216410636901855,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 380,
@@ -3426,7 +3806,8 @@
         "image_1_path": "inpaint_uHEzBw5.jpg",
         "score_0": -1.6551209688186646,
         "score_1": 0.0324925035238266,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 381,
@@ -3435,7 +3816,8 @@
         "image_1_path": "inpaint_SYgTuj4.jpg",
         "score_0": -1.6246328353881836,
         "score_1": -1.0354303121566772,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 382,
@@ -3444,7 +3826,8 @@
         "image_1_path": "inpaint_YNzfE9fh.jpg",
         "score_0": -2.1646242141723633,
         "score_1": -2.251305103302002,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 383,
@@ -3453,7 +3836,8 @@
         "image_1_path": "inpaint_62148230_014_cb73.jpg",
         "score_0": -2.2766458988189697,
         "score_1": -1.3367059230804443,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 384,
@@ -3462,7 +3846,8 @@
         "image_1_path": "inpaint_MTTKV0q.jpg",
         "score_0": -1.888298511505127,
         "score_1": -0.8952306509017944,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 385,
@@ -3471,7 +3856,8 @@
         "image_1_path": "inpaint_YnnCVwW.jpg",
         "score_0": -0.49635377526283264,
         "score_1": -0.3009248375892639,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 386,
@@ -3480,7 +3866,8 @@
         "image_1_path": "inpaint_79559559_006_9210.jpg",
         "score_0": -2.274897813796997,
         "score_1": -2.2618587017059326,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 387,
@@ -3489,7 +3876,8 @@
         "image_1_path": "inpaint_FdSI2UUh.jpg",
         "score_0": -2.273963689804077,
         "score_1": -2.2797396183013916,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 388,
@@ -3498,7 +3886,8 @@
         "image_1_path": "inpaint_19487580_015_3ff2.jpg",
         "score_0": -2.281233310699463,
         "score_1": -1.702415943145752,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 389,
@@ -3507,7 +3896,8 @@
         "image_1_path": "inpaint_77654515_016_dbe1.jpg",
         "score_0": -2.158705472946167,
         "score_1": 0.008826203644275665,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 390,
@@ -3516,7 +3906,8 @@
         "image_1_path": "inpaint_VXFdTss.jpg",
         "score_0": -1.2652565240859985,
         "score_1": -1.452402949333191,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 391,
@@ -3525,7 +3916,8 @@
         "image_1_path": "inpaint_frwIXeV.jpg",
         "score_0": -1.3024593591690063,
         "score_1": -0.6807369589805603,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 392,
@@ -3534,7 +3926,8 @@
         "image_1_path": "inpaint_V3NYPBU.jpg",
         "score_0": -1.1148717403411865,
         "score_1": -1.1186858415603638,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 393,
@@ -3543,7 +3936,8 @@
         "image_1_path": "inpaint_59371994_015_fbfe.jpg",
         "score_0": -2.2518279552459717,
         "score_1": -2.0107312202453613,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 394,
@@ -3552,7 +3946,8 @@
         "image_1_path": "inpaint_sSRNuVL.jpg",
         "score_0": -0.7335742115974426,
         "score_1": -0.39094069600105286,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 395,
@@ -3561,7 +3956,8 @@
         "image_1_path": "inpaint_2.jpg",
         "score_0": -2.2498350143432617,
         "score_1": -1.88884699344635,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 396,
@@ -3570,7 +3966,8 @@
         "image_1_path": "inpaint_TerpiGH.jpg",
         "score_0": -1.552504539489746,
         "score_1": -1.481745958328247,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 397,
@@ -3579,7 +3976,8 @@
         "image_1_path": "inpaint_25558948_010_db96.jpg",
         "score_0": -2.1818149089813232,
         "score_1": -2.0287058353424072,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 398,
@@ -3588,7 +3986,8 @@
         "image_1_path": "inpaint_13490798_007_b831.jpg",
         "score_0": -2.2650249004364014,
         "score_1": -2.0171356201171875,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 399,
@@ -3597,7 +3996,8 @@
         "image_1_path": "inpaint_59196584_013_37bb.jpg",
         "score_0": -2.278303384780884,
         "score_1": -2.012152671813965,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 400,
@@ -3606,7 +4006,8 @@
         "image_1_path": "inpaint_pSNebaR.jpg",
         "score_0": -1.5093430280685425,
         "score_1": -1.6237298250198364,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 401,
@@ -3615,7 +4016,8 @@
         "image_1_path": "inpaint_wAZpeFV.jpg",
         "score_0": -1.679391860961914,
         "score_1": -1.5386300086975098,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 402,
@@ -3624,7 +4026,8 @@
         "image_1_path": "inpaint_1U3SA75.jpg",
         "score_0": -0.7385244965553284,
         "score_1": 0.7312093377113342,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 403,
@@ -3633,7 +4036,8 @@
         "image_1_path": "inpaint_3.jpg",
         "score_0": -2.280812978744507,
         "score_1": -0.5523746609687805,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 404,
@@ -3642,7 +4046,8 @@
         "image_1_path": "inpaint_BTmxtuS.jpg",
         "score_0": -0.5622995495796204,
         "score_1": -0.776909589767456,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 405,
@@ -3651,7 +4056,8 @@
         "image_1_path": "inpaint_1jJeP.jpg",
         "score_0": -2.2469642162323,
         "score_1": -1.197628378868103,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 406,
@@ -3660,7 +4066,8 @@
         "image_1_path": "inpaint_33620715_006_3798.jpg",
         "score_0": -2.2780535221099854,
         "score_1": -2.263113498687744,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 407,
@@ -3669,7 +4076,8 @@
         "image_1_path": "inpaint_QbBI6Ga.jpg",
         "score_0": -1.9727120399475098,
         "score_1": -1.3524973392486572,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 408,
@@ -3678,7 +4086,8 @@
         "image_1_path": "inpaint_3Q2vy5r.jpg",
         "score_0": -2.2115819454193115,
         "score_1": -0.40439653396606445,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 409,
@@ -3687,7 +4096,8 @@
         "image_1_path": "inpaint_31453681_014_570a.jpg",
         "score_0": -1.8987808227539062,
         "score_1": -0.7644351720809937,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 410,
@@ -3696,7 +4106,8 @@
         "image_1_path": "inpaint_vsPOT6k.jpg",
         "score_0": -1.507899522781372,
         "score_1": -1.3535970449447632,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 411,
@@ -3705,7 +4116,8 @@
         "image_1_path": "inpaint_60422560_004_5dad.jpg",
         "score_0": -2.276916265487671,
         "score_1": -2.276887893676758,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 412,
@@ -3714,7 +4126,8 @@
         "image_1_path": "inpaint_FjlexmS.jpg",
         "score_0": -0.653051495552063,
         "score_1": -0.14972473680973053,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 413,
@@ -3723,7 +4136,8 @@
         "image_1_path": "inpaint_QicPQoI.jpg",
         "score_0": -2.2823851108551025,
         "score_1": -1.4666919708251953,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 414,
@@ -3732,7 +4146,8 @@
         "image_1_path": "inpaint_d4me8b1.jpg",
         "score_0": -0.3449738025665283,
         "score_1": 0.14211423695087433,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 415,
@@ -3741,7 +4156,8 @@
         "image_1_path": "inpaint_vFOjvi8.jpg",
         "score_0": -0.496724396944046,
         "score_1": 0.5093990564346313,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 416,
@@ -3750,7 +4166,8 @@
         "image_1_path": "inpaint_13281851_015_4dae.jpg",
         "score_0": 1.077049970626831,
         "score_1": 0.9106607437133789,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 417,
@@ -3759,7 +4176,8 @@
         "image_1_path": "inpaint_12165516_020_ca7b.jpg",
         "score_0": -2.159269094467163,
         "score_1": -0.7969250082969666,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 418,
@@ -3768,7 +4186,8 @@
         "image_1_path": "inpaint_vWjUm6e.jpg",
         "score_0": -1.3491661548614502,
         "score_1": -1.293198823928833,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 419,
@@ -3777,7 +4196,8 @@
         "image_1_path": "inpaint_e9JPlC4.jpg",
         "score_0": 0.6750616431236267,
         "score_1": 0.5596398711204529,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 420,
@@ -3786,7 +4206,8 @@
         "image_1_path": "inpaint_CGbHBLT.jpg",
         "score_0": 0.1534169465303421,
         "score_1": 0.8451684713363647,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 421,
@@ -3795,7 +4216,8 @@
         "image_1_path": "inpaint_75790209_015_9cbc.jpg",
         "score_0": -2.2716715335845947,
         "score_1": -2.081364631652832,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 422,
@@ -3804,7 +4226,8 @@
         "image_1_path": "inpaint_WKhM34P.jpg",
         "score_0": -1.7157628536224365,
         "score_1": -0.5763863921165466,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 423,
@@ -3813,7 +4236,8 @@
         "image_1_path": "inpaint_JPKR4rQ.jpg",
         "score_0": 0.7497507929801941,
         "score_1": 0.6258162260055542,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 424,
@@ -3822,7 +4246,8 @@
         "image_1_path": "inpaint_89184567_016_872e.jpg",
         "score_0": -0.7413241863250732,
         "score_1": -0.29927241802215576,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 425,
@@ -3831,7 +4256,8 @@
         "image_1_path": "inpaint_16.jpg",
         "score_0": -0.5263383388519287,
         "score_1": -0.10781737416982651,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 426,
@@ -3840,7 +4266,8 @@
         "image_1_path": "inpaint_0CALPwr.jpg",
         "score_0": -2.1509788036346436,
         "score_1": -2.1262876987457275,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 427,
@@ -3849,7 +4276,8 @@
         "image_1_path": "inpaint_15309420_016_4014.jpg",
         "score_0": -2.2768986225128174,
         "score_1": -1.8227593898773193,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 428,
@@ -3858,7 +4286,8 @@
         "image_1_path": "inpaint_2lGLOCw.jpg",
         "score_0": -2.2791998386383057,
         "score_1": -1.4668647050857544,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 429,
@@ -3867,7 +4296,8 @@
         "image_1_path": "inpaint_23283430_016_7d30.jpg",
         "score_0": -2.272869110107422,
         "score_1": -0.14695696532726288,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 430,
@@ -3876,7 +4306,8 @@
         "image_1_path": "inpaint_Ks8WZ3z.jpg",
         "score_0": -0.4897649884223938,
         "score_1": -0.6790558099746704,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 431,
@@ -3885,7 +4316,8 @@
         "image_1_path": "inpaint_89109660_014_7261.jpg",
         "score_0": -2.270169734954834,
         "score_1": 0.9054599404335022,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 432,
@@ -3894,7 +4326,8 @@
         "image_1_path": "inpaint_gKL23SN.jpg",
         "score_0": -1.4316987991333008,
         "score_1": -1.6142220497131348,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 433,
@@ -3903,7 +4336,8 @@
         "image_1_path": "inpaint_EaNRNuY.jpg",
         "score_0": -0.9187228679656982,
         "score_1": -0.43361547589302063,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 434,
@@ -3912,7 +4346,8 @@
         "image_1_path": "inpaint_Vbhxzto.jpg",
         "score_0": -2.276298999786377,
         "score_1": -0.9697476625442505,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 435,
@@ -3921,7 +4356,8 @@
         "image_1_path": "inpaint_56367690_014_57b5.jpg",
         "score_0": -2.270066499710083,
         "score_1": -1.8296831846237183,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 436,
@@ -3930,7 +4366,8 @@
         "image_1_path": "inpaint_28749435_013_f188.jpg",
         "score_0": -2.242053508758545,
         "score_1": -1.4093292951583862,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 437,
@@ -3939,7 +4376,8 @@
         "image_1_path": "inpaint_TmEE25c.jpg",
         "score_0": -1.3644300699234009,
         "score_1": -1.0220731496810913,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 438,
@@ -3948,7 +4386,8 @@
         "image_1_path": "inpaint_p3xQgeE.jpg",
         "score_0": -1.3303301334381104,
         "score_1": -1.8832465410232544,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 439,
@@ -3957,7 +4396,8 @@
         "image_1_path": "inpaint_16610008_005_6e89.jpg",
         "score_0": -0.5659434199333191,
         "score_1": 1.471747875213623,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 440,
@@ -3966,7 +4406,8 @@
         "image_1_path": "inpaint_CwRCB9Z.jpg",
         "score_0": -2.2734570503234863,
         "score_1": -0.9158710837364197,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 441,
@@ -3975,7 +4416,8 @@
         "image_1_path": "inpaint_lQDHyFY.jpg",
         "score_0": -0.09625349193811417,
         "score_1": 0.1938466727733612,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 442,
@@ -3984,7 +4426,8 @@
         "image_1_path": "inpaint_IP5ZIMS.jpg",
         "score_0": -1.2096015214920044,
         "score_1": -1.4160515069961548,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 443,
@@ -3993,7 +4436,8 @@
         "image_1_path": "inpaint_SphjfFo.jpg",
         "score_0": -0.7853484153747559,
         "score_1": -0.4975484311580658,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 444,
@@ -4002,7 +4446,8 @@
         "image_1_path": "inpaint_17652146_008_3fd9.jpg",
         "score_0": -2.280978202819824,
         "score_1": -1.2720588445663452,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 445,
@@ -4011,7 +4456,8 @@
         "image_1_path": "inpaint_o5zNMoC.jpg",
         "score_0": -1.925641655921936,
         "score_1": -0.4804624021053314,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 446,
@@ -4020,7 +4466,8 @@
         "image_1_path": "inpaint_rMQTNC8.jpg",
         "score_0": -2.2521629333496094,
         "score_1": -0.6989679932594299,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 447,
@@ -4029,7 +4476,8 @@
         "image_1_path": "inpaint_TH2rVA3.jpg",
         "score_0": -0.9368640780448914,
         "score_1": -1.4950579404830933,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 448,
@@ -4038,7 +4486,8 @@
         "image_1_path": "inpaint_GfIeIAPh.jpg",
         "score_0": -2.2427704334259033,
         "score_1": -1.6121093034744263,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 449,
@@ -4047,7 +4496,8 @@
         "image_1_path": "inpaint_04kITqQ.jpg",
         "score_0": -2.2633047103881836,
         "score_1": -0.6479765176773071,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 450,
@@ -4056,7 +4506,8 @@
         "image_1_path": "inpaint_wznGjrRh.jpg",
         "score_0": -2.269394874572754,
         "score_1": -2.0990328788757324,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 451,
@@ -4065,7 +4516,8 @@
         "image_1_path": "inpaint_64959667_016_5a01.jpg",
         "score_0": -0.7571232914924622,
         "score_1": -0.4781126379966736,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 452,
@@ -4074,7 +4526,8 @@
         "image_1_path": "inpaint_RW4myJx.jpg",
         "score_0": -0.8488487005233765,
         "score_1": -0.037622690200805664,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 453,
@@ -4083,7 +4536,8 @@
         "image_1_path": "inpaint_NNxFMQr.jpg",
         "score_0": -1.089539647102356,
         "score_1": -1.31008780002594,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 454,
@@ -4092,7 +4546,8 @@
         "image_1_path": "inpaint_25.jpg",
         "score_0": -2.2806708812713623,
         "score_1": -1.374935507774353,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 455,
@@ -4101,7 +4556,8 @@
         "image_1_path": "inpaint_rvMdepX.jpg",
         "score_0": -1.8025643825531006,
         "score_1": -1.9304403066635132,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 456,
@@ -4110,7 +4566,8 @@
         "image_1_path": "inpaint_cRZmbKt.jpg",
         "score_0": -2.2069921493530273,
         "score_1": -1.069614052772522,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 457,
@@ -4119,7 +4576,8 @@
         "image_1_path": "inpaint_LXmFcrJ.jpg",
         "score_0": -1.4947848320007324,
         "score_1": -1.495287299156189,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 458,
@@ -4128,7 +4586,8 @@
         "image_1_path": "inpaint_QUgNXuz.jpg",
         "score_0": -1.4165536165237427,
         "score_1": -0.9025769829750061,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 459,
@@ -4137,7 +4596,8 @@
         "image_1_path": "inpaint_rbvFCyq.jpg",
         "score_0": -0.3648844063282013,
         "score_1": -0.23796768486499786,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 460,
@@ -4146,7 +4606,8 @@
         "image_1_path": "inpaint_94807498_016_a1aa.jpg",
         "score_0": -0.9078320264816284,
         "score_1": -0.48169276118278503,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 461,
@@ -4155,7 +4616,8 @@
         "image_1_path": "inpaint_Z4BlX69.jpg",
         "score_0": -0.5857479572296143,
         "score_1": -0.3608032464981079,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 462,
@@ -4164,7 +4626,8 @@
         "image_1_path": "inpaint_uuIYb7l.jpg",
         "score_0": -0.09100865572690964,
         "score_1": -0.3110688030719757,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 463,
@@ -4173,7 +4636,8 @@
         "image_1_path": "inpaint_49457858_010_7690.jpg",
         "score_0": -2.2797024250030518,
         "score_1": -0.8477085828781128,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 464,
@@ -4182,7 +4646,8 @@
         "image_1_path": "inpaint_LEm4GrQ.jpg",
         "score_0": -2.129077911376953,
         "score_1": -0.9886958003044128,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 465,
@@ -4191,7 +4656,8 @@
         "image_1_path": "inpaint_z63zOmF.jpg",
         "score_0": -2.1849141120910645,
         "score_1": -1.544853687286377,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 466,
@@ -4200,7 +4666,8 @@
         "image_1_path": "inpaint_l5piG6Y.jpg",
         "score_0": -2.2491793632507324,
         "score_1": -0.6071429252624512,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 467,
@@ -4209,7 +4676,8 @@
         "image_1_path": "inpaint_88113954_015_99ae.jpg",
         "score_0": -2.275160789489746,
         "score_1": -2.2508435249328613,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 468,
@@ -4218,7 +4686,8 @@
         "image_1_path": "inpaint_LuA4zC2.jpg",
         "score_0": -0.38244637846946716,
         "score_1": -0.899532675743103,
-        "label": "0"
+        "label": "0",
+        "pred": "0"
     },
     {
         "id": 469,
@@ -4227,7 +4696,8 @@
         "image_1_path": "inpaint_u296XVLh.jpg",
         "score_0": -1.597387433052063,
         "score_1": -1.3761718273162842,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     },
     {
         "id": 470,
@@ -4236,6 +4706,7 @@
         "image_1_path": "inpaint_42276031_016_ac05.jpg",
         "score_0": -1.6060277223587036,
         "score_1": -0.742193877696991,
-        "label": "0"
+        "label": "0",
+        "pred": "1"
     }
 ]
