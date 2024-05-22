@@ -8,3 +8,8 @@ wandb/
 *.bin
 *.pkl
 *.safetensor
+
+
+*_dlc_scripts/
+alignment/benchmark/images/
+*.ipynb_checkpoints/
