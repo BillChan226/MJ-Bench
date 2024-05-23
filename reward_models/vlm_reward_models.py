@@ -5,15 +5,28 @@ from PIL import Image
 from transformers import CLIPProcessor
 from io import BytesIO
 # from aesthetics_predictor import AestheticsPredictorV1, AestheticsPredictorV2Linear, AestheticsPredictorV2ReLU
-from transformers import AutoProcessor, AutoModel, InstructBlipProcessor, InstructBlipForConditionalGeneration, \
-    CLIPImageProcessor, AutoModelForCausalLM, AutoModelForVision2Seq
+from transformers import (
+    pipeline, 
+    AutoModel,
+    AutoProcessor, 
+    AutoTokenizer, 
+    AutoModelForCausalLM, 
+    AutoModelForVision2Seq,
+    LlavaNextProcessor,
+    LlavaNextForConditionalGeneration,
+    LlavaForConditionalGeneration,
+    BlipProcessor, 
+    BlipForImageTextRetrieval, 
+    InstructBlipProcessor, 
+    InstructBlipForConditionalGeneration,
+    CLIPImageProcessor, 
+    BitsAndBytesConfig
+)
 from datasets import load_dataset
 import torch
 import os
 import json
 from tqdm import tqdm
-from transformers import BlipProcessor, BlipForImageTextRetrieval, pipeline, LlavaForConditionalGeneration, \
-    AutoTokenizer
 # import ImageReward as RM
 import numpy as np
 from rm_utils import get_pred, get_label
@@ -25,14 +38,16 @@ class Scorer:
         self.device = device
         self.model_path = model_path
         self.processor_path = processor_path
-        # self.processor = AutoProcessor.from_pretrained(processor_path)
         self.model = None  # Initialize model as None
         self.processor = None  # Initialize processor as None
         self.tokenizer = None  # Initialize tokenizer as None
 
-        if model_name == "llava-1.5-7b-hf":
+        if "llava-1.5" in model_name:
             self.get_score = self.LLaVA
             self.load_llava_model()
+        elif "llava-v1.6" in model_name:
+            self.get_score = self.LLaVA_NeXT
+            self.load_llava_next_model()
         elif model_name == "minigpt4":
             self.get_score = self.MiniGPT4
             self.load_minigpt4_model()
@@ -42,7 +57,8 @@ class Scorer:
         elif model_name == "internVL":
             self.get_score = self.InternVL
             self.load_internVL_model()
-        elif model_name == "qwen":
+        # multi image input
+        elif "qwen-vl" in model_name:
             self.get_score = self.Qwen_VL_Chat()
             self.load_qwen_model()
         elif model_name == "idefics2-8b":
@@ -57,6 +73,25 @@ class Scorer:
             low_cpu_mem_usage=True,
         ).to(self.device)
         processor = AutoProcessor.from_pretrained(self.processor_path)
+        self.processor = processor
+        self.model = model
+    
+    def load_llava_next_model(self):
+        quantization_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_compute_dtype=torch.float16,
+        )
+        model = LlavaNextForConditionalGeneration.from_pretrained(
+            self.model_path,
+            torch_dtype=torch.float16,
+            low_cpu_mem_usage=True,
+            quantization_config=quantization_config if "34b" in self.model_name else None,
+            attn_implementation="flash_attention_2",
+            device_map="auto",
+        )
+        model.tie_weights()
+        processor = LlavaNextProcessor.from_pretrained(self.processor_path)
         self.processor = processor
         self.model = model
 
@@ -94,7 +129,12 @@ class Scorer:
         self.model = model
 
     def load_idefics2_model(self):
-        model = AutoModelForVision2Seq.from_pretrained(self.model_path).to(self.device)
+        model = AutoModelForVision2Seq.from_pretrained(
+            self.model_path,
+            torch_dtype=torch.loat16,
+            attn_implementation="flash_attention_2",
+            device_map="auto",
+        ).to(self.device)
         processor = AutoProcessor.from_pretrained(self.model_path)
         self.processor = processor
         self.model = model
@@ -128,6 +168,28 @@ class Scorer:
 
 
         prompt = f"USER: <image>\n{prompt}\nASSISTANT:"
+
+        images = [self.open_image(image) for image in images_path]
+        inputs = [self.processor(prompt, image, return_tensors='pt').to(self.device) for image in images]
+        outputs = [self.model.generate(**input, max_new_tokens=512, do_sample=False) for input in inputs]
+        responses = [self.processor.decode(output[0][2:], skip_special_tokens=True) for output in outputs]
+
+        return responses
+    
+    def LLaVA_NeXT(self, images_path, prompt):
+
+        '''
+        model: llava 1.6 series
+        '''
+                
+        if "vicuna" in self.model_name:
+            prompt = f"USER: <image>\n{prompt}\nASSISTANT:"
+        if "mistral" in self.model_name:
+            prompt = f"[INST] <image>\n{prompt} [/INST]"
+        elif "34b" in self.model_name:
+            prompt = f"<|im_start|>system\nAnswer the questions.<|im_end|><|im_start|>user\n<image>\n{prompt} <|im_end|><|im_start|>assistant\n"
+        else:
+            raise ValueError(f"not find the model {self.model_name}'s prompt format.")
 
         images = [self.open_image(image) for image in images_path]
         inputs = [self.processor(prompt, image, return_tensors='pt').to(self.device) for image in images]
