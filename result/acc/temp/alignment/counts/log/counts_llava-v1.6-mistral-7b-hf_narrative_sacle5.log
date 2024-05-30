@@ -1,0 +1,130 @@
+2024-05-30 21:18:16 | INFO | alignment_rm_score | Loading reward model form llava-v1.6-mistral-7b-hf...
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+2024-05-30 21:18:19 | INFO | accelerate.utils.modeling | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.89s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.78s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:08<00:02,  2.75s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  1.80s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.16s/it]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2024-05-30 21:18:29 | INFO | alignment_rm_score | Loading prompt template from /cpfs01/user/duyichao/workspace/LLM_RLAIF/MM-Reward/eval/prompts/alignment_single_narrative_scale5.txt
+Evaluating RM: : 0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+2024-05-30 21:18:52 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 0
+Evaluating RM: : 1it [00:23, 23.21s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 2it [00:35, 17.07s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 3it [00:49, 15.25s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+2024-05-30 21:19:42 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 3
+Evaluating RM: : 4it [01:13, 18.76s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 5it [01:24, 15.97s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 6it [01:35, 14.30s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+2024-05-30 21:20:22 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 6
+Evaluating RM: : 7it [01:53, 15.70s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 8it [02:03, 13.92s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 9it [02:14, 12.89s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+2024-05-30 21:20:56 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 9
+Evaluating RM: : 10it [02:27, 12.77s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 11it [02:39, 12.57s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 12it [02:49, 11.84s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 13it [02:58, 10.88s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 14it [03:06, 10.07s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 15it [03:16, 10.24s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 16it [03:25,  9.72s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 17it [03:34,  9.50s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 18it [03:42,  9.20s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+2024-05-30 21:22:34 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 18
+Evaluating RM: : 19it [04:05, 13.13s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 20it [04:17, 12.79s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 21it [04:26, 11.80s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+2024-05-30 21:23:23 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 21
+Evaluating RM: : 22it [04:54, 16.69s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 23it [05:09, 16.22s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+2024-05-30 21:23:59 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 23
+Evaluating RM: : 24it [05:30, 17.49s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 25it [05:48, 17.70s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 26it [06:02, 16.57s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 27it [06:15, 15.58s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 28it [06:30, 15.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+2024-05-30 21:25:21 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 28
+Evaluating RM: : 29it [06:52, 17.43s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 30it [07:03, 15.49s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 31it [07:11, 13.28s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 32it [07:23, 12.69s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 33it [07:31, 11.23s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+2024-05-30 21:26:28 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 33
+Evaluating RM: : 34it [07:59, 16.37s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 35it [08:09, 14.42s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 36it [08:18, 12.83s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 37it [08:29, 12.26s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 38it [08:46, 13.58s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 39it [08:57, 12.88s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 40it [09:09, 12.72s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 41it [09:19, 11.85s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 42it [09:29, 11.34s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 43it [09:40, 11.10s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 44it [09:55, 12.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+2024-05-30 21:28:41 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 44
+Evaluating RM: : 45it [10:12, 13.86s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 46it [10:26, 13.77s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 47it [10:38, 13.32s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 48it [10:49, 12.67s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 49it [11:00, 12.09s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 50it [11:11, 11.65s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 51it [11:19, 10.76s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 52it [11:35, 12.09s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 53it [11:43, 11.05s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 54it [11:56, 11.54s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 55it [12:10, 12.22s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Evaluating RM: : 56it [12:20, 11.68s/it]Evaluating RM: : 56it [12:20, 13.23s/it]
+2024-05-30 21:30:49 | INFO | alignment_rm_score | Saving result to /cpfs01/user/duyichao/workspace/LLM_RLAIF/MM-Reward/eval/results/alignment/counts

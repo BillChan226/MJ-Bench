@@ -1,0 +1,258 @@
+2024-05-30 20:51:41 | INFO | alignment_rm_score | Loading reward model form llava-1.5-13b-hf...
+/opt/conda/lib/python3.10/site-packages/transformers/models/llava/configuration_llava.py:100: FutureWarning: The `vocab_size` argument is deprecated and will be removed in v4.42, since it can be inferred from the `text_config`. Passing this argument has no effect
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:39<03:19, 39.93s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [02:20<05:02, 75.56s/it]Loading checkpoint shards:  50%|█████     | 3/6 [04:01<04:21, 87.32s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [05:42<03:05, 92.54s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [06:20<01:12, 72.91s/it]Loading checkpoint shards: 100%|██████████| 6/6 [06:33<00:00, 52.47s/it]Loading checkpoint shards: 100%|██████████| 6/6 [06:33<00:00, 65.53s/it]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2024-05-30 20:58:24 | INFO | alignment_rm_score | Loading prompt template from /cpfs01/user/duyichao/workspace/LLM_RLAIF/MM-Reward/eval/prompts/alignment_single_number_scale1.txt
+Evaluating RM: : 0it [00:00, ?it/s]2024-05-30 20:58:38 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 0
+Evaluating RM: : 1it [00:14, 14.52s/it]2024-05-30 20:58:53 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 1
+Evaluating RM: : 2it [00:29, 14.84s/it]2024-05-30 20:59:05 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 2
+Evaluating RM: : 3it [00:40, 13.17s/it]2024-05-30 20:59:16 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 3
+Evaluating RM: : 4it [00:52, 12.54s/it]2024-05-30 20:59:28 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 4
+Evaluating RM: : 5it [01:03, 12.18s/it]2024-05-30 20:59:41 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 5
+Evaluating RM: : 6it [01:16, 12.39s/it]2024-05-30 20:59:53 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 6
+Evaluating RM: : 7it [01:29, 12.51s/it]2024-05-30 21:00:05 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 7
+Evaluating RM: : 8it [01:41, 12.38s/it]2024-05-30 21:00:17 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 8
+Evaluating RM: : 9it [01:53, 12.22s/it]2024-05-30 21:00:27 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 9
+Evaluating RM: : 10it [02:03, 11.58s/it]2024-05-30 21:00:39 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 10
+Evaluating RM: : 11it [02:14, 11.53s/it]2024-05-30 21:00:49 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 11
+Evaluating RM: : 12it [02:25, 11.24s/it]2024-05-30 21:01:05 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 12
+Evaluating RM: : 13it [02:41, 12.64s/it]2024-05-30 21:01:17 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 13
+Evaluating RM: : 14it [02:53, 12.45s/it]2024-05-30 21:01:33 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 14
+Evaluating RM: : 15it [03:09, 13.40s/it]2024-05-30 21:01:45 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 15
+Evaluating RM: : 16it [03:21, 13.16s/it]2024-05-30 21:01:59 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 16
+Evaluating RM: : 17it [03:35, 13.27s/it]2024-05-30 21:02:11 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 17
+Evaluating RM: : 18it [03:47, 13.03s/it]2024-05-30 21:02:21 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 18
+Evaluating RM: : 19it [03:57, 12.13s/it]2024-05-30 21:02:37 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 19
+Evaluating RM: : 20it [04:13, 13.16s/it]2024-05-30 21:02:50 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 20
+Evaluating RM: : 21it [04:26, 13.17s/it]2024-05-30 21:03:01 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 21
+Evaluating RM: : 22it [04:36, 12.32s/it]2024-05-30 21:03:13 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 22
+Evaluating RM: : 23it [04:49, 12.46s/it]2024-05-30 21:03:26 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 23
+Evaluating RM: : 24it [05:02, 12.55s/it]2024-05-30 21:03:39 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 24
+Evaluating RM: : 25it [05:15, 12.60s/it]2024-05-30 21:03:50 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 25
+Evaluating RM: : 26it [05:25, 12.08s/it]2024-05-30 21:04:03 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 26
+Evaluating RM: : 27it [05:38, 12.33s/it]2024-05-30 21:04:15 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 27
+Evaluating RM: : 28it [05:51, 12.42s/it]2024-05-30 21:04:29 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 28
+Evaluating RM: : 29it [06:05, 12.92s/it]2024-05-30 21:04:40 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 29
+Evaluating RM: : 30it [06:16, 12.24s/it]2024-05-30 21:04:51 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 30
+Evaluating RM: : 31it [06:26, 11.81s/it]2024-05-30 21:05:01 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 31
+Evaluating RM: : 32it [06:37, 11.46s/it]2024-05-30 21:05:18 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 32
+Evaluating RM: : 33it [06:54, 13.00s/it]2024-05-30 21:05:36 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 33
+Evaluating RM: : 34it [07:12, 14.62s/it]2024-05-30 21:05:47 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 34
+Evaluating RM: : 35it [07:22, 13.29s/it]2024-05-30 21:05:59 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 35
+Evaluating RM: : 36it [07:35, 13.01s/it]2024-05-30 21:06:11 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 36
+Evaluating RM: : 37it [07:47, 12.85s/it]2024-05-30 21:06:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 37
+Evaluating RM: : 38it [08:00, 12.94s/it]2024-05-30 21:06:35 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 38
+Evaluating RM: : 39it [08:11, 12.22s/it]2024-05-30 21:06:50 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 39
+Evaluating RM: : 40it [08:25, 12.94s/it]2024-05-30 21:07:01 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 40
+Evaluating RM: : 41it [08:37, 12.42s/it]2024-05-30 21:07:16 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 41
+Evaluating RM: : 42it [08:51, 13.14s/it]2024-05-30 21:07:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 42
+Evaluating RM: : 43it [09:01, 11.96s/it]2024-05-30 21:07:35 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 43
+Evaluating RM: : 44it [09:11, 11.39s/it]2024-05-30 21:07:45 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 44
+Evaluating RM: : 45it [09:20, 10.81s/it]2024-05-30 21:07:56 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 45
+Evaluating RM: : 46it [09:32, 11.04s/it]2024-05-30 21:08:06 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 46
+Evaluating RM: : 47it [09:42, 10.76s/it]2024-05-30 21:08:19 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 47
+Evaluating RM: : 48it [09:54, 11.30s/it]2024-05-30 21:08:32 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 48
+Evaluating RM: : 49it [10:08, 11.99s/it]2024-05-30 21:08:45 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 49
+Evaluating RM: : 50it [10:21, 12.28s/it]2024-05-30 21:09:00 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 50
+Evaluating RM: : 51it [10:36, 12.97s/it]2024-05-30 21:09:12 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 51
+Evaluating RM: : 52it [10:48, 12.84s/it]2024-05-30 21:09:26 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 52
+Evaluating RM: : 53it [11:02, 13.06s/it]2024-05-30 21:09:37 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 53
+Evaluating RM: : 54it [11:13, 12.43s/it]2024-05-30 21:09:50 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 54
+Evaluating RM: : 55it [11:26, 12.58s/it]2024-05-30 21:10:03 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 55
+Evaluating RM: : 56it [11:38, 12.62s/it]2024-05-30 21:10:13 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 56
+Evaluating RM: : 57it [11:49, 12.04s/it]2024-05-30 21:10:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 57
+Evaluating RM: : 58it [12:00, 11.79s/it]2024-05-30 21:10:37 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 58
+Evaluating RM: : 59it [12:12, 11.92s/it]2024-05-30 21:10:48 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 59
+Evaluating RM: : 60it [12:23, 11.63s/it]2024-05-30 21:11:04 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 60
+Evaluating RM: : 61it [12:40, 12.99s/it]2024-05-30 21:11:20 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 61
+Evaluating RM: : 62it [12:55, 13.84s/it]2024-05-30 21:11:34 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 62
+Evaluating RM: : 63it [13:09, 13.88s/it]2024-05-30 21:11:47 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 63
+Evaluating RM: : 64it [13:22, 13.64s/it]2024-05-30 21:11:58 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 64
+Evaluating RM: : 65it [13:33, 12.78s/it]2024-05-30 21:12:10 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 65
+Evaluating RM: : 66it [13:45, 12.61s/it]2024-05-30 21:12:22 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 66
+Evaluating RM: : 67it [13:57, 12.43s/it]2024-05-30 21:12:38 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 67
+Evaluating RM: : 68it [14:13, 13.49s/it]2024-05-30 21:12:52 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 68
+Evaluating RM: : 69it [14:28, 13.69s/it]2024-05-30 21:13:07 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 69
+Evaluating RM: : 70it [14:43, 14.23s/it]2024-05-30 21:13:20 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 70
+Evaluating RM: : 71it [14:55, 13.66s/it]2024-05-30 21:13:32 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 71
+Evaluating RM: : 72it [15:07, 13.20s/it]2024-05-30 21:13:42 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 72
+Evaluating RM: : 73it [15:17, 12.22s/it]2024-05-30 21:13:53 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 73
+Evaluating RM: : 74it [15:29, 12.04s/it]2024-05-30 21:14:04 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 74
+Evaluating RM: : 75it [15:39, 11.54s/it]2024-05-30 21:14:16 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 75
+Evaluating RM: : 76it [15:51, 11.66s/it]2024-05-30 21:14:28 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 76
+Evaluating RM: : 77it [16:04, 11.82s/it]2024-05-30 21:14:41 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 77
+Evaluating RM: : 78it [16:17, 12.26s/it]2024-05-30 21:14:53 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 78
+Evaluating RM: : 79it [16:29, 12.27s/it]2024-05-30 21:15:06 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 79
+Evaluating RM: : 80it [16:41, 12.23s/it]2024-05-30 21:15:18 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 80
+Evaluating RM: : 81it [16:54, 12.33s/it]2024-05-30 21:15:35 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 81
+Evaluating RM: : 82it [17:11, 13.72s/it]2024-05-30 21:15:47 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 82
+Evaluating RM: : 83it [17:23, 13.31s/it]2024-05-30 21:16:05 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 83
+Evaluating RM: : 84it [17:40, 14.43s/it]2024-05-30 21:16:15 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 84
+Evaluating RM: : 85it [17:51, 13.39s/it]2024-05-30 21:16:29 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 85
+Evaluating RM: : 86it [18:05, 13.38s/it]2024-05-30 21:16:41 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 86
+Evaluating RM: : 87it [18:16, 12.95s/it]2024-05-30 21:16:52 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 87
+Evaluating RM: : 88it [18:28, 12.53s/it]2024-05-30 21:17:07 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 88
+Evaluating RM: : 89it [18:42, 13.08s/it]2024-05-30 21:17:22 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 89
+Evaluating RM: : 90it [18:58, 13.88s/it]2024-05-30 21:17:36 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 90
+Evaluating RM: : 91it [19:12, 13.76s/it]2024-05-30 21:17:50 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 91
+Evaluating RM: : 92it [19:26, 13.99s/it]2024-05-30 21:18:02 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 92
+Evaluating RM: : 93it [19:38, 13.23s/it]2024-05-30 21:18:16 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 93
+Evaluating RM: : 94it [19:51, 13.38s/it]2024-05-30 21:18:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 94
+Evaluating RM: : 95it [20:01, 12.25s/it]2024-05-30 21:18:37 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 95
+Evaluating RM: : 96it [20:12, 11.98s/it]2024-05-30 21:18:51 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 96
+Evaluating RM: : 97it [20:26, 12.64s/it]2024-05-30 21:19:00 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 97
+Evaluating RM: : 98it [20:36, 11.74s/it]2024-05-30 21:19:14 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 98
+Evaluating RM: : 99it [20:50, 12.36s/it]2024-05-30 21:19:27 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 99
+Evaluating RM: : 100it [21:02, 12.42s/it]2024-05-30 21:19:38 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 100
+Evaluating RM: : 101it [21:13, 11.95s/it]2024-05-30 21:19:50 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 101
+Evaluating RM: : 102it [21:26, 12.03s/it]2024-05-30 21:20:02 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 102
+Evaluating RM: : 103it [21:37, 11.94s/it]2024-05-30 21:20:11 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 103
+Evaluating RM: : 104it [21:47, 11.31s/it]2024-05-30 21:20:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 104
+Evaluating RM: : 105it [22:01, 11.95s/it]2024-05-30 21:20:37 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 105
+Evaluating RM: : 106it [22:12, 11.88s/it]2024-05-30 21:20:52 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 106
+Evaluating RM: : 107it [22:28, 12.89s/it]2024-05-30 21:21:08 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 107
+Evaluating RM: : 108it [22:43, 13.72s/it]2024-05-30 21:21:19 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 108
+Evaluating RM: : 109it [22:55, 13.01s/it]2024-05-30 21:21:30 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 109
+Evaluating RM: : 110it [23:05, 12.37s/it]2024-05-30 21:21:41 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 110
+Evaluating RM: : 111it [23:17, 12.11s/it]2024-05-30 21:21:52 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 111
+Evaluating RM: : 112it [23:28, 11.84s/it]2024-05-30 21:22:07 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 112
+Evaluating RM: : 113it [23:42, 12.53s/it]2024-05-30 21:22:22 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 113
+Evaluating RM: : 114it [23:57, 13.34s/it]2024-05-30 21:22:37 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 114
+Evaluating RM: : 115it [24:13, 13.97s/it]2024-05-30 21:22:52 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 115
+Evaluating RM: : 116it [24:28, 14.18s/it]2024-05-30 21:23:08 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 116
+Evaluating RM: : 117it [24:43, 14.64s/it]2024-05-30 21:23:21 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 117
+Evaluating RM: : 118it [24:56, 14.15s/it]2024-05-30 21:23:36 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 118
+Evaluating RM: : 119it [25:11, 14.46s/it]2024-05-30 21:23:48 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 119
+Evaluating RM: : 120it [25:23, 13.64s/it]2024-05-30 21:24:01 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 120
+Evaluating RM: : 121it [25:37, 13.66s/it]2024-05-30 21:24:17 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 121
+Evaluating RM: : 122it [25:53, 14.39s/it]2024-05-30 21:24:33 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 122
+Evaluating RM: : 123it [26:08, 14.69s/it]2024-05-30 21:24:48 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 123
+Evaluating RM: : 124it [26:24, 14.97s/it]2024-05-30 21:24:59 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 124
+Evaluating RM: : 125it [26:35, 13.72s/it]2024-05-30 21:25:12 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 125
+Evaluating RM: : 126it [26:48, 13.52s/it]2024-05-30 21:25:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 126
+Evaluating RM: : 127it [27:01, 13.41s/it]2024-05-30 21:25:44 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 127
+Evaluating RM: : 128it [27:20, 15.11s/it]2024-05-30 21:25:55 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 128
+Evaluating RM: : 129it [27:31, 13.86s/it]2024-05-30 21:26:06 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 129
+Evaluating RM: : 130it [27:42, 12.94s/it]2024-05-30 21:26:19 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 130
+Evaluating RM: : 131it [27:55, 12.98s/it]2024-05-30 21:26:32 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 131
+Evaluating RM: : 132it [28:07, 12.84s/it]2024-05-30 21:26:46 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 132
+Evaluating RM: : 133it [28:21, 13.15s/it]2024-05-30 21:27:01 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 133
+Evaluating RM: : 134it [28:36, 13.69s/it]2024-05-30 21:27:16 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 134
+Evaluating RM: : 135it [28:51, 14.07s/it]2024-05-30 21:27:30 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 135
+Evaluating RM: : 136it [29:06, 14.21s/it]2024-05-30 21:27:41 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 136
+Evaluating RM: : 137it [29:17, 13.29s/it]2024-05-30 21:27:54 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 137
+Evaluating RM: : 138it [29:30, 13.13s/it]2024-05-30 21:28:05 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 138
+Evaluating RM: : 139it [29:41, 12.58s/it]2024-05-30 21:28:19 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 139
+Evaluating RM: : 140it [29:54, 12.86s/it]2024-05-30 21:28:31 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 140
+Evaluating RM: : 141it [30:06, 12.54s/it]2024-05-30 21:28:49 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 141
+Evaluating RM: : 142it [30:24, 14.23s/it]2024-05-30 21:29:03 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 142
+Evaluating RM: : 143it [30:39, 14.19s/it]2024-05-30 21:29:16 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 143
+Evaluating RM: : 144it [30:52, 13.82s/it]2024-05-30 21:29:29 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 144
+Evaluating RM: : 145it [31:04, 13.57s/it]2024-05-30 21:29:43 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 145
+Evaluating RM: : 146it [31:18, 13.65s/it]2024-05-30 21:29:53 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 146
+Evaluating RM: : 147it [31:29, 12.75s/it]2024-05-30 21:30:08 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 147
+Evaluating RM: : 148it [31:43, 13.25s/it]2024-05-30 21:30:22 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 148
+Evaluating RM: : 149it [31:58, 13.63s/it]2024-05-30 21:30:33 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 149
+Evaluating RM: : 150it [32:09, 12.91s/it]2024-05-30 21:30:48 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 150
+Evaluating RM: : 151it [32:24, 13.45s/it]2024-05-30 21:31:01 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 151
+Evaluating RM: : 152it [32:37, 13.24s/it]2024-05-30 21:31:11 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 152
+Evaluating RM: : 153it [32:47, 12.26s/it]2024-05-30 21:31:21 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 153
+Evaluating RM: : 154it [32:57, 11.68s/it]2024-05-30 21:31:35 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 154
+Evaluating RM: : 155it [33:11, 12.35s/it]2024-05-30 21:31:45 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 155
+Evaluating RM: : 156it [33:21, 11.66s/it]2024-05-30 21:31:59 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 156
+Evaluating RM: : 157it [33:35, 12.36s/it]2024-05-30 21:32:11 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 157
+Evaluating RM: : 158it [33:47, 12.30s/it]2024-05-30 21:32:23 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 158
+Evaluating RM: : 159it [33:59, 12.25s/it]2024-05-30 21:32:35 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 159
+Evaluating RM: : 160it [34:11, 12.00s/it]2024-05-30 21:32:51 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 160
+Evaluating RM: : 161it [34:26, 13.11s/it]Evaluating RM: : 162it [34:39, 13.03s/it]2024-05-30 21:33:15 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 162
+Evaluating RM: : 163it [34:51, 12.54s/it]2024-05-30 21:33:30 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 163
+Evaluating RM: : 164it [35:05, 13.24s/it]2024-05-30 21:33:42 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 164
+Evaluating RM: : 165it [35:18, 13.04s/it]2024-05-30 21:33:54 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 165
+Evaluating RM: : 166it [35:30, 12.72s/it]2024-05-30 21:34:09 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 166
+Evaluating RM: : 167it [35:45, 13.30s/it]2024-05-30 21:34:22 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 167
+Evaluating RM: : 168it [35:58, 13.34s/it]2024-05-30 21:34:39 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 168
+Evaluating RM: : 169it [36:15, 14.44s/it]2024-05-30 21:34:53 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 169
+Evaluating RM: : 170it [36:29, 14.21s/it]2024-05-30 21:35:07 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 170
+Evaluating RM: : 171it [36:43, 14.11s/it]2024-05-30 21:35:18 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 171
+Evaluating RM: : 172it [36:54, 13.21s/it]2024-05-30 21:35:33 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 172
+Evaluating RM: : 173it [37:09, 13.69s/it]2024-05-30 21:35:44 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 173
+Evaluating RM: : 174it [37:19, 12.87s/it]2024-05-30 21:35:55 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 174
+Evaluating RM: : 175it [37:31, 12.34s/it]2024-05-30 21:36:06 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 175
+Evaluating RM: : 176it [37:42, 12.02s/it]2024-05-30 21:36:16 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 176
+Evaluating RM: : 177it [37:52, 11.38s/it]2024-05-30 21:36:29 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 177
+Evaluating RM: : 178it [38:05, 11.93s/it]2024-05-30 21:36:40 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 178
+Evaluating RM: : 179it [38:16, 11.55s/it]2024-05-30 21:36:53 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 179
+Evaluating RM: : 180it [38:28, 11.85s/it]2024-05-30 21:37:03 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 180
+Evaluating RM: : 181it [38:39, 11.55s/it]2024-05-30 21:37:15 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 181
+Evaluating RM: : 182it [38:50, 11.44s/it]2024-05-30 21:37:26 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 182
+Evaluating RM: : 183it [39:02, 11.58s/it]2024-05-30 21:37:40 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 183
+Evaluating RM: : 184it [39:16, 12.16s/it]2024-05-30 21:37:56 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 184
+Evaluating RM: : 185it [39:31, 13.20s/it]2024-05-30 21:38:09 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 185
+Evaluating RM: : 186it [39:45, 13.25s/it]2024-05-30 21:38:26 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 186
+Evaluating RM: : 187it [40:01, 14.32s/it]2024-05-30 21:38:37 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 187
+Evaluating RM: : 188it [40:13, 13.53s/it]2024-05-30 21:38:49 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 188
+Evaluating RM: : 189it [40:24, 12.88s/it]2024-05-30 21:39:03 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 189
+Evaluating RM: : 190it [40:39, 13.37s/it]2024-05-30 21:39:15 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 190
+Evaluating RM: : 191it [40:51, 12.93s/it]2024-05-30 21:39:28 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 191
+Evaluating RM: : 192it [41:03, 12.82s/it]2024-05-30 21:39:43 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 192
+Evaluating RM: : 193it [41:18, 13.39s/it]2024-05-30 21:39:54 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 193
+Evaluating RM: : 194it [41:29, 12.74s/it]2024-05-30 21:40:07 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 194
+Evaluating RM: : 195it [41:43, 12.85s/it]2024-05-30 21:40:22 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 195
+Evaluating RM: : 196it [41:58, 13.60s/it]2024-05-30 21:40:38 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 196
+Evaluating RM: : 197it [42:13, 14.14s/it]2024-05-30 21:40:50 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 197
+Evaluating RM: : 198it [42:26, 13.76s/it]2024-05-30 21:41:02 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 198
+Evaluating RM: : 199it [42:37, 13.01s/it]2024-05-30 21:41:16 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 199
+Evaluating RM: : 200it [42:52, 13.39s/it]2024-05-30 21:41:26 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 200
+Evaluating RM: : 201it [43:02, 12.48s/it]2024-05-30 21:41:41 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 201
+Evaluating RM: : 202it [43:16, 13.01s/it]2024-05-30 21:41:51 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 202
+Evaluating RM: : 203it [43:27, 12.27s/it]2024-05-30 21:42:03 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 203
+Evaluating RM: : 204it [43:38, 12.01s/it]2024-05-30 21:42:16 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 204
+Evaluating RM: : 205it [43:52, 12.49s/it]2024-05-30 21:42:26 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 205
+Evaluating RM: : 206it [44:02, 11.81s/it]2024-05-30 21:42:37 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 206
+Evaluating RM: : 207it [44:13, 11.51s/it]2024-05-30 21:42:50 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 207
+Evaluating RM: : 208it [44:26, 11.96s/it]2024-05-30 21:43:02 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 208
+Evaluating RM: : 209it [44:37, 11.86s/it]2024-05-30 21:43:14 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 209
+Evaluating RM: : 210it [44:49, 11.89s/it]2024-05-30 21:43:24 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 210
+Evaluating RM: : 211it [45:00, 11.42s/it]2024-05-30 21:43:36 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 211
+Evaluating RM: : 212it [45:11, 11.47s/it]2024-05-30 21:43:49 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 212
+Evaluating RM: : 213it [45:25, 12.07s/it]2024-05-30 21:44:02 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 213
+Evaluating RM: : 214it [45:38, 12.28s/it]2024-05-30 21:44:13 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 214
+Evaluating RM: : 215it [45:49, 11.88s/it]2024-05-30 21:44:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 215
+Evaluating RM: : 216it [46:00, 11.82s/it]2024-05-30 21:44:35 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 216
+Evaluating RM: : 217it [46:11, 11.51s/it]2024-05-30 21:44:47 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 217
+Evaluating RM: : 218it [46:23, 11.56s/it]2024-05-30 21:45:00 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 218
+Evaluating RM: : 219it [46:36, 11.97s/it]2024-05-30 21:45:12 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 219
+Evaluating RM: : 220it [46:47, 11.89s/it]2024-05-30 21:45:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 220
+Evaluating RM: : 221it [47:00, 12.27s/it]2024-05-30 21:45:41 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 221
+Evaluating RM: : 222it [47:16, 13.30s/it]2024-05-30 21:45:54 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 222
+Evaluating RM: : 223it [47:30, 13.34s/it]2024-05-30 21:46:07 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 223
+Evaluating RM: : 224it [47:43, 13.34s/it]2024-05-30 21:46:20 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 224
+Evaluating RM: : 225it [47:56, 13.26s/it]2024-05-30 21:46:31 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 225
+Evaluating RM: : 226it [48:06, 12.34s/it]2024-05-30 21:46:42 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 226
+Evaluating RM: : 227it [48:18, 12.05s/it]2024-05-30 21:46:54 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 227
+Evaluating RM: : 228it [48:29, 11.91s/it]2024-05-30 21:47:08 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 228
+Evaluating RM: : 229it [48:43, 12.54s/it]2024-05-30 21:47:22 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 229
+Evaluating RM: : 230it [48:57, 12.98s/it]2024-05-30 21:47:33 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 230
+Evaluating RM: : 231it [49:08, 12.43s/it]2024-05-30 21:47:44 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 231
+Evaluating RM: : 232it [49:20, 12.06s/it]2024-05-30 21:47:54 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 232
+Evaluating RM: : 233it [49:29, 11.36s/it]2024-05-30 21:48:08 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 233
+Evaluating RM: : 234it [49:44, 12.27s/it]2024-05-30 21:48:20 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 234
+Evaluating RM: : 235it [49:55, 12.13s/it]2024-05-30 21:48:31 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 235
+Evaluating RM: : 236it [50:07, 11.91s/it]2024-05-30 21:48:48 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 236
+Evaluating RM: : 237it [50:23, 13.25s/it]2024-05-30 21:49:02 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 237
+Evaluating RM: : 238it [50:38, 13.61s/it]2024-05-30 21:49:14 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 238
+Evaluating RM: : 239it [50:50, 13.13s/it]2024-05-30 21:49:26 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 239
+Evaluating RM: : 240it [51:02, 12.74s/it]2024-05-30 21:49:40 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 240
+Evaluating RM: : 241it [51:16, 13.22s/it]2024-05-30 21:49:51 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 241
+Evaluating RM: : 242it [51:26, 12.39s/it]2024-05-30 21:50:03 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 242
+Evaluating RM: : 243it [51:39, 12.50s/it]2024-05-30 21:50:14 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 243
+Evaluating RM: : 244it [51:50, 11.96s/it]2024-05-30 21:50:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 244
+Evaluating RM: : 245it [52:01, 11.59s/it]2024-05-30 21:50:40 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 245
+Evaluating RM: : 246it [52:16, 12.81s/it]2024-05-30 21:50:53 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 246
+Evaluating RM: : 247it [52:29, 12.72s/it]2024-05-30 21:51:05 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 247
+Evaluating RM: : 248it [52:40, 12.36s/it]2024-05-30 21:51:18 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 248
+Evaluating RM: : 249it [52:53, 12.58s/it]2024-05-30 21:51:28 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 249
+Evaluating RM: : 250it [53:04, 12.04s/it]2024-05-30 21:51:40 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 250
+Evaluating RM: : 251it [53:16, 11.89s/it]Evaluating RM: : 251it [53:16, 12.73s/it]
+2024-05-30 21:51:40 | INFO | alignment_rm_score | Saving result to /cpfs01/user/duyichao/workspace/LLM_RLAIF/MM-Reward/eval/results/alignment/existence

@@ -1,0 +1,243 @@
+2024-05-30 18:51:30 | INFO | artifacte_rm_score | Loading reward model form llava-v1.6-vicuna-13b-hf...
+You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+2024-05-30 18:51:33 | INFO | accelerate.utils.modeling | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:47<03:55, 47.13s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [01:32<03:04, 46.21s/it]Loading checkpoint shards:  50%|█████     | 3/6 [02:14<02:12, 44.30s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [02:57<01:27, 43.62s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [03:41<00:43, 43.98s/it]Loading checkpoint shards: 100%|██████████| 6/6 [04:00<00:00, 35.20s/it]Loading checkpoint shards: 100%|██████████| 6/6 [04:00<00:00, 40.01s/it]
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+2024-05-30 18:55:34 | INFO | artifacte_rm_score | Loading dataset from /cpfs01/user/duyichao/workspace/LLM_RLAIF/MM-Reward/artifacts/blur_dataset...
+2024-05-30 18:55:34 | INFO | artifacte_rm_score | Loading prompt template from /cpfs01/user/duyichao/workspace/LLM_RLAIF/MM-Reward/eval/prompts/artifacts_single_number_scale5.txt
+Evaluating RM: : 0it [00:00, ?it/s]2024-05-30 18:55:47 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 0
+Evaluating RM: : 1it [00:12, 12.99s/it]2024-05-30 18:55:57 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 1
+Evaluating RM: : 2it [00:22, 10.99s/it]2024-05-30 18:56:08 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 2
+Evaluating RM: : 3it [00:34, 11.20s/it]2024-05-30 18:56:21 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 3
+Evaluating RM: : 4it [00:47, 11.99s/it]2024-05-30 18:56:33 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 4
+Evaluating RM: : 5it [00:59, 12.00s/it]2024-05-30 18:56:44 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 5
+Evaluating RM: : 6it [01:09, 11.37s/it]2024-05-30 18:56:53 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 6
+Evaluating RM: : 7it [01:19, 10.84s/it]2024-05-30 18:57:06 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 7
+Evaluating RM: : 8it [01:32, 11.53s/it]Evaluating RM: : 9it [01:41, 10.93s/it]Evaluating RM: : 10it [01:51, 10.42s/it]2024-05-30 18:57:38 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 10
+Evaluating RM: : 11it [02:04, 11.20s/it]2024-05-30 18:57:51 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 11
+Evaluating RM: : 12it [02:16, 11.62s/it]2024-05-30 18:58:04 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 12
+Evaluating RM: : 13it [02:29, 12.08s/it]Evaluating RM: : 14it [02:37, 10.85s/it]2024-05-30 18:58:25 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 14
+Evaluating RM: : 15it [02:50, 11.44s/it]2024-05-30 18:58:37 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 15
+Evaluating RM: : 16it [03:02, 11.53s/it]2024-05-30 18:58:49 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 16
+Evaluating RM: : 17it [03:15, 11.93s/it]2024-05-30 18:59:03 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 17
+Evaluating RM: : 18it [03:28, 12.30s/it]2024-05-30 18:59:15 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 18
+Evaluating RM: : 19it [03:40, 12.32s/it]Evaluating RM: : 20it [03:58, 14.03s/it]2024-05-30 18:59:43 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 20
+Evaluating RM: : 21it [04:08, 12.88s/it]Evaluating RM: : 22it [04:17, 11.66s/it]2024-05-30 19:00:08 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 22
+Evaluating RM: : 23it [04:33, 12.94s/it]2024-05-30 19:00:21 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 23
+Evaluating RM: : 24it [04:47, 13.08s/it]2024-05-30 19:00:37 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 24
+Evaluating RM: : 25it [05:02, 13.73s/it]2024-05-30 19:00:48 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 25
+Evaluating RM: : 26it [05:13, 13.08s/it]2024-05-30 19:01:00 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 26
+Evaluating RM: : 27it [05:25, 12.64s/it]2024-05-30 19:01:11 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 27
+Evaluating RM: : 28it [05:37, 12.38s/it]2024-05-30 19:01:22 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 28
+Evaluating RM: : 29it [05:47, 11.85s/it]2024-05-30 19:01:34 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 29
+Evaluating RM: : 30it [06:00, 11.95s/it]Evaluating RM: : 31it [06:09, 11.24s/it]Evaluating RM: : 32it [06:21, 11.43s/it]2024-05-30 19:02:09 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 32
+Evaluating RM: : 33it [06:34, 12.04s/it]2024-05-30 19:02:21 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 33
+Evaluating RM: : 34it [06:46, 11.97s/it]2024-05-30 19:02:34 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 34
+Evaluating RM: : 35it [06:59, 12.21s/it]2024-05-30 19:02:45 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 35
+Evaluating RM: : 36it [07:10, 11.93s/it]2024-05-30 19:02:57 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 36
+Evaluating RM: : 37it [07:22, 11.94s/it]2024-05-30 19:03:14 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 37
+Evaluating RM: : 38it [07:39, 13.45s/it]2024-05-30 19:03:26 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 38
+Evaluating RM: : 39it [07:51, 12.96s/it]2024-05-30 19:03:40 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 39
+Evaluating RM: : 40it [08:05, 13.25s/it]Evaluating RM: : 41it [08:16, 12.59s/it]2024-05-30 19:04:02 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 41
+Evaluating RM: : 42it [08:27, 12.12s/it]2024-05-30 19:04:16 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 42
+Evaluating RM: : 43it [08:42, 12.82s/it]2024-05-30 19:04:31 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 43
+Evaluating RM: : 44it [08:56, 13.31s/it]Evaluating RM: : 45it [09:09, 13.15s/it]2024-05-30 19:04:58 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 45
+Evaluating RM: : 46it [09:23, 13.58s/it]2024-05-30 19:05:11 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 46
+Evaluating RM: : 47it [09:37, 13.45s/it]Evaluating RM: : 48it [09:47, 12.56s/it]Evaluating RM: : 49it [09:56, 11.53s/it]2024-05-30 19:05:42 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 49
+Evaluating RM: : 50it [10:07, 11.34s/it]2024-05-30 19:05:55 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 50
+Evaluating RM: : 51it [10:20, 11.85s/it]2024-05-30 19:06:06 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 51
+Evaluating RM: : 52it [10:32, 11.73s/it]2024-05-30 19:06:20 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 52
+Evaluating RM: : 53it [10:46, 12.49s/it]2024-05-30 19:06:31 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 53
+Evaluating RM: : 54it [10:56, 11.77s/it]2024-05-30 19:06:48 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 54
+Evaluating RM: : 55it [11:13, 13.39s/it]2024-05-30 19:07:00 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 55
+Evaluating RM: : 56it [11:25, 12.99s/it]Evaluating RM: : 57it [11:34, 11.67s/it]Evaluating RM: : 58it [11:44, 11.29s/it]2024-05-30 19:07:30 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 58
+Evaluating RM: : 59it [11:55, 11.16s/it]Evaluating RM: : 60it [12:05, 10.81s/it]Evaluating RM: : 61it [12:18, 11.43s/it]2024-05-30 19:08:02 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 61
+Evaluating RM: : 62it [12:27, 10.81s/it]Evaluating RM: : 63it [12:44, 12.66s/it]2024-05-30 19:08:34 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 63
+Evaluating RM: : 64it [12:59, 13.38s/it]2024-05-30 19:08:47 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 64
+Evaluating RM: : 65it [13:12, 13.21s/it]Evaluating RM: : 66it [13:23, 12.52s/it]Evaluating RM: : 67it [13:33, 11.91s/it]2024-05-30 19:09:21 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 67
+Evaluating RM: : 68it [13:46, 12.08s/it]Evaluating RM: : 69it [13:58, 12.02s/it]Evaluating RM: : 70it [14:07, 11.16s/it]Evaluating RM: : 71it [14:24, 12.84s/it]2024-05-30 19:10:11 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 71
+Evaluating RM: : 72it [14:37, 12.93s/it]2024-05-30 19:10:24 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 72
+Evaluating RM: : 73it [14:49, 12.75s/it]2024-05-30 19:10:37 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 73
+Evaluating RM: : 74it [15:03, 12.96s/it]2024-05-30 19:10:52 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 74
+Evaluating RM: : 75it [15:17, 13.52s/it]Evaluating RM: : 76it [15:31, 13.60s/it]2024-05-30 19:11:18 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 76
+Evaluating RM: : 77it [15:43, 13.01s/it]Evaluating RM: : 78it [15:58, 13.59s/it]Evaluating RM: : 79it [16:08, 12.69s/it]2024-05-30 19:11:58 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 79
+Evaluating RM: : 80it [16:23, 13.42s/it]Evaluating RM: : 81it [16:35, 12.87s/it]Evaluating RM: : 82it [16:45, 12.09s/it]2024-05-30 19:12:35 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 82
+Evaluating RM: : 83it [17:00, 12.88s/it]2024-05-30 19:12:51 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 83
+Evaluating RM: : 84it [17:17, 14.03s/it]2024-05-30 19:13:04 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 84
+Evaluating RM: : 85it [17:30, 13.66s/it]2024-05-30 19:13:15 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 85
+Evaluating RM: : 86it [17:40, 12.72s/it]2024-05-30 19:13:25 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 86
+Evaluating RM: : 87it [17:50, 12.01s/it]2024-05-30 19:13:46 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 87
+Evaluating RM: : 88it [18:11, 14.55s/it]Evaluating RM: : 89it [18:19, 12.55s/it]2024-05-30 19:14:06 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 89
+Evaluating RM: : 90it [18:31, 12.52s/it]2024-05-30 19:14:22 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 90
+Evaluating RM: : 91it [18:47, 13.56s/it]2024-05-30 19:14:32 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 91
+Evaluating RM: : 92it [18:58, 12.64s/it]2024-05-30 19:14:45 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 92
+Evaluating RM: : 93it [19:10, 12.48s/it]2024-05-30 19:14:58 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 93
+Evaluating RM: : 94it [19:23, 12.83s/it]Evaluating RM: : 95it [19:31, 11.19s/it]2024-05-30 19:15:18 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 95
+Evaluating RM: : 96it [19:44, 11.69s/it]2024-05-30 19:15:33 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 96
+Evaluating RM: : 97it [19:58, 12.48s/it]2024-05-30 19:15:45 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 97
+Evaluating RM: : 98it [20:11, 12.53s/it]2024-05-30 19:16:02 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 98
+Evaluating RM: : 99it [20:27, 13.62s/it]Evaluating RM: : 100it [20:37, 12.69s/it]2024-05-30 19:16:22 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 100
+Evaluating RM: : 101it [20:47, 11.91s/it]2024-05-30 19:16:32 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 101
+Evaluating RM: : 102it [20:58, 11.40s/it]Evaluating RM: : 103it [21:08, 11.16s/it]2024-05-30 19:17:01 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 103
+Evaluating RM: : 104it [21:26, 13.08s/it]2024-05-30 19:17:13 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 104
+Evaluating RM: : 105it [21:38, 12.92s/it]Evaluating RM: : 106it [21:49, 12.26s/it]2024-05-30 19:17:37 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 106
+Evaluating RM: : 107it [22:03, 12.69s/it]2024-05-30 19:17:46 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 107
+Evaluating RM: : 108it [22:11, 11.42s/it]Evaluating RM: : 109it [22:21, 10.96s/it]2024-05-30 19:18:08 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 109
+Evaluating RM: : 110it [22:33, 11.23s/it]Evaluating RM: : 111it [22:46, 11.73s/it]Evaluating RM: : 112it [22:54, 10.67s/it]Evaluating RM: : 113it [23:04, 10.56s/it]Evaluating RM: : 114it [23:14, 10.29s/it]Evaluating RM: : 115it [23:32, 12.74s/it]Evaluating RM: : 116it [23:45, 12.54s/it]2024-05-30 19:19:35 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 116
+Evaluating RM: : 117it [24:00, 13.53s/it]2024-05-30 19:19:51 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 117
+Evaluating RM: : 118it [24:16, 14.17s/it]2024-05-30 19:20:01 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 118
+Evaluating RM: : 119it [24:26, 13.00s/it]2024-05-30 19:20:20 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 119
+Evaluating RM: : 120it [24:45, 14.67s/it]2024-05-30 19:20:31 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 120
+Evaluating RM: : 121it [24:56, 13.63s/it]2024-05-30 19:20:41 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 121
+Evaluating RM: : 122it [25:06, 12.62s/it]2024-05-30 19:20:58 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 122
+Evaluating RM: : 123it [25:23, 13.94s/it]Evaluating RM: : 124it [25:34, 12.91s/it]2024-05-30 19:21:20 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 124
+Evaluating RM: : 125it [25:46, 12.58s/it]2024-05-30 19:21:32 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 125
+Evaluating RM: : 126it [25:57, 12.26s/it]2024-05-30 19:21:40 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 126
+Evaluating RM: : 127it [26:06, 11.11s/it]2024-05-30 19:21:51 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 127
+Evaluating RM: : 128it [26:16, 10.93s/it]2024-05-30 19:22:02 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 128
+Evaluating RM: : 129it [26:27, 11.03s/it]Evaluating RM: : 130it [26:41, 11.89s/it]2024-05-30 19:22:25 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 130
+Evaluating RM: : 131it [26:51, 11.17s/it]Evaluating RM: : 132it [27:02, 11.24s/it]2024-05-30 19:22:51 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 132
+Evaluating RM: : 133it [27:17, 12.22s/it]2024-05-30 19:23:02 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 133
+Evaluating RM: : 134it [27:27, 11.66s/it]Evaluating RM: : 135it [27:36, 10.84s/it]2024-05-30 19:23:22 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 135
+Evaluating RM: : 136it [27:47, 10.99s/it]2024-05-30 19:23:36 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 136
+Evaluating RM: : 137it [28:02, 11.99s/it]Evaluating RM: : 138it [28:12, 11.38s/it]Evaluating RM: : 139it [28:20, 10.34s/it]Evaluating RM: : 140it [28:31, 10.61s/it]2024-05-30 19:24:19 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 140
+Evaluating RM: : 141it [28:44, 11.46s/it]Evaluating RM: : 142it [28:54, 11.09s/it]2024-05-30 19:24:40 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 142
+Evaluating RM: : 143it [29:05, 11.00s/it]Evaluating RM: : 144it [29:14, 10.27s/it]2024-05-30 19:25:02 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 144
+Evaluating RM: : 145it [29:27, 11.19s/it]Evaluating RM: : 146it [29:47, 13.82s/it]Evaluating RM: : 147it [29:57, 12.53s/it]2024-05-30 19:25:44 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 147
+Evaluating RM: : 148it [30:09, 12.64s/it]2024-05-30 19:25:59 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 148
+Evaluating RM: : 149it [30:24, 13.33s/it]Evaluating RM: : 150it [30:35, 12.63s/it]2024-05-30 19:26:23 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 150
+Evaluating RM: : 151it [30:48, 12.68s/it]Evaluating RM: : 152it [30:57, 11.51s/it]Evaluating RM: : 153it [31:08, 11.32s/it]2024-05-30 19:26:58 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 153
+Evaluating RM: : 154it [31:24, 12.67s/it]2024-05-30 19:27:19 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 154
+Evaluating RM: : 155it [31:44, 14.92s/it]2024-05-30 19:27:35 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 155
+Evaluating RM: : 156it [32:01, 15.50s/it]Evaluating RM: : 157it [32:13, 14.42s/it]2024-05-30 19:28:01 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 157
+Evaluating RM: : 158it [32:26, 14.23s/it]Evaluating RM: : 159it [32:36, 12.80s/it]2024-05-30 19:28:24 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 159
+Evaluating RM: : 160it [32:49, 12.87s/it]Evaluating RM: : 161it [33:01, 12.57s/it]Evaluating RM: : 162it [33:09, 11.15s/it]2024-05-30 19:28:54 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 162
+Evaluating RM: : 163it [33:19, 10.91s/it]2024-05-30 19:29:07 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 163
+Evaluating RM: : 164it [33:32, 11.63s/it]2024-05-30 19:29:18 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 164
+Evaluating RM: : 165it [33:43, 11.44s/it]2024-05-30 19:29:33 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 165
+Evaluating RM: : 166it [33:58, 12.45s/it]Evaluating RM: : 167it [34:11, 12.52s/it]2024-05-30 19:29:56 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 167
+Evaluating RM: : 168it [34:21, 11.84s/it]2024-05-30 19:30:12 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 168
+Evaluating RM: : 169it [34:37, 13.18s/it]2024-05-30 19:30:25 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 169
+Evaluating RM: : 170it [34:50, 13.10s/it]2024-05-30 19:30:36 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 170
+Evaluating RM: : 171it [35:02, 12.55s/it]2024-05-30 19:30:46 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 171
+Evaluating RM: : 172it [35:12, 11.79s/it]2024-05-30 19:31:01 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 172
+Evaluating RM: : 173it [35:26, 12.65s/it]Evaluating RM: : 174it [35:36, 11.67s/it]Evaluating RM: : 175it [35:45, 11.03s/it]Evaluating RM: : 176it [35:54, 10.40s/it]Evaluating RM: : 177it [36:06, 10.85s/it]Evaluating RM: : 178it [36:15, 10.32s/it]2024-05-30 19:32:03 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 178
+Evaluating RM: : 179it [36:28, 11.13s/it]2024-05-30 19:32:20 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 179
+Evaluating RM: : 180it [36:45, 12.87s/it]Evaluating RM: : 181it [37:01, 13.71s/it]2024-05-30 19:32:46 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 181
+Evaluating RM: : 182it [37:11, 12.84s/it]Evaluating RM: : 183it [37:20, 11.56s/it]2024-05-30 19:33:06 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 183
+Evaluating RM: : 184it [37:31, 11.41s/it]2024-05-30 19:33:18 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 184
+Evaluating RM: : 185it [37:43, 11.68s/it]Evaluating RM: : 186it [37:54, 11.30s/it]Evaluating RM: : 187it [38:04, 11.06s/it]2024-05-30 19:33:49 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 187
+Evaluating RM: : 188it [38:15, 10.88s/it]2024-05-30 19:33:59 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 188
+Evaluating RM: : 189it [38:24, 10.42s/it]2024-05-30 19:34:12 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 189
+Evaluating RM: : 190it [38:38, 11.35s/it]2024-05-30 19:34:26 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 190
+Evaluating RM: : 191it [38:51, 11.98s/it]2024-05-30 19:34:40 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 191
+Evaluating RM: : 192it [39:05, 12.50s/it]Evaluating RM: : 193it [39:15, 11.94s/it]2024-05-30 19:34:59 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 193
+Evaluating RM: : 194it [39:24, 10.96s/it]2024-05-30 19:35:10 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 194
+Evaluating RM: : 195it [39:35, 11.00s/it]Evaluating RM: : 196it [39:46, 10.93s/it]2024-05-30 19:35:31 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 196
+Evaluating RM: : 197it [39:57, 10.81s/it]2024-05-30 19:35:41 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 197
+Evaluating RM: : 198it [40:06, 10.47s/it]Evaluating RM: : 199it [40:17, 10.61s/it]Evaluating RM: : 200it [40:26, 10.17s/it]2024-05-30 19:36:12 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 200
+Evaluating RM: : 201it [40:38, 10.56s/it]2024-05-30 19:36:24 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 201
+Evaluating RM: : 202it [40:49, 10.76s/it]2024-05-30 19:36:36 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 202
+Evaluating RM: : 203it [41:01, 11.24s/it]2024-05-30 19:36:45 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 203
+Evaluating RM: : 204it [41:10, 10.45s/it]2024-05-30 19:37:01 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 204
+Evaluating RM: : 205it [41:26, 12.15s/it]2024-05-30 19:37:11 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 205
+Evaluating RM: : 206it [41:36, 11.62s/it]2024-05-30 19:37:24 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 206
+Evaluating RM: : 207it [41:49, 11.98s/it]2024-05-30 19:37:34 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 207
+Evaluating RM: : 208it [41:59, 11.39s/it]Evaluating RM: : 209it [42:08, 10.55s/it]Evaluating RM: : 210it [42:21, 11.21s/it]Evaluating RM: : 211it [42:31, 10.92s/it]2024-05-30 19:38:19 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 211
+Evaluating RM: : 212it [42:44, 11.60s/it]Evaluating RM: : 213it [43:02, 13.36s/it]Evaluating RM: : 214it [43:10, 11.95s/it]Evaluating RM: : 215it [43:19, 11.05s/it]2024-05-30 19:39:06 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 215
+Evaluating RM: : 216it [43:32, 11.47s/it]2024-05-30 19:39:19 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 216
+Evaluating RM: : 217it [43:44, 11.78s/it]2024-05-30 19:39:33 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 217
+Evaluating RM: : 218it [43:58, 12.38s/it]2024-05-30 19:39:47 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 218
+Evaluating RM: : 219it [44:12, 12.92s/it]Evaluating RM: : 220it [44:21, 11.72s/it]2024-05-30 19:40:07 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 220
+Evaluating RM: : 221it [44:33, 11.69s/it]2024-05-30 19:40:19 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 221
+Evaluating RM: : 222it [44:45, 11.79s/it]2024-05-30 19:40:33 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 222
+Evaluating RM: : 223it [44:58, 12.35s/it]2024-05-30 19:40:43 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 223
+Evaluating RM: : 224it [45:08, 11.53s/it]Evaluating RM: : 225it [45:18, 11.16s/it]2024-05-30 19:41:06 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 225
+Evaluating RM: : 226it [45:32, 11.90s/it]2024-05-30 19:41:18 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 226
+Evaluating RM: : 227it [45:44, 11.91s/it]2024-05-30 19:41:34 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 227
+Evaluating RM: : 228it [45:59, 12.91s/it]2024-05-30 19:41:49 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 228
+Evaluating RM: : 229it [46:14, 13.56s/it]2024-05-30 19:41:58 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 229
+Evaluating RM: : 230it [46:23, 12.26s/it]2024-05-30 19:42:11 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 230
+Evaluating RM: : 231it [46:37, 12.63s/it]2024-05-30 19:42:27 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 231
+Evaluating RM: : 232it [46:53, 13.60s/it]Evaluating RM: : 233it [47:04, 12.96s/it]2024-05-30 19:42:49 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 233
+Evaluating RM: : 234it [47:14, 12.01s/it]2024-05-30 19:42:58 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 234
+Evaluating RM: : 235it [47:23, 11.23s/it]2024-05-30 19:43:11 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 235
+Evaluating RM: : 236it [47:36, 11.66s/it]2024-05-30 19:43:21 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 236
+Evaluating RM: : 237it [47:47, 11.40s/it]Evaluating RM: : 238it [47:59, 11.79s/it]2024-05-30 19:43:49 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 238
+Evaluating RM: : 239it [48:14, 12.64s/it]2024-05-30 19:44:01 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 239
+Evaluating RM: : 240it [48:26, 12.45s/it]2024-05-30 19:44:11 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 240
+Evaluating RM: : 241it [48:36, 11.70s/it]2024-05-30 19:44:19 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 241
+Evaluating RM: : 242it [48:45, 10.81s/it]2024-05-30 19:44:34 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 242
+Evaluating RM: : 243it [48:59, 11.92s/it]2024-05-30 19:44:48 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 243
+Evaluating RM: : 244it [49:14, 12.62s/it]2024-05-30 19:45:00 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 244
+Evaluating RM: : 245it [49:25, 12.29s/it]2024-05-30 19:45:10 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 245
+Evaluating RM: : 246it [49:35, 11.63s/it]2024-05-30 19:45:21 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 246
+Evaluating RM: : 247it [49:47, 11.61s/it]Evaluating RM: : 248it [49:56, 11.04s/it]Evaluating RM: : 249it [50:08, 11.06s/it]2024-05-30 19:46:01 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 249
+Evaluating RM: : 250it [50:26, 13.31s/it]Evaluating RM: : 251it [50:37, 12.51s/it]Evaluating RM: : 252it [50:45, 11.36s/it]2024-05-30 19:46:34 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 252
+Evaluating RM: : 253it [50:59, 12.10s/it]Evaluating RM: : 254it [51:09, 11.33s/it]2024-05-30 19:46:56 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 254
+Evaluating RM: : 255it [51:21, 11.57s/it]2024-05-30 19:47:08 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 255
+Evaluating RM: : 256it [51:33, 11.69s/it]2024-05-30 19:47:15 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 256
+Evaluating RM: : 257it [51:40, 10.39s/it]2024-05-30 19:47:35 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 257
+Evaluating RM: : 258it [52:00, 13.27s/it]2024-05-30 19:47:53 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 258
+Evaluating RM: : 259it [52:19, 14.84s/it]2024-05-30 19:48:05 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 259
+Evaluating RM: : 260it [52:30, 13.87s/it]2024-05-30 19:48:17 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 260
+Evaluating RM: : 261it [52:42, 13.31s/it]2024-05-30 19:48:35 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 261
+Evaluating RM: : 262it [53:01, 14.80s/it]2024-05-30 19:48:45 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 262
+Evaluating RM: : 263it [53:10, 13.16s/it]Evaluating RM: : 264it [53:19, 11.81s/it]2024-05-30 19:49:04 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 264
+Evaluating RM: : 265it [53:29, 11.37s/it]2024-05-30 19:49:15 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 265
+Evaluating RM: : 266it [53:40, 11.23s/it]2024-05-30 19:49:25 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 266
+Evaluating RM: : 267it [53:51, 11.13s/it]2024-05-30 19:49:38 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 267
+Evaluating RM: : 268it [54:04, 11.69s/it]2024-05-30 19:49:46 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 268
+Evaluating RM: : 269it [54:11, 10.37s/it]Evaluating RM: : 270it [54:21, 10.19s/it]2024-05-30 19:50:06 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 270
+Evaluating RM: : 271it [54:31, 10.24s/it]2024-05-30 19:50:19 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 271
+Evaluating RM: : 272it [54:44, 11.02s/it]2024-05-30 19:50:34 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 272
+Evaluating RM: : 273it [55:00, 12.39s/it]2024-05-30 19:50:45 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 273
+Evaluating RM: : 274it [55:11, 12.03s/it]Evaluating RM: : 275it [55:19, 10.87s/it]Evaluating RM: : 276it [55:29, 10.55s/it]2024-05-30 19:51:13 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 276
+Evaluating RM: : 277it [55:38, 10.27s/it]Evaluating RM: : 278it [55:48, 10.21s/it]Evaluating RM: : 279it [55:57,  9.77s/it]2024-05-30 19:51:46 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 279
+Evaluating RM: : 280it [56:11, 11.14s/it]2024-05-30 19:51:58 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 280
+Evaluating RM: : 281it [56:23, 11.35s/it]2024-05-30 19:52:10 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 281
+Evaluating RM: : 282it [56:35, 11.42s/it]2024-05-30 19:52:22 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 282
+Evaluating RM: : 283it [56:47, 11.67s/it]Evaluating RM: : 284it [56:56, 10.73s/it]2024-05-30 19:52:40 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 284
+Evaluating RM: : 285it [57:06, 10.54s/it]2024-05-30 19:52:53 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 285
+Evaluating RM: : 286it [57:19, 11.26s/it]2024-05-30 19:53:06 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 286
+Evaluating RM: : 287it [57:31, 11.54s/it]2024-05-30 19:53:16 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 287
+Evaluating RM: : 288it [57:41, 11.21s/it]Evaluating RM: : 289it [57:49, 10.24s/it]Evaluating RM: : 290it [58:02, 10.98s/it]2024-05-30 19:53:47 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 290
+Evaluating RM: : 291it [58:12, 10.66s/it]2024-05-30 19:54:02 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 291
+Evaluating RM: : 292it [58:27, 12.08s/it]Evaluating RM: : 293it [58:36, 11.10s/it]2024-05-30 19:54:23 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 293
+Evaluating RM: : 294it [58:48, 11.35s/it]2024-05-30 19:54:36 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 294
+Evaluating RM: : 295it [59:02, 11.97s/it]Evaluating RM: : 296it [59:18, 13.24s/it]Evaluating RM: : 297it [59:29, 12.64s/it]Evaluating RM: : 298it [59:40, 12.11s/it]2024-05-30 19:55:23 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 298
+Evaluating RM: : 299it [59:49, 11.08s/it]2024-05-30 19:55:35 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 299
+Evaluating RM: : 300it [1:00:00, 11.25s/it]Evaluating RM: : 301it [1:00:10, 10.86s/it]Evaluating RM: : 302it [1:00:22, 11.26s/it]2024-05-30 19:56:08 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 302
+Evaluating RM: : 303it [1:00:34, 11.24s/it]Evaluating RM: : 304it [1:00:43, 10.81s/it]2024-05-30 19:56:32 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 304
+Evaluating RM: : 305it [1:00:57, 11.78s/it]2024-05-30 19:56:43 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 305
+Evaluating RM: : 306it [1:01:08, 11.46s/it]Evaluating RM: : 307it [1:01:18, 11.00s/it]Evaluating RM: : 308it [1:01:37, 13.49s/it]2024-05-30 19:57:27 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 308
+Evaluating RM: : 309it [1:01:52, 13.82s/it]2024-05-30 19:57:41 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 309
+Evaluating RM: : 310it [1:02:06, 13.91s/it]Evaluating RM: : 311it [1:02:17, 12.91s/it]Evaluating RM: : 312it [1:02:30, 12.98s/it]2024-05-30 19:58:14 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 312
+Evaluating RM: : 313it [1:02:40, 12.02s/it]2024-05-30 19:58:28 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 313
+Evaluating RM: : 314it [1:02:53, 12.50s/it]Evaluating RM: : 315it [1:03:05, 12.31s/it]2024-05-30 19:58:49 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 315
+Evaluating RM: : 316it [1:03:15, 11.53s/it]2024-05-30 19:59:01 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 316
+Evaluating RM: : 317it [1:03:26, 11.53s/it]2024-05-30 19:59:13 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 317
+Evaluating RM: : 318it [1:03:38, 11.66s/it]2024-05-30 19:59:22 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 318
+Evaluating RM: : 319it [1:03:48, 11.02s/it]2024-05-30 19:59:30 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 319
+Evaluating RM: : 320it [1:03:56, 10.13s/it]2024-05-30 19:59:39 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 320
+Evaluating RM: : 321it [1:04:04,  9.62s/it]Evaluating RM: : 322it [1:04:12,  9.12s/it]2024-05-30 20:00:02 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 322
+Evaluating RM: : 323it [1:04:27, 10.79s/it]Evaluating RM: : 324it [1:04:37, 10.58s/it]Evaluating RM: : 325it [1:04:48, 10.62s/it]2024-05-30 20:00:33 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 325
+Evaluating RM: : 326it [1:04:58, 10.65s/it]Evaluating RM: : 327it [1:05:09, 10.74s/it]Evaluating RM: : 328it [1:05:18, 10.25s/it]Evaluating RM: : 329it [1:05:28, 10.18s/it]2024-05-30 20:01:13 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 329
+Evaluating RM: : 330it [1:05:39, 10.22s/it]Evaluating RM: : 331it [1:05:49, 10.26s/it]2024-05-30 20:01:37 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 331
+Evaluating RM: : 332it [1:06:03, 11.25s/it]2024-05-30 20:01:50 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 332
+Evaluating RM: : 333it [1:06:15, 11.56s/it]2024-05-30 20:02:03 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 333
+Evaluating RM: : 334it [1:06:28, 12.02s/it]2024-05-30 20:02:17 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 334
+Evaluating RM: : 335it [1:06:42, 12.66s/it]2024-05-30 20:02:32 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 335
+Evaluating RM: : 336it [1:06:57, 13.27s/it]2024-05-30 20:02:43 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 336
+Evaluating RM: : 337it [1:07:09, 12.79s/it]2024-05-30 20:02:52 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 337
+Evaluating RM: : 338it [1:07:17, 11.61s/it]Evaluating RM: : 339it [1:07:28, 11.29s/it]2024-05-30 20:03:14 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 339
+Evaluating RM: : 340it [1:07:40, 11.44s/it]2024-05-30 20:03:28 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 340
+Evaluating RM: : 341it [1:07:53, 11.99s/it]Evaluating RM: : 342it [1:08:01, 10.87s/it]2024-05-30 20:03:49 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 342
+Evaluating RM: : 343it [1:08:15, 11.58s/it]2024-05-30 20:04:06 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 343
+Evaluating RM: : 344it [1:08:31, 13.20s/it]2024-05-30 20:04:19 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 344
+Evaluating RM: : 345it [1:08:44, 12.94s/it]Evaluating RM: : 346it [1:08:54, 12.01s/it]Evaluating RM: : 347it [1:09:04, 11.47s/it]2024-05-30 20:04:51 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 347
+Evaluating RM: : 348it [1:09:17, 11.86s/it]2024-05-30 20:05:02 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 348
+Evaluating RM: : 349it [1:09:28, 11.59s/it]2024-05-30 20:05:16 | INFO | artifacte_rm_score | Cannot parsing the score from vlm output. sample id is 349
+Evaluating RM: : 350it [1:09:42, 12.31s/it]Evaluating RM: : 350it [1:09:42, 11.95s/it]
+2024-05-30 20:05:16 | INFO | artifacte_rm_score | Saving result to /cpfs01/user/duyichao/workspace/LLM_RLAIF/MM-Reward/eval/results/artifacts/blur
