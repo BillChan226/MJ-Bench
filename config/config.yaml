@@ -45,8 +45,18 @@ reward_models:
         
 
     closesource_models:
-        gpt-4-turbo-2024-04-09:
-            model_name: gpt-4-turbo-2024-04-09
-            api_key: 
-            base_url: api.openai.com
+        gpt-4-turbo:
+            model_name: gpt-4-turbo
+            api_key: ImsRPttSiXXU4JA4Z9mzc74Ul2yXDw3M
+            base_url: https://azure-openai-api.shenmishajing.workers.dev/v1/
+
+        claude-3-opus:
+            model_name: claude-3-opus-20240229
+            api_key: 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
+            base_url: None
+
+        gemini-1.5:
+            model_name: gemini-1.5-pro-latest
+            api_key: AIzaSyCP8yRIYd16-x88zeSeVs7vTfDpShcn3Jg
+            base_url: None
 

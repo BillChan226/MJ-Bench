@@ -4,6 +4,7 @@ sys.path.append("./")
 import argparse
 from reward_models import score_reward_models
 from reward_models import vlm_reward_models
+from reward_models import closesource_models
 from datasets import load_dataset
 import json
 from tqdm import tqdm
@@ -99,6 +100,9 @@ def main(args):
     elif rm_type_dict[args.model] == "opensource_vlm":
         model_config = reward_models_config[rm_type_dict[args.model]][args.model]
         reward_model = vlm_reward_models.Scorer(args.model, model_config["model_path"], model_config["processor_path"], device)
+    elif rm_type_dict[args.model] == "closesource_vlm":
+        model_config = reward_models_config[rm_type_dict[args.model]][args.model]
+        reward_model = closesource_models.Scorer(args.model, model_config["model_path"], model_config["api_key"], model_config["base_url"])
     else:
         raise ValueError(f"Model {args.model} not found in config file")
 
