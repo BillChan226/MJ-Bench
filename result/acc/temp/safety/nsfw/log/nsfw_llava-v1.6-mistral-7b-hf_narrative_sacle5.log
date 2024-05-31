@@ -1,968 +1,0 @@
-2024-05-30 19:44:48 | INFO | alignment_rm_score | Loading reward model form llava-v1.6-mistral-7b-hf...
-You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
-2024-05-30 19:44:52 | INFO | accelerate.utils.modeling | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.94s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.64s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.56s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  1.68s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.04s/it]
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-2024-05-30 19:45:00 | INFO | alignment_rm_score | Loading prompt template from /cpfs01/user/duyichao/workspace/LLM_RLAIF/MM-Reward/eval/prompts/safety_single_narrative_scale5.txt
-Evaluating RM: : 0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 1it [00:10, 10.76s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 2it [00:18,  9.13s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 3it [00:26,  8.53s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 4it [00:33,  8.08s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 5it [00:41,  8.03s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 6it [00:49,  7.97s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 7it [00:57,  8.01s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 8it [01:08,  8.85s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 9it [01:17,  9.03s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 10it [01:26,  8.78s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 11it [01:34,  8.55s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 19:46:53 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 11
-Evaluating RM: : 12it [01:52, 11.49s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 13it [01:59, 10.29s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 14it [02:10, 10.25s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 15it [02:24, 11.45s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 16it [02:34, 11.08s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 17it [02:43, 10.59s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 18it [02:52,  9.92s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 19it [03:02, 10.14s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 20it [03:09,  9.13s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 21it [03:19,  9.40s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 19:48:37 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 21
-Evaluating RM: : 22it [03:36, 11.74s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 23it [03:44, 10.44s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 24it [03:53,  9.94s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 25it [04:00,  9.08s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 26it [04:11,  9.64s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 27it [04:22, 10.02s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 28it [04:32, 10.18s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 29it [04:38,  9.00s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 19:49:57 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 29
-Evaluating RM: : 30it [04:57, 11.75s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 31it [05:04, 10.60s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 32it [05:15, 10.49s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 33it [05:22,  9.64s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 34it [05:34, 10.10s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 35it [05:44, 10.13s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 36it [05:51,  9.38s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 37it [06:01,  9.39s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 38it [06:10,  9.20s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 39it [06:20,  9.68s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 40it [06:29,  9.43s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 41it [06:36,  8.66s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 42it [06:45,  8.72s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 43it [06:52,  8.25s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 44it [07:01,  8.42s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 45it [07:07,  7.78s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 46it [07:18,  8.71s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 47it [07:28,  8.97s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 48it [07:37,  8.97s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 49it [07:46,  8.96s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 50it [07:53,  8.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 51it [08:02,  8.55s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 52it [08:09,  8.14s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 53it [08:21,  9.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 54it [08:32,  9.74s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 55it [08:43, 10.37s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 56it [08:51,  9.45s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 57it [08:59,  9.04s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 58it [09:09,  9.49s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 59it [09:18,  9.37s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 60it [09:30, 10.05s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 61it [09:37,  9.01s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 62it [09:45,  8.83s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 63it [09:53,  8.63s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 64it [10:01,  8.48s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 65it [10:12,  9.24s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 66it [10:19,  8.45s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 67it [10:32,  9.95s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 68it [10:38,  8.74s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 69it [10:51, 10.06s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 70it [11:00,  9.70s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 71it [11:12, 10.30s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 72it [11:22, 10.24s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 73it [11:29,  9.17s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 74it [11:40,  9.76s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 75it [11:49,  9.46s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 76it [11:56,  8.69s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 77it [12:03,  8.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 78it [12:13,  8.78s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 79it [12:23,  9.27s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 80it [12:31,  8.89s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 81it [12:42,  9.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 82it [12:51,  9.36s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 83it [12:59,  8.82s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 84it [13:08,  8.93s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 85it [13:16,  8.73s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 86it [13:27,  9.33s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 87it [13:34,  8.72s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 88it [13:45,  9.26s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 89it [13:53,  8.94s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 90it [14:05,  9.84s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 91it [14:14,  9.48s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 92it [14:25,  9.99s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 93it [14:33,  9.44s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 94it [14:40,  8.73s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 95it [14:46,  8.02s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 96it [14:57,  8.92s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 97it [15:06,  8.86s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 98it [15:14,  8.56s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 99it [15:22,  8.27s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 100it [15:29,  7.99s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 101it [15:37,  7.88s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 102it [15:46,  8.33s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 103it [15:54,  8.12s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 104it [16:01,  7.89s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 105it [16:13,  9.28s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 106it [16:22,  9.02s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 107it [16:29,  8.38s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 108it [16:37,  8.35s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 109it [16:44,  7.86s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 110it [16:54,  8.58s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 111it [17:07,  9.77s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 112it [17:17,  9.87s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 113it [17:27,  9.93s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 114it [17:38, 10.31s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 115it [17:47,  9.95s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 116it [17:55,  9.47s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 117it [18:05,  9.40s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 118it [18:12,  8.70s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 119it [18:20,  8.71s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 120it [18:28,  8.37s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 121it [18:35,  7.89s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 122it [18:44,  8.40s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 123it [18:53,  8.62s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 124it [19:01,  8.29s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 125it [19:12,  8.98s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 126it [19:19,  8.55s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 127it [19:31,  9.44s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 128it [19:42,  9.91s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 129it [19:50,  9.42s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 130it [19:57,  8.75s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 131it [20:07,  8.95s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 132it [20:18,  9.63s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 133it [20:25,  9.01s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 134it [20:38, 10.24s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 135it [20:48, 10.13s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 136it [20:57,  9.62s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 137it [21:06,  9.39s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 138it [21:15,  9.36s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 139it [21:23,  8.91s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 140it [21:31,  8.60s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 141it [21:38,  8.27s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 142it [21:49,  9.01s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 143it [21:58,  9.01s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 144it [22:09,  9.55s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 145it [22:18,  9.58s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 146it [22:28,  9.63s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 147it [22:37,  9.32s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 148it [22:47,  9.62s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 149it [23:00, 10.72s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 150it [23:07,  9.50s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 151it [23:18,  9.97s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 152it [23:29, 10.37s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 153it [23:38,  9.83s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 154it [23:48,  9.83s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 155it [23:57,  9.56s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 156it [24:04,  8.80s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 157it [24:10,  7.96s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 158it [24:18,  8.08s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 159it [24:27,  8.37s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 160it [24:36,  8.53s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:09:56 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 160
-Evaluating RM: : 161it [24:56, 11.86s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:10:18 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 161
-Evaluating RM: : 162it [25:17, 14.85s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 163it [25:27, 13.33s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 164it [25:36, 11.83s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 165it [25:45, 11.19s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 166it [25:53, 10.11s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 167it [26:01,  9.63s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 168it [26:10,  9.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 169it [26:20,  9.38s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 170it [26:28,  9.12s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 171it [26:39,  9.56s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 172it [26:48,  9.51s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 173it [26:59,  9.89s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 174it [27:10, 10.39s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 175it [27:16,  9.10s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 176it [27:26,  9.17s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 177it [27:36,  9.39s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 178it [27:43,  8.85s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 179it [27:51,  8.39s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 180it [28:03,  9.74s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 181it [28:11,  9.18s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 182it [28:20,  9.08s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:13:41 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 182
-Evaluating RM: : 183it [28:40, 12.40s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 184it [28:50, 11.53s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 185it [28:57, 10.23s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 186it [29:06,  9.75s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 187it [29:13,  9.17s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 188it [29:21,  8.64s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 189it [29:31,  9.22s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 190it [29:41,  9.33s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 191it [29:50,  9.26s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 192it [30:02, 10.08s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 193it [30:13, 10.30s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 194it [30:20,  9.22s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 195it [30:28,  9.01s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 196it [30:36,  8.77s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 197it [30:44,  8.53s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 198it [30:53,  8.69s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 199it [31:02,  8.53s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 200it [31:09,  8.31s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 201it [31:20,  8.94s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:16:39 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 201
-Evaluating RM: : 202it [31:38, 11.68s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 203it [31:47, 10.83s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 204it [32:01, 11.79s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 205it [32:09, 10.68s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 206it [32:16,  9.65s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 207it [32:26,  9.82s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 208it [32:35,  9.52s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 209it [32:44,  9.29s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 210it [32:52,  9.04s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 211it [33:04,  9.76s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 212it [33:11,  8.86s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 213it [33:21,  9.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 214it [33:28,  8.68s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 215it [33:38,  9.14s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 216it [33:48,  9.37s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 217it [33:57,  9.10s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 218it [34:04,  8.55s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 219it [34:13,  8.66s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 220it [34:23,  9.02s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 221it [34:30,  8.55s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 222it [34:40,  9.05s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 223it [34:51,  9.38s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 224it [34:58,  8.91s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 225it [35:06,  8.49s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 226it [35:13,  8.13s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 227it [35:22,  8.17s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 228it [35:30,  8.13s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 229it [35:37,  8.04s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 230it [35:43,  7.42s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 231it [35:53,  8.02s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 232it [36:00,  7.93s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 233it [36:08,  7.66s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 234it [36:15,  7.68s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 235it [36:27,  8.83s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 236it [36:37,  9.35s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 237it [36:45,  8.89s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:22:07 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 237
-Evaluating RM: : 238it [37:06, 12.44s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 239it [37:14, 11.24s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:22:34 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 239
-Evaluating RM: : 240it [37:33, 13.48s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 241it [37:41, 11.90s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 242it [37:48, 10.50s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 243it [37:56,  9.46s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 244it [38:07, 10.08s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 245it [38:16,  9.67s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 246it [38:25,  9.68s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 247it [38:32,  8.88s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 248it [38:41,  8.69s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 249it [38:51,  9.08s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 250it [39:00,  9.24s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 251it [39:07,  8.56s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 252it [39:22, 10.34s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 253it [39:30,  9.67s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 254it [39:38,  9.21s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 255it [39:46,  8.84s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 256it [39:55,  8.84s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 257it [40:01,  8.11s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 258it [40:12,  8.87s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 259it [40:21,  8.92s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 260it [40:28,  8.34s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 261it [40:34,  7.67s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 262it [40:42,  7.83s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 263it [40:49,  7.53s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:26:08 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 263
-Evaluating RM: : 264it [41:07, 10.78s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 265it [41:14,  9.47s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 266it [41:23,  9.40s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 267it [41:29,  8.35s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 268it [41:38,  8.65s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 269it [41:46,  8.34s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 270it [41:54,  8.24s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 271it [42:03,  8.50s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 272it [42:12,  8.59s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 273it [42:23,  9.51s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 274it [42:32,  9.20s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 275it [42:40,  8.86s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 276it [42:48,  8.47s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 277it [42:55,  8.09s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 278it [43:06,  8.98s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 279it [43:16,  9.35s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 280it [43:31, 11.01s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 281it [43:38,  9.82s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 282it [43:46,  9.14s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 283it [43:53,  8.77s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 284it [44:01,  8.40s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 285it [44:11,  8.94s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 286it [44:19,  8.59s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 287it [44:28,  8.78s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 288it [44:40,  9.77s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 289it [44:48,  9.22s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 290it [44:55,  8.57s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 291it [45:07,  9.40s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 292it [45:14,  8.85s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 293it [45:22,  8.70s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 294it [45:32,  9.08s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 295it [45:41,  8.95s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 296it [45:50,  8.99s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 297it [45:57,  8.20s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:31:17 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 297
-Evaluating RM: : 298it [46:16, 11.56s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 299it [46:27, 11.48s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:31:48 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 299
-Evaluating RM: : 300it [46:47, 14.10s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 301it [46:57, 12.81s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 302it [47:06, 11.64s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:32:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 302
-Evaluating RM: : 303it [47:25, 13.69s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 304it [47:33, 12.18s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 305it [47:39, 10.34s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 306it [47:48,  9.78s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 307it [47:54,  8.80s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 308it [48:10, 10.76s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 309it [48:17,  9.77s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 310it [48:25,  9.30s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 311it [48:34,  9.18s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 312it [48:42,  8.88s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 313it [48:50,  8.39s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 314it [48:59,  8.59s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 315it [49:07,  8.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 316it [49:19,  9.51s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 317it [49:27,  9.13s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 318it [49:38,  9.73s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 319it [49:46,  9.24s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 320it [49:57,  9.57s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 321it [50:04,  8.88s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 322it [50:11,  8.21s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 323it [50:20,  8.56s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 324it [50:30,  9.15s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 325it [50:37,  8.43s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:36:07 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 325
-Evaluating RM: : 326it [51:06, 14.59s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 327it [51:19, 14.06s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 328it [51:27, 12.25s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 329it [51:36, 11.26s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 330it [51:43, 10.08s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 331it [51:53, 10.12s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 332it [52:01,  9.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 333it [52:10,  9.22s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 334it [52:18,  8.83s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 335it [52:27,  8.91s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:37:47 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 335
-Evaluating RM: : 336it [52:46, 11.90s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 337it [52:54, 10.67s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 338it [53:03, 10.17s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 339it [53:09,  9.04s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 340it [53:18,  9.09s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 341it [53:26,  8.63s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 342it [53:44, 11.49s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 343it [53:55, 11.48s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 344it [54:04, 10.60s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:39:25 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 344
-Evaluating RM: : 345it [54:24, 13.37s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 346it [54:32, 11.87s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 347it [54:47, 12.75s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 348it [54:56, 11.66s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 349it [55:05, 10.76s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 350it [55:16, 10.81s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 351it [55:22,  9.60s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 352it [55:30,  9.06s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 353it [55:38,  8.72s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 354it [55:46,  8.40s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 355it [55:54,  8.18s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 356it [56:02,  8.17s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 357it [56:12,  8.91s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 358it [56:22,  9.22s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 359it [56:32,  9.50s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 360it [56:43,  9.68s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 361it [56:50,  8.88s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 362it [57:00,  9.42s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 363it [57:07,  8.73s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 364it [57:16,  8.63s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 365it [57:23,  8.11s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 366it [57:30,  7.75s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 367it [57:38,  7.93s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 368it [57:48,  8.65s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 369it [57:58,  9.06s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 370it [58:06,  8.66s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 371it [58:15,  8.87s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 372it [58:24,  8.88s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 373it [58:32,  8.47s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 374it [58:41,  8.60s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 375it [58:49,  8.42s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 376it [58:56,  8.19s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 377it [59:06,  8.53s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 378it [59:16,  9.09s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 379it [59:24,  8.81s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 380it [59:32,  8.54s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 381it [59:42,  9.01s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 382it [59:51,  9.00s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 383it [59:58,  8.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 384it [1:00:05,  8.02s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 385it [1:00:15,  8.45s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 386it [1:00:24,  8.61s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 387it [1:00:31,  8.22s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 388it [1:00:39,  8.06s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 389it [1:00:46,  7.90s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 390it [1:00:54,  7.98s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 391it [1:01:05,  8.74s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 392it [1:01:13,  8.61s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 393it [1:01:22,  8.51s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 394it [1:01:29,  8.12s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 395it [1:01:39,  8.90s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 396it [1:01:49,  8.99s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 397it [1:01:57,  8.77s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 398it [1:02:06,  9.00s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 399it [1:02:18,  9.67s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 400it [1:02:25,  9.10s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 401it [1:02:35,  9.28s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 402it [1:02:43,  8.93s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 403it [1:02:51,  8.66s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 404it [1:03:03,  9.57s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 405it [1:03:11,  9.01s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 406it [1:03:19,  8.72s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 407it [1:03:26,  8.39s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 408it [1:03:43, 10.84s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 409it [1:03:51, 10.04s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 410it [1:04:01,  9.90s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 411it [1:04:09,  9.50s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 412it [1:04:18,  9.24s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:49:33 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 412
-Evaluating RM: : 413it [1:04:32, 10.63s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 414it [1:04:40,  9.95s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 415it [1:04:49,  9.59s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 416it [1:04:58,  9.48s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 417it [1:05:08,  9.76s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 418it [1:05:18,  9.83s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 419it [1:05:26,  9.07s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 420it [1:05:34,  8.73s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 421it [1:05:45,  9.41s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 422it [1:05:53,  8.95s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 423it [1:06:00,  8.59s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 424it [1:06:09,  8.52s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 425it [1:06:19,  9.03s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 426it [1:06:29,  9.35s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 427it [1:06:37,  8.97s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 428it [1:06:45,  8.73s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 429it [1:06:54,  8.86s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 430it [1:07:04,  9.02s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 431it [1:07:17, 10.30s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 432it [1:07:24,  9.40s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 433it [1:07:36, 10.06s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 434it [1:07:45,  9.79s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 435it [1:07:53,  9.07s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-2024-05-30 20:53:04 | INFO | alignment_rm_score | Cannot parsing the score from vlm output. sample id is 435
-Evaluating RM: : 436it [1:08:03,  9.51s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 437it [1:08:12,  9.19s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 438it [1:08:18,  8.46s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 439it [1:08:33, 10.33s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 440it [1:08:40,  9.27s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 441it [1:08:48,  8.96s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 442it [1:08:55,  8.42s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 443it [1:09:08,  9.78s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 444it [1:09:16,  9.28s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 445it [1:09:25,  9.24s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 446it [1:09:33,  8.77s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 447it [1:09:41,  8.63s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 448it [1:09:51,  9.05s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 449it [1:09:58,  8.43s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 450it [1:10:06,  8.16s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 451it [1:10:14,  8.11s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 452it [1:10:23,  8.48s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 453it [1:10:30,  7.88s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 454it [1:10:39,  8.33s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 455it [1:10:48,  8.39s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 456it [1:10:57,  8.82s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 457it [1:11:05,  8.55s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 458it [1:11:14,  8.48s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 459it [1:11:30, 10.88s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 460it [1:11:37,  9.80s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 461it [1:11:45,  9.02s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 462it [1:11:54,  9.07s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 463it [1:12:01,  8.55s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 464it [1:12:10,  8.76s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 465it [1:12:17,  8.14s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 466it [1:12:26,  8.43s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 467it [1:12:34,  8.22s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 468it [1:12:41,  7.85s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 469it [1:12:50,  8.20s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 470it [1:13:00,  8.62s/it]Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
-Evaluating RM: : 471it [1:13:10,  9.30s/it]Evaluating RM: : 471it [1:13:10,  9.32s/it]
-2024-05-30 20:58:11 | INFO | alignment_rm_score | Saving result to /cpfs01/user/duyichao/workspace/LLM_RLAIF/MM-Reward/eval/results/safety/nsfw
