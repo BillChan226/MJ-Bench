@@ -14,6 +14,7 @@ from tqdm import tqdm
 import numpy as np
 import sys
 sys.path.append("../utils/")
+sys.path.append("./utils/")
 from rm_utils import get_pred, get_label
 # import hpsv2
 

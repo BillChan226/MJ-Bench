@@ -100,9 +100,9 @@ def main(args):
     elif rm_type_dict[args.model] == "opensource_vlm":
         model_config = reward_models_config[rm_type_dict[args.model]][args.model]
         reward_model = vlm_reward_models.Scorer(args.model, model_config["model_path"], model_config["processor_path"], device)
-    elif rm_type_dict[args.model] == "closesource_vlm":
+    elif rm_type_dict[args.model] == "closesource_models":
         model_config = reward_models_config[rm_type_dict[args.model]][args.model]
-        reward_model = closesource_models.Scorer(args.model, model_config["model_path"], model_config["api_key"], model_config["base_url"])
+        reward_model = closesource_models.Scorer(args.model, model_config["model_name"], model_config["api_key"], model_config["base_url"])
     else:
         raise ValueError(f"Model {args.model} not found in config file")
 
@@ -175,6 +175,9 @@ def main(args):
             scores = reward_model.get_score([image_0_path, image_1_path], prompt)
             # The scores here are actually the generations of the vlms
             # TODO: get scores of different perspectives from vlm generations
+        elif rm_type_dict[args.model] == "closesource_models":
+            # scores = reward_model.get_score([image_0_path, image_1_path], caption)
+            scores = reward_model.get_score([image_0_path], caption)
 
 
         label = get_label(example)

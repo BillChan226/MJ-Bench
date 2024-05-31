@@ -2,19 +2,16 @@ import os
 import openai
 import anthropic
 import google.generativeai as genai
-from google.generativeai.types import ContentType
 from PIL import Image
 from IPython.display import Markdown
 import time
-import cv2
 import base64
-import httpx
 import requests
+import pathlib
 
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
-
 
 
 class Scorer:
@@ -28,6 +25,8 @@ class Scorer:
             self.get_score = self.gpt_score
             
         elif "gemini" in model_name:
+            genai.configure(api_key=self.api_key)
+            self.model = genai.GenerativeModel(self.model_path)
             self.get_score = self.gemini_score
             
         elif "claude" in model_name:
@@ -132,31 +131,49 @@ class Scorer:
             
 
             message = self.client.messages.create(
-            model=self.model_path
-            max_tokens=256,
-            messages=[
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "image",
-                            "source": {
-                                "type": "base64",
-                                "media_type": media_type,
-                                "data": image_data,
+                model=self.model_path,
+                max_tokens=256,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {
+                                "type": "image",
+                                "source": {
+                                    "type": "base64",
+                                    "media_type": media_type,
+                                    "data": image_data,
+                                },
                             },
-                        },
-                        {
-                            "type": "text",
-                            "text": prompt
-                        }
-                    ],
-                }
-            ],
+                            {
+                                "type": "text",
+                                "text": prompt
+                            }
+                        ],
+                    }
+                ],
         )
-        Markdown(message.content[0].text)
+        claude_output = message.content[0].text
 
-        claude_output = message.content[1].text
+        print("claude_output", claude_output)
 
         input()
 
+    
+    def gemini_score(self, images, prompt):
+
+        if len(images) == 1:
+            image_dir = images[0]
+            image_data = {
+            'mime_type': 'image/jpg',
+            'data': pathlib.Path(image_dir).read_bytes()
+            }
+            
+
+            combined_prompt = [prompt, image_data]
+            response = self.model.generate_content(combined_prompt)
+
+            gemini_output = response.text
+            print("gemini_output", gemini_output)
+            input()
+      
