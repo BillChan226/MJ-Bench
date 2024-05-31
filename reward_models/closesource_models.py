@@ -39,8 +39,6 @@ class Scorer:
             raise ValueError(f"Model {model_name} not found")
         
 
-
-
     def gpt_score(self, images, prompt):
 
 
