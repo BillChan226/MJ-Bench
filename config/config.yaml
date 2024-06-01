@@ -47,13 +47,24 @@ reward_models:
     closesource_models:
         gpt-4-turbo:
             model_name: gpt-4-turbo
-            api_key: ImsRPttSiXXU4JA4Z9mzc74Ul2yXDw3M
-            base_url: https://azure-openai-api.shenmishajing.workers.dev/v1/
+            api_key: sk-proj-IlTqXRjyYZSIAQ15rSuQT3BlbkFJSbr7QfChcTLHJXs0d9p5
+            base_url: https://api.openai.com/v1/
+        
+        # gpt-4-turbo:
+        #     model_name: gpt-4-turbo
+        #     api_key: DK3i6fFhq6e0fpmT7kCtSdVDLQ9IKpzk
+        #     base_url: https://azure-openai-api.shenmishajing.workers.dev/v1/
+        
+        # gpt-4o:
+        #     model_name: gpt-4o
+        #     api_key: DK3i6fFhq6e0fpmT7kCtSdVDLQ9IKpzk
+        #     base_url: https://azure-openai-api.shenmishajing.workers.dev/v1/
+
         
         gpt-4o:
             model_name: gpt-4o
-            api_key: DK3i6fFhq6e0fpmT7kCtSdVDLQ9IKpzk
-            base_url: https://azure-openai-api.shenmishajing.workers.dev/v1/
+            api_key: sk-proj-IlTqXRjyYZSIAQ15rSuQT3BlbkFJSbr7QfChcTLHJXs0d9p5
+            base_url: https://api.openai.com/v1/
 
         claude-3-opus:
             model_name: claude-3-opus-20240229
