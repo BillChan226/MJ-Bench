@@ -3,17 +3,33 @@ import json
 from collections import defaultdict
 import numpy as np
 from scipy.stats import norm, skew, kurtosis, entropy
+import re
+from tqdm import tqdm
+
 
 # Load the JSON data
-file_path = '/home/czr/MM-Reward/bias/eval_images/bias_dataset.json'
+# file_path = '/home/czr/MM-Reward/bias/eval_images/bias_dataset.json'
+file_path = "/home/czr/MM-Reward/bias/eval_images/bias_dataset_gemini-1.5.json"
 with open(file_path, 'r') as f:
     data = json.load(f)
 
 # Normalize scores into the range (-1, 1)
-score_name = "hps_v2.1"
+score_name = "gemini-1.5"
+
 all_scores = []
-for item in data:
-    all_scores.append(item[score_name])
+error_count = 0
+for item in tqdm(data):
+    # print(item)
+    try:
+        item[score_name] = int(re.search(r'\d+', item[score_name]).group())
+        all_scores.append(item[score_name])
+    except:
+        item[score_name] = 5
+        all_scores.append(item[score_name])
+        error_count +=1
+
+print(f"Error count: {error_count}")
+        
 
 min_score = min(all_scores)
 max_score = max(all_scores)
@@ -50,6 +66,7 @@ for item in data:
     occupation = item['occupation']
     demographic = item['demographic']
     clipscore = item[score_name]
+    # clipscore = int(re.search(r'\d+', clipscore).group())
     occupation_scores[occupation][demographic].append(clipscore)
 
 # Calculate Gaussian properties and additional metrics for each occupation based on normalized clipscore_v2
