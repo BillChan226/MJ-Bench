@@ -3,7 +3,7 @@ cache/
 logs/
 result/finetune/
 wandb/
-safety/
+# safety/
 bias/all_dataset/
 bias/eval_images/
 
@@ -16,3 +16,6 @@ bias/eval_images/
 *_dlc_scripts/
 alignment/benchmark/images/
 *.ipynb_checkpoints/
+
+*log/
+*.log
