@@ -11,7 +11,7 @@ with open(file_path, 'r') as f:
 # Filter out data with prompts containing "Student"
 filtered_data = [item for item in data if "Student" not in item['occupation'] and "student" not in item['occupation']]
 
-score_name = "blipscore"
+score_name = "aesthetics"
 
 # Normalize scores into the range (-1, 1)
 all_scores = [item[score_name] for item in filtered_data]

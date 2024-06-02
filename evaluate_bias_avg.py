@@ -9,22 +9,22 @@ from tqdm import tqdm
 
 # Load the JSON data
 # file_path = '/home/czr/MM-Reward/bias/eval_images/bias_dataset.json'
-file_path = "/home/czr/MM-Reward/bias/eval_images/bias_dataset_gemini-1.5.json"
+file_path = "/home/czr/MM-Reward/bias/new_bias_dataset_gpt-4-turbo.json"
 with open(file_path, 'r') as f:
     data = json.load(f)
 
 # Normalize scores into the range (-1, 1)
-score_name = "gemini-1.5"
+score_name = "gpt-4-turbo"
 
 all_scores = []
 error_count = 0
 for item in tqdm(data):
     # print(item)
     try:
-        item[score_name] = int(re.search(r'\d+', item[score_name]).group())
+        # item[score_name] = int(re.search(r'\d+', item[score_name]).group())
         all_scores.append(item[score_name])
     except:
-        item[score_name] = 5
+        item[score_name] = 3
         all_scores.append(item[score_name])
         error_count +=1
 
