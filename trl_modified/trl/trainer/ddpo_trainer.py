@@ -25,13 +25,19 @@ from accelerate.logging import get_logger
 from accelerate.utils import ProjectConfiguration, set_seed
 from huggingface_hub import whoami
 
-sys.path.append("trl_modified/trl/models")
-from modeling_sd_base import DDPOStableDiffusionPipeline
-# from models import DDPOStableDiffusionPipeline
-from trainer import DDPOConfig
-from base import BaseTrainer
-from utils import PerPromptStatTracker
+# sys.path.append("trl_modified/trl/models")
+sys.path.append("/cpfs01/user/duyichao/workspace/LLM_RLAIF/MRM-Bench/trl_modified")
+from trl.models.modeling_sd_base import DDPOStableDiffusionPipeline
+from trl.trainer import DDPOConfig
+from trl.trainer.base import BaseTrainer
+from trl.trainer.utils import PerPromptStatTracker
 
+# sys.path.append("/cpfs01/user/duyichao/workspace/LLM_RLAIF/MRM-Bench/trl_modified/trl/models")
+# from modeling_sd_base import DDPOStableDiffusionPipeline
+# # from models import DDPOStableDiffusionPipeline
+# from trainer import DDPOConfig
+# from base import BaseTrainer
+# from utils import PerPromptStatTracker
 
 logger = get_logger(__name__)
 
@@ -326,7 +332,7 @@ class DDPOTrainer(BaseTrainer):
             transposed_values = zip(*reshaped_values)
             # Create new dictionaries for each row of transposed values
             samples_batched = [dict(zip(original_keys, row_values)) for row_values in transposed_values]
-
+            # try:
             self.sd_pipeline.unet.train()
             global_step = self._train_batched_samples(inner_epoch, epoch, global_step, samples_batched)
             # ensure optimization step at the end of the inner epoch
@@ -337,6 +343,7 @@ class DDPOTrainer(BaseTrainer):
 
         if epoch != 0 and epoch % self.config.save_freq == 0 and self.accelerator.is_main_process:
             self.accelerator.save_state()
+            
 
         return global_step
 
@@ -604,7 +611,12 @@ class DDPOTrainer(BaseTrainer):
         if epochs is None:
             epochs = self.config.num_epochs
         for epoch in range(self.first_epoch, epochs):
-            global_step = self.step(epoch, global_step)
+            try:
+                global_step = self.step(epoch, global_step)
+            except:
+                global_step += self.config.sample_num_batches_per_epoch
+                global_step = self.step(epoch, global_step)
+                logger.error("Error occurred during training. Maybe VLM output Parsing .")
 
     def create_model_card(self, path: str, model_name: Optional[str] = "TRL DDPO Model") -> None:
         """Creates and saves a model card for a TRL model.
