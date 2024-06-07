@@ -83,7 +83,7 @@ def main(args):
 
         print(f"Image: {image_path}, Rating: {rating}")
         print(f"Analysis: {analysis}")
-        # input()
+        input()
 
         key = f"""{args.model}"""
         # example[key] = scores[0]

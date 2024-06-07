@@ -1,7 +1,7 @@
 # MM-Reward: A Comprehensive Assessment for Multi-modal Reward Models in Text-to-Image Generation
 
 <div align="center">
-  <img src="assets/repo_logo_3.png" width="90%">
+  <img src="assets/repo_logo_4.png" width="90%">
 </div>
 
 
