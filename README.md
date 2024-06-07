@@ -1,4 +1,4 @@
-# MM-Reward: A Comprehensive Assessment for Multi-modal Reward Models in Text-to-Image Generation
+# MJ-BENCH: Is Your Multimodal Reward Model Really a Good Judge?
 
 <div align="center">
   <img src="assets/repo_logo_4.png" width="90%">
