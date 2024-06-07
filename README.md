@@ -1,4 +1,4 @@
-# MJ-BENCH: Is Your Multimodal Reward Model Really a Good Judge?
+# :woman_judge: MJ-BENCH: Is Your Multimodal Reward Model Really a Good Judge?
 
 <div align="center">
   <img src="assets/repo_logo_4.png" width="90%">
